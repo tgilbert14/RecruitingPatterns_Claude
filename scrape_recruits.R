@@ -7,6 +7,11 @@ library(rvest)
 library(httr2)
 library(dplyr)
 library(stringr)
+library(jsonlite)
+
+`%||%` <- function(x, y) {
+    if (is.null(x) || length(x) == 0) y else x
+}
 
 # ── Campus coordinates (lat, lon) ─────────────────────────
 campus_coords <- list(
@@ -239,8 +244,47 @@ add_distances <- function(df) {
             }
         ) %>%
         ungroup() %>%
-        filter(!is.na(distance_miles)) %>%
-        select(team, year, hometown, distance_miles)
+        select(team, year, player_name, player_slug, high_school, hometown, status, distance_miles)
+}
+
+# ── Parse on3 __NEXT_DATA__ player list ───────────────────
+parse_on3_players <- function(html_text) {
+    page <- read_html(html_text)
+    next_data <- page %>%
+        html_node("script#__NEXT_DATA__") %>%
+        html_text(trim = TRUE)
+
+    if (is.null(next_data) || length(next_data) == 0 || nchar(next_data) == 0) {
+        return(NULL)
+    }
+
+    payload <- fromJSON(next_data, simplifyDataFrame = FALSE)
+    players <- payload$props$pageProps$playerList$list
+    if (is.null(players) || length(players) == 0) {
+        return(NULL)
+    }
+
+    rows <- lapply(players, function(item) {
+        player_name <- item$player$fullName %||%
+            paste(item$player$firstName %||% "", item$player$lastName %||% "") %>%
+            str_squish()
+        hometown <- item$player$hometown$abbr %||% item$player$hometown$name %||% NA_character_
+        high_school <- item$player$highSchoolName %||% NA_character_
+        player_slug <- item$player$slug %||% NA_character_
+        status <- item$status$type %||% NA_character_
+
+        data.frame(
+            player_name = player_name,
+            player_slug = player_slug,
+            hometown = clean_hometown(hometown),
+            high_school = high_school,
+            status = status,
+            stringsAsFactors = FALSE
+        )
+    })
+
+    bind_rows(rows) %>%
+        filter(!is.na(player_name) & nchar(trimws(player_name)) > 0)
 }
 
 # ── Scrape one page from on3.com ──────────────────────────
@@ -268,54 +312,14 @@ scrape_on3_page <- function(team, year, slug, verbose = TRUE) {
             }
             html_text <- resp_body_string(resp)
 
-            # Try multiple extraction strategies
-            hometowns <- character(0)
-
-            # Strategy 1: regex for Hometown patterns
-            m1 <- str_match_all(
-                html_text,
-                "Hometown[^(]*\\(([^)]{2,50})\\)"
-            )[[1]]
-            if (nrow(m1) > 0) hometowns <- c(hometowns, m1[, 2])
-
-            # Strategy 2: JSON data embedded in page
-            if (length(hometowns) == 0) {
-                m2 <- str_match_all(
-                    html_text,
-                    '"hometown"[^:]*:\\s*"([^"]{2,50})"'
-                )[[1]]
-                if (nrow(m2) > 0) hometowns <- c(hometowns, m2[, 2])
-            }
-
-            # Strategy 3: rvest parsing
-            if (length(hometowns) == 0) {
-                page <- read_html(html_text)
-                dts <- page %>%
-                    html_nodes("dt") %>%
-                    html_text(trim = TRUE)
-                dds <- page %>%
-                    html_nodes("dd") %>%
-                    html_text(trim = TRUE)
-                ht_idx <- which(str_detect(dts, "(?i)hometown"))
-                if (length(ht_idx) > 0 && max(ht_idx) <= length(dds)) {
-                    hometowns <- dds[ht_idx]
-                }
-            }
-
-            hometowns <- vapply(hometowns, clean_hometown, character(1))
-            hometowns <- hometowns[!is.na(hometowns) & nchar(trimws(hometowns)) > 1]
-            hometowns <- unique(trimws(hometowns))
-
-            if (length(hometowns) == 0) {
+            players <- parse_on3_players(html_text)
+            if (is.null(players) || nrow(players) == 0) {
                 cat("0 recruits\n")
                 return(NULL)
             }
 
-            cat(length(hometowns), "recruits\n")
-            data.frame(
-                team = team, year = year, hometown = hometowns,
-                stringsAsFactors = FALSE
-            )
+            cat(nrow(players), "recruits\n")
+            players %>% mutate(team = team, year = year, .before = 1)
         },
         error = function(e) {
             cat("ERROR:", e$message, "\n")
@@ -350,7 +354,7 @@ team_slugs <- c(
     "West Virginia"  = "west-virginia-mountaineers"
 )
 
-years <- 2021:2025
+years <- 2024:2025
 rows <- list()
 total <- length(years) * length(team_slugs)
 n <- 0
@@ -378,16 +382,39 @@ if (length(rows) == 0) {
 
 cat("Processing data...\n")
 raw_data <- bind_rows(rows)
+raw_data <- raw_data %>% distinct(team, year, player_name, .keep_all = TRUE)
 cat("  Raw recruits:", nrow(raw_data), "\n")
 
-final_data <- add_distances(raw_data)
+full_data <- add_distances(raw_data)
+final_data <- full_data %>% filter(!is.na(distance_miles))
 cat("  With valid distances:", nrow(final_data), "\n")
+
+unmatched <- full_data %>%
+    filter(is.na(distance_miles)) %>%
+    select(team, year, player_name, hometown, high_school, status)
+
+dupe_players <- raw_data %>%
+    count(team, year, player_name, sort = TRUE) %>%
+    filter(n > 1)
 
 # ── Save to CSV ────────────────────────────────────────────
 output_file <- "recruits_data.csv"
 write.csv(final_data, output_file, row.names = FALSE)
+
+qa_output <- "recruits_player_qa.csv"
+write.csv(full_data, qa_output, row.names = FALSE)
+
+unmatched_output <- "recruits_unmatched_hometowns.csv"
+write.csv(unmatched, unmatched_output, row.names = FALSE)
+
+dupe_output <- "recruits_duplicate_players.csv"
+write.csv(dupe_players, dupe_output, row.names = FALSE)
+
 cat("\n✓ Saved to", output_file, "\n")
 cat("  File size:", format(file.size(output_file), units = "auto"), "\n")
+cat("✓ Saved QA table to", qa_output, "\n")
+cat("✓ Saved unmatched hometowns to", unmatched_output, "\n")
+cat("✓ Saved duplicate check to", dupe_output, "\n")
 
 # ── Summary stats ──────────────────────────────────────────
 cat("\n=== SUMMARY STATS ===\n")

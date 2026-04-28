@@ -8,7 +8,7 @@ A Shiny R app that visualizes recruiting distance patterns for Big 12 basketball
 
 **Install required packages:**
 ```r
-install.packages(c("shiny","ggplot2","dplyr","scales","stringr","rvest","httr2"))
+install.packages(c("shiny","ggplot2","dplyr","scales","stringr","rvest","httr2","jsonlite"))
 ```
 
 ### 2. Scrape Real Data (One Time)
@@ -21,9 +21,13 @@ source('scrape_recruits.R')
 
 This will:
 - Scrape all 16 Big 12 teams across 2021-2025
-- Extract recruit hometowns from each team's commits page
+- Extract player-level records (player name, hometown, high school, status) from each team's commits page
 - Calculate distances from hometown to campus
 - Save clean data to `recruits_data.csv`
+- Save QA outputs:
+  - `recruits_player_qa.csv`
+  - `recruits_unmatched_hometowns.csv`
+  - `recruits_duplicate_players.csv`
 
 The scraper is respectful to on3.com (1-second delays between requests) and will take ~5-10 minutes to complete.
 
@@ -50,6 +54,9 @@ recruits_data.csv ← (static data file)
 - **app.R** — Main Shiny application (UI + server)
 - **scrape_recruits.R** — One-time scraper script that fetches real data
 - **recruits_data.csv** — Static data file (created by scraper)
+- **recruits_player_qa.csv** — Full player-level table for QA/QC
+- **recruits_unmatched_hometowns.csv** — Rows where hometown did not geocode
+- **recruits_duplicate_players.csv** — Duplicate player checks by team/year
 
 ## Features
 
@@ -63,6 +70,7 @@ recruits_data.csv ← (static data file)
   - Exclude international recruits (>4000 miles)
   - Density curve overlay
 - **Stats strip:** Live calculations of recruits, medians, and percentages
+- **QA/QC table:** Player-level rows under the plot (player, hometown, high school, status, distance)
 
 ## Refreshing Data
 

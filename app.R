@@ -11,6 +11,15 @@ library(ggplot2)
 library(dplyr)
 library(scales)
 library(stringr)
+library(rvest)
+library(httr)
+library(jsonlite)
+
+`%||%` <- function(x, y) {
+  if (is.null(x) || length(x) == 0) y else x
+}
+
+# source("scrape_recruits.R") # For data scraping functions and city geocoding
 
 # ── on3.com team slugs ────────────────────────────────────
 team_slugs <- c(
@@ -64,6 +73,50 @@ team_colors <- c(
   "Texas Tech"     = "#CC0000", "UCF"            = "#FFC904",
   "Utah"           = "#BE0000", "West Virginia"  = "#002855"
 )
+
+# ── Team domains for logo fetch ──────────────────────────
+team_domains <- c(
+  "Arizona" = "arizona.edu",
+  "Arizona State" = "asu.edu",
+  "Baylor" = "baylor.edu",
+  "BYU" = "byu.edu",
+  "Cincinnati" = "uc.edu",
+  "Colorado" = "colorado.edu",
+  "Houston" = "uh.edu",
+  "Iowa State" = "iastate.edu",
+  "Kansas" = "ku.edu",
+  "Kansas State" = "k-state.edu",
+  "Oklahoma State" = "okstate.edu",
+  "TCU" = "tcu.edu",
+  "Texas Tech" = "ttu.edu",
+  "UCF" = "ucf.edu",
+  "Utah" = "utah.edu",
+  "West Virginia" = "wvu.edu"
+)
+
+load_team_logo_map <- function(csv_file = "team_logo_urls.csv") {
+  defaults <- data.frame(
+    team = names(team_domains),
+    logo_url = paste0("https://logo.clearbit.com/", unname(team_domains), "?size=64"),
+    stringsAsFactors = FALSE
+  )
+
+  if (!file.exists(csv_file)) {
+    return(setNames(defaults$logo_url, defaults$team))
+  }
+
+  x <- tryCatch(read.csv(csv_file, stringsAsFactors = FALSE), error = function(e) defaults)
+  if (!all(c("team", "logo_url") %in% names(x))) {
+    x <- defaults
+  }
+
+  merged <- defaults
+  idx <- match(x$team, merged$team)
+  valid <- !is.na(idx) & !is.na(x$logo_url) & nchar(trimws(x$logo_url)) > 0
+  merged$logo_url[idx[valid]] <- x$logo_url[valid]
+
+  setNames(merged$logo_url, merged$team)
+}
 
 # ── Haversine distance (miles) ────────────────────────────
 haversine <- function(lat1, lon1, lat2, lon2) {
@@ -353,6 +406,13 @@ load_recruiting_data <- function(csv_file = "recruits_data.csv") {
   }
   message(sprintf("Loading data from %s...", csv_file))
   df <- read.csv(csv_file, stringsAsFactors = FALSE)
+
+  # Backward compatibility for older CSVs that didn't include player-level columns.
+  if (!"player_name" %in% names(df)) df$player_name <- NA_character_
+  if (!"player_slug" %in% names(df)) df$player_slug <- NA_character_
+  if (!"high_school" %in% names(df)) df$high_school <- NA_character_
+  if (!"status" %in% names(df)) df$status <- NA_character_
+
   message(sprintf("Loaded %d recruits", nrow(df)))
   df
 }
@@ -364,98 +424,454 @@ ui <- fluidPage(
   tags$head(
     tags$link(
       rel = "stylesheet",
-      href = "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap"
+      href = "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Manrope:wght@300;400;500;600;700&display=swap"
     ),
+    tags$script(HTML("$(document).on('click keydown', '.help-dot', function(e) {
+      if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault();
+      var $dot = $(this);
+      $('.help-dot.is-open').not($dot).removeClass('is-open');
+      $dot.toggleClass('is-open');
+    });
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('.help-dot').length) {
+        $('.help-dot.is-open').removeClass('is-open');
+      }
+    });")),
     tags$style(HTML("
       * { box-sizing:border-box; }
-      body { background:#0e0f14; color:#e8e4dc;
-             font-family:'DM Sans',sans-serif; margin:0; padding:0; }
-
-      /* Header */
-      .app-header {
-        background:linear-gradient(135deg,#0e0f14 0%,#1a1c25 50%,#0e0f14 100%);
-        border-bottom:2px solid #c8a84b;
-        padding:20px 32px 14px;
-        display:flex; align-items:flex-end; gap:14px;
+      body {
+        background:linear-gradient(170deg,#f3eee4 0%,#eef4fa 54%,#f7f1e6 100%);
+        color:#232733;
+        font-family:'Manrope',sans-serif;
+        font-size:16px;
+        margin:0;
+        padding:0;
       }
-      .app-title { font-family:'Bebas Neue',sans-serif; font-size:2.6rem;
-        letter-spacing:3px; color:#c8a84b; line-height:1; margin:0; }
-      .app-sub { font-size:0.76rem; color:#7a7d8a; letter-spacing:1.5px;
-        text-transform:uppercase; margin-bottom:3px; }
-      .badge-conf { background:#c8a84b; color:#0e0f14;
-        font-family:'Bebas Neue',sans-serif; font-size:0.82rem;
-        letter-spacing:2px; padding:2px 10px; border-radius:3px;
-        display:inline-block; margin-bottom:4px; }
-      .badge-live { background:#1a2a1a; border:1px solid #2d5a2d;
-        color:#5fd4a0; font-size:0.68rem; letter-spacing:1px;
-        padding:2px 9px; border-radius:3px; display:inline-block;
-        margin-bottom:4px; margin-left:6px; }
 
-      /* Stats strip */
-      .stats-strip { display:flex; gap:5px; padding:10px 22px;
-        background:#13141a; border-bottom:1px solid #232530; flex-wrap:wrap; }
-      .stat-card { background:#1a1c25; border:1px solid #2d3040;
-        border-radius:5px; padding:7px 12px; flex:1; min-width:80px;
-        text-align:center; transition:border-color 0.2s; }
-      .stat-card:hover { border-color:#c8a84b; }
-      .stat-val { font-family:'Bebas Neue',sans-serif; font-size:1.5rem;
-        color:#c8a84b; line-height:1; }
-      .stat-lbl { font-size:0.60rem; color:#7a7d8a; letter-spacing:1.5px;
-        text-transform:uppercase; margin-top:2px; }
+      .app-header {
+        background:linear-gradient(130deg,#f7ecd5 0%,#fbfcfe 48%,#e1edf9 100%);
+        border-bottom:1px solid #d8deea;
+        box-shadow:0 12px 28px rgba(29,43,71,.08);
+        padding:20px 28px 16px;
+        display:flex;
+        align-items:flex-end;
+        gap:14px;
+      }
+      .app-title {
+        font-family:'Barlow Condensed',sans-serif;
+        font-size:2.3rem;
+        letter-spacing:1px;
+        color:#213459;
+        line-height:1;
+        margin:0;
+      }
+      .app-sub {
+        font-size:0.88rem;
+        color:#5f6f89;
+        letter-spacing:1px;
+        text-transform:uppercase;
+        margin-bottom:3px;
+      }
+      .badge-conf {
+        background:#ffb703;
+        color:#1b2d4f;
+        font-family:'Barlow Condensed',sans-serif;
+        font-size:0.95rem;
+        letter-spacing:1px;
+        padding:2px 10px;
+        border-radius:999px;
+        display:inline-block;
+        margin-bottom:4px;
+      }
+      .badge-live {
+        background:#e8fff0;
+        border:1px solid #9bd2ae;
+        color:#277147;
+        font-size:0.70rem;
+        letter-spacing:.6px;
+        padding:2px 9px;
+        border-radius:999px;
+        display:inline-block;
+        margin-bottom:4px;
+        margin-left:6px;
+      }
 
-      /* Layout */
+      .stats-strip {
+        display:flex;
+        gap:14px;
+        padding:16px 24px;
+        border-bottom:1px solid #d8deea;
+        background:linear-gradient(125deg,#2a4667 0%,#35577d 54%,#43698f 100%);
+        flex-wrap:wrap;
+      }
+      .stat-card {
+        background:linear-gradient(165deg,#fffdfb 0%,#f2f7fd 100%);
+        border:1px solid #9db2d1;
+        border-radius:12px;
+        padding:12px 14px;
+        flex:1;
+        min-width:118px;
+        text-align:center;
+        box-shadow:0 8px 18px rgba(8,18,38,.23);
+      }
+      .stat-val {
+        font-family:'Barlow Condensed',sans-serif;
+        font-size:1.78rem;
+        color:#1a3868;
+        line-height:1;
+      }
+      .stat-lbl {
+        font-size:0.78rem;
+        color:#4c5f80;
+        letter-spacing:1.2px;
+        text-transform:uppercase;
+        margin-top:6px;
+      }
+
+      .help-dot {
+        display:inline-flex;
+        width:16px;
+        height:16px;
+        border-radius:50%;
+        align-items:center;
+        justify-content:center;
+        background:#e4eefc;
+        color:#1f4276;
+        border:1px solid #bcd0ee;
+        font-size:10px;
+        font-weight:800;
+        margin-left:4px;
+        cursor:help;
+        position:relative;
+        vertical-align:middle;
+        outline:none;
+      }
+      .help-dot::after {
+        content:attr(data-help);
+        position:absolute;
+        left:50%;
+        bottom:calc(100% + 10px);
+        transform:translateX(-50%);
+        min-width:180px;
+        max-width:260px;
+        padding:10px 12px;
+        border-radius:10px;
+        background:#173057;
+        color:#ffffff;
+        font-size:0.84rem;
+        font-weight:500;
+        line-height:1.45;
+        letter-spacing:0;
+        text-transform:none;
+        box-shadow:0 12px 24px rgba(9,20,38,.28);
+        opacity:0;
+        pointer-events:none;
+        transition:opacity .16s ease;
+        z-index:20;
+        text-align:left;
+      }
+      .help-dot::before {
+        content:'';
+        position:absolute;
+        left:50%;
+        bottom:calc(100% + 4px);
+        transform:translateX(-50%);
+        border-left:6px solid transparent;
+        border-right:6px solid transparent;
+        border-top:6px solid #173057;
+        opacity:0;
+        pointer-events:none;
+        transition:opacity .16s ease;
+        z-index:21;
+      }
+      .help-dot:hover::after,
+      .help-dot:hover::before,
+      .help-dot:focus::after,
+      .help-dot:focus::before,
+      .help-dot.is-open::after,
+      .help-dot.is-open::before {
+        opacity:1;
+      }
+
       .main-wrap { display:flex; min-height:calc(100vh - 96px); }
 
-      /* Sidebar */
-      .sidebar { width:252px; min-width:252px; background:#13141a;
-        border-right:1px solid #232530; padding:18px 16px;
-        display:flex; flex-direction:column; gap:16px; }
-      .sec-lbl { font-size:0.64rem; letter-spacing:2.5px;
-        text-transform:uppercase; color:#c8a84b; margin-bottom:6px;
+      .sidebar {
+        width:292px;
+        min-width:292px;
+        background:linear-gradient(180deg,#f6f9fd 0%,#eef4fa 100%);
+        border-right:1px solid #d8deea;
+        padding:20px 18px;
+        display:flex; flex-direction:column; gap:18px; }
+      .sec-lbl { font-size:0.78rem; letter-spacing:1.8px;
+        text-transform:uppercase; color:#1a447f; margin-bottom:6px;
         font-weight:600; }
-      hr.sdiv { border:none; border-top:1px solid #232530; margin:2px 0; }
+      hr.sdiv { border:none; border-top:1px solid #dce4f2; margin:4px 0; }
       .shiny-input-container { margin-bottom:0 !important; }
-      label { color:#9da0ad !important; font-size:0.75rem !important;
-              font-weight:500 !important; margin-bottom:3px !important; }
+      label { color:#4f607e !important; font-size:0.92rem !important;
+              font-weight:500 !important; margin-bottom:5px !important; }
       .selectize-control .selectize-input {
-        background:#1e2029 !important; border:1px solid #2d3040 !important;
-        color:#e8e4dc !important; border-radius:4px !important;
-        box-shadow:none !important; font-size:0.78rem !important; }
+        background:#ffffff !important; border:2px solid #b6c9e2 !important;
+        color:#213459 !important; border-radius:7px !important;
+        box-shadow:0 2px 0 rgba(50,82,122,.08) !important; font-size:0.94rem !important; }
       .selectize-control .selectize-input.focus {
-        border-color:#c8a84b !important;
-        box-shadow:0 0 0 2px rgba(200,168,75,.15) !important; }
-      .selectize-dropdown { background:#1e2029 !important;
-        border:1px solid #2d3040 !important; color:#e8e4dc !important;
-        font-size:0.78rem !important; }
+        border-color:#356fbf !important;
+        box-shadow:0 0 0 3px rgba(53,111,191,.18) !important; }
+      .selectize-dropdown { background:#ffffff !important;
+        border:1px solid #cdd7e8 !important; color:#213459 !important;
+        font-size:0.92rem !important; }
       .selectize-dropdown-content .option:hover,
       .selectize-dropdown-content .option.active {
-        background:#2d3040 !important; color:#c8a84b !important; }
-      input[type=checkbox],input[type=radio] { accent-color:#c8a84b; }
-      .checkbox label,.radio label { color:#e8e4dc !important;
-        font-size:0.78rem !important; }
-      .irs--shiny .irs-bar { background:#c8a84b !important; }
-      .irs--shiny .irs-handle { background:#c8a84b !important;
-        border-color:#c8a84b !important; }
+        background:#eff5ff !important; color:#1a447f !important; }
+      input[type=checkbox],input[type=radio] { accent-color:#2a6fdb; }
+      .checkbox label,.radio label { color:#334b70 !important;
+        font-size:0.92rem !important; }
+      .irs--shiny .irs-bar { background:#2a6fdb !important; }
+      .irs--shiny .irs-handle { background:#2a6fdb !important;
+        border-color:#2a6fdb !important; }
       .irs--shiny .irs-from,.irs--shiny .irs-to,.irs--shiny .irs-single {
-        background:#c8a84b !important; color:#0e0f14 !important;
+        background:#2a6fdb !important; color:#ffffff !important;
         font-weight:600 !important; }
-      .irs--shiny .irs-line { background:#2d3040 !important; }
-      .irs--shiny .irs-grid-text { color:#7a7d8a !important;
-        font-size:0.66rem !important; }
-      .shiny-options-group { display:flex; flex-direction:column; gap:3px; }
+      .irs--shiny .irs-line { background:#d3dff1 !important; }
+      .irs--shiny .irs-grid-text { color:#5f6f89 !important;
+        font-size:0.80rem !important; }
+      .sidebar-note {
+        font-size:0.86rem;
+        color:#4f607e;
+        line-height:1.65;
+      }
 
-      /* Plot area */
-      .plot-area { flex:1; padding:18px 22px; background:#0e0f14; overflow:auto; }
+      .plot-area { flex:1; padding:20px 24px; overflow:auto; background:linear-gradient(180deg,rgba(255,255,255,.22) 0%, rgba(233,241,249,.12) 100%); }
       .plot-hdr { display:flex; justify-content:space-between;
-        align-items:baseline; margin-bottom:10px; }
-      .plot-ttl { font-family:'Bebas Neue',sans-serif; font-size:1.35rem;
-        letter-spacing:2px; color:#e8e4dc; }
-      .plot-cap { font-size:0.68rem; color:#555868; }
-      .loading-box { color:#c8a84b; font-family:'Bebas Neue',sans-serif;
+        align-items:baseline; margin-bottom:12px; }
+      .plot-ttl { font-family:'Barlow Condensed',sans-serif; font-size:1.45rem;
+        letter-spacing:1px; color:#213459; }
+      .plot-cap { font-size:0.84rem; color:#5f6f89; }
+
+      .hero-card {
+        background:linear-gradient(180deg,#fffdfa 0%,#f5f8fc 100%);
+        border:1px solid #ccd9ea;
+        border-radius:16px;
+        padding:16px 18px 14px;
+        box-shadow:0 16px 28px rgba(18,36,66,.11);
+        margin-bottom:14px;
+      }
+      .hero-head {
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        flex-wrap:wrap;
+        gap:12px;
+        margin-bottom:12px;
+      }
+      .hero-title {
+        font-family:'Barlow Condensed',sans-serif;
+        font-size:1.5rem;
+        letter-spacing:1px;
+        color:#173a72;
+        line-height:1;
+      }
+      .hero-sub {
+        font-size:.84rem;
+        color:#5b6e8e;
+        margin-top:7px;
+      }
+      .hero-badges {
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+        gap:10px;
+        margin:8px 0 14px;
+      }
+      .story-badge {
+        background:linear-gradient(155deg,#f8fbff 0%,#eef5ff 100%);
+        border:1px solid #d6e2f4;
+        border-radius:12px;
+        padding:10px 12px;
+        box-shadow:0 8px 14px rgba(22,40,72,.07);
+      }
+      .story-kicker {
+        font-size:.70rem;
+        text-transform:uppercase;
+        letter-spacing:1.35px;
+        color:#6a7f9f;
+      }
+      .story-team {
+        margin-top:4px;
+        font-family:'Barlow Condensed',sans-serif;
+        font-size:1.28rem;
+        color:#15396d;
+        letter-spacing:.5px;
+        line-height:1;
+      }
+      .story-value {
+        margin-top:4px;
+        font-size:.88rem;
+        color:#39547f;
+      }
+      .hero-note {
+        background:#eef4fb;
+        border:1px solid #d1deef;
+        border-radius:10px;
+        padding:10px 12px;
+        margin-top:12px;
+        color:#284a7d;
+        font-size:.88rem;
+      }
+
+      .hero-tabs .nav {
+        display:flex;
+        gap:8px;
+        flex-wrap:wrap;
+        border-bottom:none;
+        margin-bottom:12px;
+      }
+      .hero-tabs .nav > li {
+        float:none;
+      }
+      .hero-tabs .nav > li > a {
+        margin-right:0;
+        border:2px solid #c3d4e8;
+        border-radius:999px;
+        padding:9px 16px;
+        background:#e5edf7;
+        color:#28476f;
+        font-size:0.86rem;
+        font-weight:700;
+        letter-spacing:0.2px;
+      }
+      .hero-tabs .nav > li > a:hover,
+      .hero-tabs .nav > li > a:focus {
+        background:#dbe7f4;
+        color:#1f416c;
+      }
+      .hero-tabs .nav > li.active > a,
+      .hero-tabs .nav > li.active > a:hover,
+      .hero-tabs .nav > li.active > a:focus {
+        background:linear-gradient(135deg,#2a496d 0%,#40658f 100%);
+        color:#ffffff;
+        border:2px solid #2b4f77;
+      }
+      .hero-tabs .tab-content > .tab-pane {
+        padding:6px 0 0;
+        border:none;
+        background:transparent;
+        box-shadow:none;
+      }
+
+      .supp-card {
+        background:#ffffff;
+        border:1px solid #d8deea;
+        border-radius:13px;
+        padding:0;
+        box-shadow:0 8px 16px rgba(20,40,73,.08);
+      }
+      .loading-box { color:#294f90; font-family:'Barlow Condensed',sans-serif;
         font-size:1.1rem; letter-spacing:2px; padding:60px 20px;
         text-align:center; }
-      .loading-sub { font-family:'DM Sans',sans-serif; font-size:0.8rem;
-        color:#7a7d8a; margin-top:10px; line-height:1.6; }
+      .loading-sub { font-family:'Manrope',sans-serif; font-size:0.8rem;
+        color:#5f6f89; margin-top:10px; line-height:1.6; }
+
+      .tab-pane {
+        background:#ffffff;
+        border:1px solid #d8deea;
+        border-top:none;
+        border-radius:0 0 12px 12px;
+        padding:18px;
+        box-shadow:none;
+      }
+      .nav-tabs > li > a {
+        color:#35527f;
+        font-size:0.90rem;
+        font-weight:600;
+      }
+      .nav-tabs > li.active > a,
+      .nav-tabs > li.active > a:hover,
+      .nav-tabs > li.active > a:focus {
+        color:#1a3868;
+        background:#ffffff;
+        border:1px solid #d8deea;
+        border-bottom-color:#ffffff;
+      }
+
+      .team-logo-strip {
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+        margin:8px 0 12px;
+      }
+      .logo-chip {
+        display:inline-flex;
+        align-items:center;
+        gap:8px;
+        padding:7px 12px;
+        border-radius:999px;
+        color:#ffffff;
+        font-size:.84rem;
+        font-weight:700;
+        box-shadow:0 6px 10px rgba(15,28,52,.20);
+      }
+      .logo-mark {
+        width:22px;
+        height:22px;
+        border-radius:50%;
+        background:rgba(255,255,255,.20);
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        font-size:.60rem;
+        font-weight:800;
+      }
+      .logo-img {
+        width:22px;
+        height:22px;
+        border-radius:50%;
+        background:#ffffff;
+        border:1px solid rgba(255,255,255,.55);
+        object-fit:contain;
+      }
+
+      .help-panel {
+        line-height:1.75;
+        color:#334b70;
+        font-size:1rem;
+      }
+      .help-panel h4 {
+        margin:8px 0 6px;
+        font-family:'Barlow Condensed',sans-serif;
+        letter-spacing:.7px;
+        color:#1d3d70;
+      }
+
+      .action-button,
+      .btn-default,
+      .btn.btn-default {
+        background:linear-gradient(140deg,#2f5f90 0%,#3e78b6 100%) !important;
+        border:2px solid #2b5f95 !important;
+        color:#ffffff !important;
+        font-weight:700 !important;
+        font-size:0.90rem !important;
+        letter-spacing:0.3px;
+        border-radius:10px !important;
+        padding:8px 12px !important;
+        box-shadow:0 6px 12px rgba(25,54,88,.22);
+      }
+      .action-button:hover,
+      .btn-default:hover,
+      .btn.btn-default:hover,
+      .action-button:focus,
+      .btn-default:focus,
+      .btn.btn-default:focus {
+        background:linear-gradient(140deg,#2b567f 0%,#36699f 100%) !important;
+        border-color:#244e79 !important;
+        color:#ffffff !important;
+      }
+
+      @media (max-width: 1080px) {
+        .sidebar { width:100%; min-width:100%; border-right:none; border-bottom:1px solid #d8deea; }
+        .main-wrap { flex-direction:column; }
+        .plot-area { padding:18px 16px; }
+        .stats-strip { padding:14px 16px; }
+      }
     "))
   ),
 
@@ -463,13 +879,13 @@ ui <- fluidPage(
   div(
     class = "app-header",
     div(
-      div(class = "badge-conf", "BIG 12 CONFERENCE"),
-      span(class = "badge-live", "● LIVE DATA · on3.com"),
-      div(class = "app-title", "RECRUITING RADAR")
+      div(class = "badge-conf", "BIG 12 MEN'S BASKETBALL"),
+      span(class = "badge-live", "LIVE DATA · CSV BACKED"),
+      div(class = "app-title", "BASKETBALL RECRUITING RADAR")
     ),
     div(
       style = "margin-left:auto; text-align:right;",
-      div(class = "app-sub", "High school recruit distance · miles from hometown to campus")
+      div(class = "app-sub", "Visual Big 12 basketball recruiting distance patterns by team and class")
     )
   ),
 
@@ -478,27 +894,27 @@ ui <- fluidPage(
     class = "stats-strip",
     div(
       class = "stat-card", div(class = "stat-val", textOutput("s_n", inline = TRUE)),
-      div(class = "stat-lbl", "Recruits")
+      div(class = "stat-lbl", HTML("Recruits <span class='help-dot' data-help='Total recruits included after filters are applied.' tabindex='0' role='button' aria-label='Explain recruits metric'>?</span>"))
     ),
     div(
       class = "stat-card", div(class = "stat-val", textOutput("s_med", inline = TRUE)),
-      div(class = "stat-lbl", "Median Miles")
+      div(class = "stat-lbl", HTML("Median Miles <span class='help-dot' data-help='Middle value of recruiting distance. Half of recruits are closer and half are farther.' tabindex='0' role='button' aria-label='Explain median miles metric'>?</span>"))
     ),
     div(
       class = "stat-card", div(class = "stat-val", textOutput("s_avg", inline = TRUE)),
-      div(class = "stat-lbl", "Avg Miles")
+      div(class = "stat-lbl", HTML("Avg Miles <span class='help-dot' data-help='Mean distance across all visible recruits.' tabindex='0' role='button' aria-label='Explain average miles metric'>?</span>"))
     ),
     div(
       class = "stat-card", div(class = "stat-val", textOutput("s_loc", inline = TRUE)),
-      div(class = "stat-lbl", "≤300 mi %")
+      div(class = "stat-lbl", HTML("Local Share <span class='help-dot' data-help='Percent of recruits within 300 miles of campus.' tabindex='0' role='button' aria-label='Explain local share metric'>?</span>"))
     ),
     div(
       class = "stat-card", div(class = "stat-val", textOutput("s_natl", inline = TRUE)),
-      div(class = "stat-lbl", ">1,000 mi %")
+      div(class = "stat-lbl", HTML("National Share <span class='help-dot' data-help='Percent of recruits more than 1,000 miles from campus.' tabindex='0' role='button' aria-label='Explain national share metric'>?</span>"))
     ),
     div(
       class = "stat-card", div(class = "stat-val", textOutput("s_intl", inline = TRUE)),
-      div(class = "stat-lbl", ">2,500 mi %")
+      div(class = "stat-lbl", HTML("Long-Haul Share <span class='help-dot' data-help='Percent of recruits more than 2,500 miles from campus.' tabindex='0' role='button' aria-label='Explain long-haul share metric'>?</span>"))
     )
   ),
 
@@ -510,7 +926,7 @@ ui <- fluidPage(
     div(
       class = "sidebar",
       div(
-        div(class = "sec-lbl", "Year Range"),
+        div(class = "sec-lbl", HTML("Year Range <span class='help-dot' data-help='Choose recruiting classes to include in all visuals.' tabindex='0' role='button' aria-label='Explain year range filter'>?</span>")),
         sliderInput("yr", NULL,
           min = 2021, max = 2025,
           value = c(2021, 2025), step = 1, sep = "", ticks = TRUE
@@ -518,62 +934,59 @@ ui <- fluidPage(
       ),
       hr(class = "sdiv"),
       div(
-        div(class = "sec-lbl", "Teams"),
+        div(class = "sec-lbl", HTML("Teams <span class='help-dot' data-help='Start with one team, then add peers to compare spread and recruiting reach.' tabindex='0' role='button' aria-label='Explain teams filter'>?</span>")),
         selectizeInput("teams", NULL,
           choices = big12_teams,
-          selected = big12_teams, multiple = TRUE,
+          selected = "Arizona", multiple = TRUE,
           options = list(
-            placeholder = "Select teams…",
+            placeholder = "Select Big 12 basketball teams…",
             plugins = list("remove_button")
           )
         )
       ),
       hr(class = "sdiv"),
-      div(
-        div(class = "sec-lbl", "Display Mode"),
-        radioButtons("mode", NULL,
-          choices = c(
-            "All Teams Overlaid" = "overlay",
-            "Facet by Team" = "facet"
-          ),
-          selected = "overlay"
+      conditionalPanel(
+        condition = "input.view_tab === 'histogram'",
+        div(
+          div(class = "sec-lbl", HTML("Histogram Mode <span class='help-dot' data-help='Supplemental view: compare all teams in one panel or split by team facets.' tabindex='0' role='button' aria-label='Explain histogram mode'>?</span>")),
+          radioButtons("hist_mode", NULL,
+            choices = c(
+              "All Teams Overlaid" = "overlay",
+              "Facet by Team" = "facet"
+            ),
+            selected = "overlay"
+          )
+        )
+      ),
+      conditionalPanel(
+        condition = "input.view_tab === 'histogram'",
+        hr(class = "sdiv"),
+        div(
+          div(class = "sec-lbl", HTML("Bin Width (miles) <span class='help-dot' data-help='Larger bins smooth the histogram; smaller bins show more detail.' tabindex='0' role='button' aria-label='Explain histogram bin width'>?</span>")),
+          sliderInput("bw", NULL, min = 50, max = 400, value = 150, step = 25)
         )
       ),
       hr(class = "sdiv"),
       div(
-        div(class = "sec-lbl", "Bin Width (miles)"),
-        sliderInput("bw", NULL, min = 50, max = 400, value = 150, step = 25)
-      ),
-      hr(class = "sdiv"),
-      div(
-        div(class = "sec-lbl", "Options"),
+        div(class = "sec-lbl", HTML("Options <span class='help-dot' data-help='Turn plot layers on or off and optionally remove very long-distance outliers.' tabindex='0' role='button' aria-label='Explain display options'>?</span>")),
         checkboxInput("dens", "Overlay density curve", TRUE),
-        checkboxInput("local_hl", "Highlight local zone (≤300 mi)", FALSE),
-        checkboxInput("drop_intl", "Exclude international recruits (>4000 mi)", FALSE)
+        checkboxInput("show_refs", "Show distance markers", TRUE),
+        checkboxInput("show_points", "Show individual points on box plot", TRUE),
+        checkboxInput("drop_intl", "Exclude international recruits (>4000 mi)", FALSE),
+        actionButton("rescrape", "Reload Basketball Data", width = "100%")
       ),
       hr(class = "sdiv"),
       div(
-        div(class = "sec-lbl", "Legend"),
+        div(class = "sec-lbl", "Color Key"),
         div(
-          style = "font-size:0.68rem;color:#9da0ad;line-height:1.8;",
-          HTML("🟨 <b style='color:#c8a84b;'>Gold solid</b> = current year<br>
-                🔲 <b style='color:#5a6080;'>Faded blue</b> = prior years<br>
-                Dashed lines = distance markers")
+          class = "sidebar-note",
+          HTML("<b style='color:#b88200;'>Current class</b> vs <b style='color:#5279b5;'>Prior classes</b><br>
+                The main box plot is the primary comparison view")
         )
       ),
-      hr(class = "sdiv"),
       div(
-        div(class = "sec-lbl", "Data"),
-        div(
-          style = "font-size:0.67rem;color:#555868;line-height:1.5;",
-          "Data loaded from recruits_data.csv.", br(),
-          "Run scrape_recruits.R to refresh."
-        ),
-        actionButton("rescrape", "🔄 Reload Data",
-          style = "margin-top:8px;width:100%;background:#1a1c25;
-                 color:#c8a84b;border:1px solid #c8a84b;border-radius:4px;
-                 font-size:0.72rem;padding:5px 0;cursor:pointer;"
-        )
+        class = "sidebar-note",
+        "Tip: Start with Arizona, then add teams to compare spread and recruiting reach."
       )
     ),
 
@@ -582,10 +995,58 @@ ui <- fluidPage(
       class = "plot-area",
       div(
         class = "plot-hdr",
-        div(class = "plot-ttl", "Distance Traveled to Campus"),
+        div(class = "plot-ttl", "Big 12 Basketball Recruiting Distance Dashboard"),
         div(class = "plot-cap", textOutput("caption", inline = TRUE))
       ),
-      uiOutput("content")
+      uiOutput("team_logos"),
+      div(
+        class = "hero-card",
+        div(
+          class = "hero-head",
+          div(
+            div(class = "hero-title", HTML("Primary View: Basketball Team Distance Distribution <span class='help-dot' data-help='Each box summarizes basketball recruiting distance distribution for a team. Line in box = median, box = middle 50 percent, whiskers and outliers = spread and extremes.' tabindex='0' role='button' aria-label='Explain primary box plot'>?</span>")),
+            div(class = "hero-sub", "Box plot stays primary, but the histogram, QA table, and guide are now one click away inside this same view.")
+          )
+        ),
+        div(
+          class = "hero-tabs",
+          tabsetPanel(
+            id = "view_tab",
+            selected = "box",
+            type = "tabs",
+            tabPanel(
+              "Box Plot",
+              value = "box",
+              uiOutput("hero_badges"),
+              plotOutput("box_plot", height = "640px", width = "100%"),
+              div(class = "hero-note", textOutput("hero_note", inline = TRUE))
+            ),
+            tabPanel("Histogram", value = "histogram", plotOutput("hist_plot", height = "500px", width = "100%")),
+            tabPanel("QA / QC", value = "qa", dataTableOutput("qa_table")),
+            tabPanel(
+              "How To Read This",
+              value = "guide",
+              div(
+                class = "help-panel",
+                h4("What the box plot shows"),
+                tags$ul(
+                  tags$li("Each team appears on the y-axis; farther right means longer recruiting distance."),
+                  tags$li("Gold represents the current class in the selected range; blue represents prior classes."),
+                  tags$li("Median points and labels show the typical distance for each team in the current class.")
+                ),
+                h4("Recommended workflow"),
+                tags$ol(
+                  tags$li("Select 2-6 teams to keep comparisons readable."),
+                  tags$li("Set year range, then review medians and spread in the main box plot."),
+                  tags$li("Open Histogram for shape details and QA / QC Table for player-level verification.")
+                ),
+                h4("Data notes"),
+                tags$p("Distances are straight-line (haversine) from recruit hometown to campus and are loaded from local CSV data artifacts.")
+              )
+            )
+          )
+        )
+      )
     )
   )
 )
@@ -596,6 +1057,7 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   rv_data <- reactiveVal(NULL)
   rv_loading <- reactiveVal(TRUE)
+  team_logo_map <- load_team_logo_map("team_logo_urls.csv")
 
   # Initial load
   observe({
@@ -623,7 +1085,7 @@ server <- function(input, output, session) {
   # Reload data button
   observeEvent(input$rescrape, {
     rv_loading(TRUE)
-    withProgress(message = "Reloading data…", value = 0, {
+    withProgress(message = "Reloading recruits_data.csv…", value = 0, {
       df <- tryCatch(load_recruiting_data("recruits_data.csv"),
         error = function(e) rv_data()
       )
@@ -679,44 +1141,246 @@ server <- function(input, output, session) {
       nrow(fdf()), " recruits"
     )
   })
-
-  # ── Content switch ─────────────────────────────────────
-  output$content <- renderUI({
-    if (rv_loading()) {
-      div(
-        class = "loading-box",
-        div("⏳ LOADING DATA…"),
-        div(
-          class = "loading-sub",
-          "Reading from recruits_data.csv", br(), br(),
-          "To update with new recruiting data:", br(),
-          "Run ",
-          tags$code(
-            style = "background:#1e2029;padding:2px 6px;border-radius:3px;",
-            "source('scrape_recruits.R')"
-          ),
-          " in the R console"
-        )
-      )
-    } else if (is.null(rv_data()) || nrow(rv_data()) == 0) {
-      div(
-        class = "loading-box",
-        div("⚠️ NO DATA LOADED"),
-        div(
-          class = "loading-sub",
-          "recruits_data.csv not found.", br(),
-          "Run ",
-          tags$code(
-            style = "background:#1e2029;padding:2px 6px;border-radius:3px;",
-            "source('scrape_recruits.R')"
-          ),
-          " to fetch and save data."
-        )
-      )
-    } else {
-      plotOutput("hist_plot", height = "570px", width = "100%")
+  output$hero_note <- renderText({
+    req(fdf())
+    df <- fdf()
+    current_year <- max(df$year, na.rm = TRUE)
+    current_df <- df %>% filter(year == current_year)
+    if (nrow(current_df) == 0) {
+      return("Tip: include the latest class year to unlock the current-vs-prior comparison layer.")
     }
+    med_current <- round(median(current_df$distance_miles, na.rm = TRUE))
+    iqr_current <- round(IQR(current_df$distance_miles, na.rm = TRUE))
+    paste0(
+      "Current class ", current_year, " median distance is ", comma(med_current),
+      " miles with an IQR of ", comma(iqr_current),
+      " miles. Use the median labels on each row to compare teams quickly."
+    )
   })
+  output$hero_badges <- renderUI({
+    req(fdf())
+    df <- fdf()
+    current_year <- max(df$year, na.rm = TRUE)
+    current_df <- df %>%
+      filter(year == current_year) %>%
+      group_by(team) %>%
+      summarize(
+        recruits = n(),
+        median_miles = median(distance_miles, na.rm = TRUE),
+        local_share = mean(distance_miles <= 300, na.rm = TRUE),
+        .groups = "drop"
+      )
+
+    req(nrow(current_df) > 0)
+
+    most_local <- current_df %>%
+      arrange(desc(local_share), median_miles, desc(recruits)) %>%
+      slice(1)
+    widest_reach <- current_df %>%
+      arrange(desc(median_miles), desc(recruits)) %>%
+      slice(1)
+    largest_class <- current_df %>%
+      arrange(desc(recruits), median_miles) %>%
+      slice(1)
+
+    badge <- function(kicker, team_name, value_text) {
+      div(
+        class = "story-badge",
+        div(class = "story-kicker", kicker),
+        div(class = "story-team", team_name),
+        div(class = "story-value", value_text)
+      )
+    }
+
+    div(
+      class = "hero-badges",
+      badge(
+        "Best Local Footprint",
+        most_local$team,
+        paste0(round(most_local$local_share * 100), "% within 300 miles in ", current_year)
+      ),
+      badge(
+        "Widest Current Reach",
+        widest_reach$team,
+        paste0(comma(round(widest_reach$median_miles)), " mile median in ", current_year)
+      ),
+      badge(
+        "Largest Current Class",
+        largest_class$team,
+        paste0(largest_class$recruits, " recruits in ", current_year)
+      )
+    )
+  })
+
+  output$team_logos <- renderUI({
+    req(input$teams)
+    selected <- input$teams
+    if (length(selected) == 0) {
+      return(NULL)
+    }
+    chips <- lapply(selected, function(tm) {
+      mark <- toupper(paste0(substr(tm, 1, 1), substr(gsub("[^A-Za-z]", "", tm), 2, 2)))
+      logo_url <- team_logo_map[[tm]] %||% ""
+
+      div(
+        class = "logo-chip",
+        style = paste0("background:", team_colors[[tm]], ";"),
+        if (nchar(logo_url) > 0) {
+          tags$img(
+            class = "logo-img",
+            src = logo_url,
+            alt = paste0(tm, " logo")
+          )
+        },
+        span(class = "logo-mark", mark),
+        span(tm)
+      )
+    })
+    div(class = "team-logo-strip", chips)
+  })
+
+  output$qa_table <- renderDataTable(
+    {
+      df <- fdf()
+      req(nrow(df) > 0)
+
+      df %>%
+        transmute(
+          team = team,
+          year = year,
+          player = ifelse(is.na(player_name) | player_name == "", "(missing)", player_name),
+          hometown = hometown,
+          high_school = ifelse(is.na(high_school) | high_school == "", "(missing)", high_school),
+          status = ifelse(is.na(status) | status == "", "(missing)", status),
+          distance_miles = round(distance_miles, 1)
+        ) %>%
+        arrange(desc(year), team, player)
+    },
+    options = list(
+      pageLength = 12,
+      order = list(list(1, "desc"), list(0, "asc"), list(2, "asc")),
+      scrollX = TRUE
+    )
+  )
+
+  output$box_plot <- renderPlot(
+    {
+      df <- fdf()
+      req(nrow(df) > 0)
+      max_yr <- max(df$year, na.rm = TRUE)
+      df <- df %>%
+        mutate(
+          era = ifelse(year == max_yr, "current", "prior"),
+          team = factor(team, levels = names(sort(tapply(distance_miles, team, median, na.rm = TRUE))))
+        )
+
+      current_med <- df %>%
+        filter(era == "current") %>%
+        group_by(team) %>%
+        summarize(median_mi = median(distance_miles, na.rm = TRUE), .groups = "drop")
+
+      ref_labels <- data.frame(
+        x = c(300, 1000, 2000),
+        y = length(levels(df$team)) + 0.45,
+        label = c("Local", "National", "Long-haul")
+      )
+
+      p <- ggplot(df, aes(x = distance_miles, y = team, fill = era)) +
+        geom_boxplot(
+          position = position_dodge2(width = 0.76, preserve = "single"),
+          width = 0.66,
+          outlier.alpha = 0.22,
+          outlier.size = 1.6,
+          color = "#2a3b5f",
+          linewidth = 0.55
+        ) +
+        geom_point(
+          data = current_med,
+          aes(x = median_mi, y = team),
+          inherit.aes = FALSE,
+          shape = 21,
+          size = 3.2,
+          fill = "#ffd166",
+          color = "#735200",
+          stroke = 0.75
+        ) +
+        geom_text(
+          data = current_med,
+          aes(x = median_mi, y = team, label = paste0(comma(round(median_mi)), " mi")),
+          inherit.aes = FALSE,
+          nudge_x = 70,
+          size = 3,
+          color = "#6c4d00",
+          fontface = "bold",
+          family = "Manrope"
+        ) +
+        scale_fill_manual(
+          values = c(current = "#b88200", prior = "#5279b5"),
+          labels = c(
+            current = paste0("Current class (", max_yr, ")"),
+            prior = paste0("Prior classes (", input$yr[1], "-", max_yr - 1, ")")
+          ),
+          name = "Class Group"
+        ) +
+        scale_x_continuous(
+          labels = label_comma(suffix = " mi"),
+          breaks = c(0, 300, 600, 1000, 1500, 2000, 2500, 3000),
+          expand = expansion(mult = c(0.01, 0.18))
+        ) +
+        labs(x = "Distance from hometown to campus", y = NULL) +
+        theme_minimal(base_family = "Manrope") +
+        theme(
+          panel.background = element_rect(fill = "#ffffff", color = NA),
+          plot.background = element_rect(fill = "#ffffff", color = NA),
+          panel.grid.minor = element_blank(),
+          panel.grid.major.y = element_blank(),
+          panel.grid.major.x = element_line(color = "#e6edf8"),
+          axis.text = element_text(color = "#344a6f", size = 10),
+          axis.title = element_text(color = "#22395f", face = "bold"),
+          legend.position = "top",
+          legend.title = element_text(color = "#22395f", face = "bold"),
+          legend.background = element_rect(fill = "#f7faff", color = "#d3e0f4"),
+          legend.key = element_rect(fill = "#f7faff", color = NA),
+          plot.margin = margin(12, 30, 10, 8)
+        )
+
+      if (isTRUE(input$show_refs)) {
+        p <- p + geom_vline(
+          xintercept = c(300, 1000, 2000),
+          linetype = c("dashed", "dashed", "dotdash"),
+          color = c("#a8b8d4", "#93a7cb", "#7c95c4"),
+          linewidth = c(0.5, 0.6, 0.8)
+        ) +
+          geom_label(
+            data = ref_labels,
+            aes(x = x, y = y, label = label),
+            inherit.aes = FALSE,
+            size = 2.8,
+            label.size = 0,
+            fill = "#eef4ff",
+            color = "#4f6790",
+            fontface = "bold",
+            family = "Manrope",
+            alpha = 0.95,
+            label.padding = unit(0.16, "lines")
+          )
+      }
+
+      if (isTRUE(input$show_points)) {
+        p <- p + geom_point(
+          aes(color = era),
+          position = position_jitterdodge(jitter.width = 0, jitter.height = 0.14, dodge.width = 0.76),
+          alpha = 0.3,
+          size = 1.25,
+          show.legend = FALSE
+        ) +
+          scale_color_manual(values = c(current = "#9a6f00", prior = "#5279b5"))
+      }
+
+      p
+    },
+    bg = "#ffffff"
+  )
 
   # ── Histogram ──────────────────────────────────────────
   output$hist_plot <- renderPlot(
@@ -726,6 +1390,11 @@ server <- function(input, output, session) {
       max_yr <- input$yr[2]
       df$era <- ifelse(df$year == max_yr, "current", "prior")
       bw <- input$bw
+      era_c <- c(current = "#b88200", prior = "#5279b5")
+      era_l <- c(
+        current = paste0("Current class (", max_yr, ")"),
+        prior = paste0("Prior classes (", input$yr[1], "-", max_yr - 1, ")")
+      )
 
       # Reference lines
       refs <- data.frame(
@@ -733,47 +1402,37 @@ server <- function(input, output, session) {
         lbl = c("300", "600", "1,000", "2,000 mi")
       )
 
-      base_theme <- theme_minimal(base_family = "DM Sans") +
+      base_theme <- theme_minimal(base_family = "Manrope") +
         theme(
-          plot.background = element_rect(fill = "#0e0f14", color = NA),
-          panel.background = element_rect(fill = "#13141a", color = NA),
-          panel.grid.major = element_line(color = "#1e2029", linewidth = 0.5),
+          plot.background = element_rect(fill = "#ffffff", color = NA),
+          panel.background = element_rect(fill = "#ffffff", color = NA),
+          panel.grid.major = element_line(color = "#ebeff6", linewidth = 0.5),
           panel.grid.minor = element_blank(),
-          panel.border = element_rect(color = "#2d3040", fill = NA, linewidth = 0.5),
-          axis.text = element_text(color = "#7a7d8a", size = 9),
-          axis.title = element_text(color = "#9da0ad", size = 10, face = "bold"),
+          panel.border = element_rect(color = "#d8deea", fill = NA, linewidth = 0.6),
+          axis.text = element_text(color = "#3b4f73", size = 9),
+          axis.title = element_text(color = "#22395f", size = 10, face = "bold"),
           axis.title.x = element_text(margin = margin(t = 10)),
           axis.title.y = element_text(margin = margin(r = 10)),
-          legend.background = element_rect(fill = "#13141a", color = "#2d3040"),
-          legend.text = element_text(color = "#9da0ad", size = 8.5),
-          legend.title = element_text(color = "#c8a84b", size = 9, face = "bold"),
+          legend.background = element_rect(fill = "#ffffff", color = "#d8deea"),
+          legend.text = element_text(color = "#445a82", size = 8.5),
+          legend.title = element_text(color = "#22395f", size = 9, face = "bold"),
           legend.key = element_rect(fill = NA, color = NA),
-          strip.background = element_rect(fill = "#1a1c25", color = "#2d3040"),
-          strip.text = element_text(color = "#c8a84b", size = 8.5, face = "bold"),
+          strip.background = element_rect(fill = "#eef4ff", color = "#d8deea"),
+          strip.text = element_text(color = "#1a447f", size = 8.5, face = "bold"),
           plot.margin = margin(12, 16, 12, 12)
         )
 
-      if (input$mode == "overlay") {
-        era_c <- c(current = "#c8a84b", prior = "#3a4565")
-        era_l <- c(
-          current = paste0("Current class (", max_yr, ")"),
-          prior = paste0("Prior classes (", input$yr[1], "–", max_yr - 1, ")")
-        )
-
+      if (input$hist_mode == "overlay") {
         p <- ggplot(df, aes(x = distance_miles)) +
-          geom_vline(
-            xintercept = refs$x, color = "#2d3040",
-            linewidth = 0.7, linetype = "dashed"
-          ) +
           geom_histogram(
             data = filter(df, era == "prior"),
-            aes(fill = era), binwidth = bw, alpha = 0.42,
-            color = "#1a1c25", linewidth = 0.25, position = "identity"
+            aes(fill = era), binwidth = bw, alpha = 0.18,
+            color = "#44689f", linewidth = 0.6, position = "identity"
           ) +
           geom_histogram(
             data = filter(df, era == "current"),
-            aes(fill = era), binwidth = bw, alpha = 0.86,
-            color = "#0e0f14", linewidth = 0.35, position = "identity"
+            aes(fill = era), binwidth = bw, alpha = 0.90,
+            color = "#866100", linewidth = 0.4, position = "identity"
           )
 
         if (input$dens) {
@@ -783,37 +1442,29 @@ server <- function(input, output, session) {
             p <- p + stat_density(
               data = filter(df, era == "current"),
               aes(y = after_stat(density) * nc * bw, x = distance_miles),
-              geom = "line", color = "#c8a84b", linewidth = 1.2, inherit.aes = FALSE
+              geom = "line", color = "#a57500", linewidth = 1.2, inherit.aes = FALSE
             )
           }
           if (np > 3) {
             p <- p + stat_density(
               data = filter(df, era == "prior"),
               aes(y = after_stat(density) * np * bw, x = distance_miles),
-              geom = "line", color = "#607090", linewidth = 0.9,
+              geom = "line", color = "#44689f", linewidth = 1.05,
               linetype = "dashed", inherit.aes = FALSE
             )
           }
         }
 
-        if (input$local_hl) {
+        if (isTRUE(input$show_refs)) {
           p <- p +
-            annotate("rect",
-              xmin = 0, xmax = 300, ymin = -Inf, ymax = Inf,
-              fill = "#5fd4a0", alpha = 0.07
-            ) +
-            annotate("text",
-              x = 150, y = Inf, label = "LOCAL\nZONE",
-              vjust = 1.4, color = "#5fd4a0", size = 3,
-              fontface = "bold", family = "DM Sans"
-            )
+            geom_vline(xintercept = refs$x, color = "#98a7c2", linewidth = 0.7, linetype = "dashed")
         }
 
         p <- p +
           annotate("text",
             x = refs$x + 22, y = Inf, label = refs$lbl,
-            vjust = 1.3, hjust = 0, color = "#555868", size = 2.7,
-            family = "DM Sans"
+            vjust = 1.3, hjust = 0, color = "#627898", size = 2.7,
+            family = "Manrope"
           ) +
           scale_fill_manual(values = era_c, labels = era_l, name = "Class") +
           scale_x_continuous(
@@ -830,21 +1481,22 @@ server <- function(input, output, session) {
           base_theme +
           theme(legend.position = "top", legend.direction = "horizontal")
       } else {
-        # Facet
-        pal <- team_colors[names(team_colors) %in% input$teams]
-        p <- ggplot(df, aes(x = distance_miles, fill = team, alpha = era)) +
+        p <- ggplot(df, aes(x = distance_miles)) +
           geom_histogram(
+            data = filter(df, era == "prior"),
+            aes(fill = era),
             binwidth = bw, position = "identity",
-            color = "#1a1c25", linewidth = 0.2
+            alpha = 0.16,
+            color = "#44689f", linewidth = 0.52
           ) +
-          scale_alpha_manual(
-            values = c(current = 0.88, prior = 0.32),
-            labels = c(
-              current = paste0("Current (", max_yr, ")"),
-              prior = "Prior"
-            ), name = "Era"
+          geom_histogram(
+            data = filter(df, era == "current"),
+            aes(fill = era),
+            binwidth = bw, position = "identity",
+            alpha = 0.88,
+            color = "#866100", linewidth = 0.36
           ) +
-          scale_fill_manual(values = pal, guide = "none") +
+          scale_fill_manual(values = era_c, labels = era_l, name = "Class") +
           scale_x_continuous(
             labels = label_comma(suffix = " mi"),
             breaks = c(0, 500, 1000, 2000, 3000),
@@ -860,16 +1512,16 @@ server <- function(input, output, session) {
             axis.text = element_text(size = 7.5)
           )
 
-        if (input$local_hl) {
+        if (isTRUE(input$show_refs)) {
           p <- p + geom_vline(
-            xintercept = 300, color = "#5fd4a0",
+            xintercept = c(300, 1000, 2000), color = "#98a7c2",
             linewidth = 0.5, linetype = "dotted"
           )
         }
       }
       p
     },
-    bg = "#0e0f14"
+    bg = "#ffffff"
   )
 }
 
