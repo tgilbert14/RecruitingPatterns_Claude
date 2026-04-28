@@ -1,5 +1,5 @@
 # These were the prompts used to create the app in Claude (Visual Studio Code)
-# in 10 steps
+## in 10 steps...
 
 1.
     Prompt: 
