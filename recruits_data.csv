@@ -1,4 +1,283 @@
 "team","year","player_name","player_slug","high_school","hometown","status","distance_miles"
+"Arizona",2016,"Keanu Pinder","keanu-pinder-71660","Sunrise Christian Academy","Wichita, KS","Enrolled",857.023232912167
+"Arizona State",2016,"Sam Cunliffe","sam-cunliffe-104252","Rainier Beach","Seattle, WA","Enrolled",1119.69484400478
+"Baylor",2016,"Tyson Jolly","tyson-jolly-141313","Putnam City West","Oklahoma City, OK","Committed",271.714868748918
+"BYU",2016,"Gavin Baxter","gavin-baxter-45349","Timpview","Provo, UT","Enrolled",1.37762800165695
+"Colorado",2016,"Lucas Siewert","lucas-siewert-80387","Cathedral","Los Angeles, CA","Enrolled",824.465483411964
+"Colorado",2016,"Deleon Brown","deleon-brown-33545","Brewster Academy","Grand Rapids, MI","Enrolled",1032.85185847232
+"Houston",2016,"Armoni Brooks","armoni-brooks-7576","McNeil","Austin, TX","Enrolled",149.04480580679
+"Iowa State",2016,"Solomon Young","solomon-young-107859","Sacramento","Sacramento, CA","Enrolled",1479.79926118181
+"Kansas",2016,"Josh Jackson","josh-jackson-137061","Justin-Siena","Detroit, MI","Enrolled",680.578934902725
+"Kansas",2016,"Udoka Azubuike","udoka-azubuike-119149","The Potter's House Christian Academy","Jacksonville, FL","Enrolled",974.114396356885
+"Kansas",2016,"Mitch Lightfoot","mitch-lightfoot-89876","Gilbert Christian","Tucson, AZ","Enrolled",996.007892423064
+"Kansas State",2016,"James Love","james-love-55696","American Heritage","Fort Lauderdale, FL","Enrolled",1310.41452703327
+"Kansas State",2016,"Brian Patrick","brian-patrick-14695","Boyd Anderson","Fort Lauderdale, FL","Enrolled",1310.41452703327
+"Oklahoma State",2016,"Lindy Waters","lindy-waters-79514","Brewster Academy","Norman, OK","Enrolled",65.9793522759993
+"Oklahoma State",2016,"Brandon Averette","brandon-averette-12132","Richardson","Richardson, TX","Enrolled",220.489540588767
+"Oklahoma State",2016,"Thomas Dziagwa","thomas-dziagwa-112297","Tampa Catholic","Tampa, FL","Enrolled",1023.62471846059
+"TCU",2016,"Josh Parrish","josh-parrish-67443","Seguin","Arlington, TX","Enrolled",14.9922894224591
+"Texas Tech",2016,"Shadell Millinghaus","shadell-millinghaus-106176","Evelyn Mack Academy","Brooklyn, NY","Enrolled",1606.41881616524
+"Utah",2016,"Tyler Rawson","tyler-rawson-117991",NA,"Salt Lake City, UT","Enrolled",2.5814044961542
+"Utah",2016,"Chris Seeley","chris-seeley-22441","Central East","Fresno, CA","Enrolled",510.287636621425
+"Arizona",2017,"Deandre Ayton","deandre-ayton-32934","Hillcrest Prep","Phoenix, AZ","Enrolled",106.380123785223
+"Arizona",2017,"Brandon Randolph","brandon-randolph-12980","Westtown School","Yonkers, NY","Enrolled",2124.18006570454
+"Arizona",2017,"Alex Barcello","alex-barcello-2807","Corona Del Sol","Tempe, AZ","Enrolled",100.491773894319
+"Arizona State",2017,"Rob Edwards","rob-edwards-100729","Cass Technical","Detroit, MI","Enrolled",1680.99540306399
+"BYU",2017,"Kolby Lee","kolby-lee-75734","Rocky Mountain","Meridian, ID","Enrolled",336.541001711592
+"BYU",2017,"Jahshire Hardnett","jahshire-hardnett-53062","Gulfport","Gulfport, MS","Signed",1437.55226451595
+"BYU",2017,"Rylan Bergersen","rylan-bergersen-103973","Borah Senior","Boise, ID","Signed",329.68767149384
+"Cincinnati",2017,"Keith Williams","keith-williams-72237","Bishop Loughlin Memorial","Brooklyn, NY","Enrolled",569.437815850364
+"Cincinnati",2017,"Mamoudou Diarra","mamoudou-diarra-82119","22 Feet Academy ","Greenville, SC","Enrolled",317.973747873032
+"Colorado",2017,"D'Shawn Schwartz","dshawn-schwartz-27452","Sand Creek","Colorado Springs, CO","Enrolled",84.4790629652279
+"Colorado",2017,"Tyler Bey","tyler-bey-117355","Middlebrooks Academy","Los Angeles, CA","Enrolled",824.465483411964
+"Houston",2017,"Cedrick Alley Jr.","cedrick-alley-jr-19417","Klein Forest","Houston, TX","Enrolled",3.41307145619784
+"Houston",2017,"Gabe Grant","gabe-grant-44508","Midwest Elite Prep","Chicago, IL","Enrolled",943.839494725181
+"Iowa State",2017,"Terrence Lewis","terrence-lewis-111689","Riverside","Milwaukee, WI","Enrolled",300.411739300901
+"Kansas",2017,"Marcus Garrett","marcus-garrett-82681","Skyline","Dallas, TX","Enrolled",435.498051477169
+"Kansas",2017,"Dedric Lawson","dedric-lawson-33239","Hamilton","Memphis, TN","Enrolled",389.062803546743
+"Kansas",2017,"Charlie Moore","charlie-moore-20468","Morgan Park","Chicago, IL","Enrolled",448.914178212485
+"Kansas",2017,"K.J. Lawson","kj-lawson-70223","Memphis East","Memphis, TN","Enrolled",389.062803546743
+"Kansas State",2017,"Nigel Shadd","nigel-shadd-93294","Tri-city Christian Academy","Tempe, AZ","Enrolled",942.036775842371
+"Oklahoma State",2017,"Zack Dawson","zack-dawson-123319","South Miami Senior","Miami, FL","Enrolled",1227.00106225506
+"Oklahoma State",2017,"Latravian Glover","latravian-glover-78458","South Miami Senior","Miami, FL","Committed",1227.00106225506
+"TCU",2017,"Kevin Samuel","kevin-samuel-74403","St Thomas Episcopal School","Houston, TX","Enrolled",235.383093497923
+"Texas Tech",2017,"Jarrett Culver","jarrett-culver-57117","Coronado","Lubbock, TX","Enrolled",1.37919083651199
+"Texas Tech",2017,"Zhaire Smith","zhaire-smith-123781","Lakeview Centennial","Garland, TX","Enrolled",306.298512406537
+"Texas Tech",2017,"Daniel Mading","daniel-mading-29326","St Anthony","Jersey City, NJ","Signed",1600.68565833375
+"UCF",2017,"Danny Lewis","danny-lewis-29629","Westlake","Atlanta, GA","Enrolled",402.385282593831
+"Utah",2017,"Donnie Tillman","donnie-tillman-38107","Findlay Prep","Henderson, NV","Enrolled",368.012297246868
+"West Virginia",2017,"D'Angelo Hunter","dangelo-hunter-142610","Pleasure Ridge Park","Louisville, KY","Enrolled",326.128982304191
+"West Virginia",2017,"Wesley Harris","wesley-harris-120454","Callaway","Birmingham, AL","Enrolled",567.838108967364
+"Arizona State",2018,"Elias Valtonen","elias-valtonen-41043","Helsinki Basketball Academy","Helsinski","Enrolled",5522.56100902098
+"Baylor",2018,"Matthew Mayer","matthew-mayer-86129","Westlake","Austin, TX","Enrolled",96.3465839512866
+"Baylor",2018,"Devonte Bandoo","devonte-bandoo-36555","Athlete Institute Basketball Academy","Toronto, ON","Enrolled",1276.27411527334
+"BYU",2018,"Hunter Erickson","hunter-erickson-48438","Timpview","Provo, UT","Enrolled",1.37762800165695
+"Cincinnati",2018,"Prince Gillam","prince-gillam-96924","Fresno","Fresno, CA","Enrolled",1917.18962416835
+"Colorado",2018,"Daylen Kountz","daylen-kountz-32635","East","Denver, CO","Enrolled",23.8301670644328
+"Iowa State",2018,"Talen Horton-Tucker","talen-horton-tucker-142560","Simeon","Chicago, IL","Enrolled",309.266861002097
+"Iowa State",2018,"Tyrese Haliburton","tyrese-haliburton-118644","Oshkosh North","Oshkosh, WI","Enrolled",292.353598911258
+"Iowa State",2018,"George Conditt","george-conditt-45657","Corliss","Chicago, IL","Enrolled",309.266861002097
+"Kansas",2018,"Devon Dotson","devon-dotson-36374","Providence Day School","Charlotte, NC","Enrolled",833.977594461265
+"Kansas",2018,"David McCormack","david-mccormack-31864","Oak Hill Academy","Norfolk, VA","Enrolled",1042.16923137308
+"Kansas",2018,"Ochai Agbaji","ochai-agbaji-94160","Oak Park","Kansas City, MO","Enrolled",37.7302094580244
+"Oklahoma State",2018,"Kentrevious Jones","kentrevious-jones-142565","Putnam Science Academy","Macon, GA","Enrolled",797.365631582005
+"Oklahoma State",2018,"Yor Anei","yor-anei-122388","Shawnee Mission South","Overland Park, KS","Enrolled",236.953413398705
+"TCU",2018,"Kendric Davis","kendric-davis-72880","Houston Math Science & Tech","Houston, TX","Enrolled",235.383093497923
+"TCU",2018,"Russell Barlow","russell-barlow-102775","Berkner","Richardson, TX","Enrolled",40.3800261185509
+"Texas Tech",2018,"Khavon Moore","khavon-moore-75011","Westside","Macon, GA","Enrolled",1054.59647635434
+"Texas Tech",2018,"Deshawn Corprew","deshawn-corprew-35389","Quality Education Academy","Hampton, VA","Enrolled",1454.74321810309
+"Texas Tech",2018,"Kyler Edwards","kyler-edwards-77136","Findlay Prep","Arlington, TX","Enrolled",282.050308045902
+"UCF",2018,"Ibrahim Famouke Doumbia","ibrahim-famouke-doumbia-48890","Miami Country Day School","Miami, FL","Enrolled",205.866162616454
+"Utah",2018,"Timmy Allen","timmy-allen-112906","Desert Ridge","Mesa, AZ","Enrolled",507.835051767768
+"Utah",2018,"Naseem Gaskin","naseem-gaskin-91020","Bishop O'Dowd","Oakland, CA","Enrolled",593.605469367078
+"Utah",2018,"Both Gach","both-gach-11469","Austin Senior","Chandler, AZ","Enrolled",515.296850392176
+"West Virginia",2018,"Trey Doomes","trey-doomes-115989","NSU University School","Fort Lauderdale, FL","Enrolled",933.732097009894
+"West Virginia",2018,"Emmitt Matthews Jr.","emmitt-matthews-jr-41853","Wilson","Tacoma, WA","Enrolled",2166.91970369
+"Arizona",2019,"Nico Mannion","nico-mannion-93200","Pinnacle","Phoenix, AZ","Enrolled",106.380123785223
+"Arizona",2019,"Jemarl Baker","jemarl-baker-59911","Roosevelt","Los Angeles, CA","Enrolled",440.199785597038
+"Arizona",2019,"Jordan Brown","jordan-brown-65260","Prolific Prep","Napa, CA","Enrolled",763.670056064619
+"Arizona",2019,"Max Hazzard","max-hazzard-86624","Loyola","Los Angeles, CA","Enrolled",440.199785597038
+"Arizona State",2019,"Jaelen House","jaelen-house-143208","Shadow Mountain","Phoenix, AZ","Enrolled",8.57167716815567
+"Arizona State",2019,"Jalen Graham","jalen-graham-54286","Mountain Pointe","Phoenix, AZ","Enrolled",8.57167716815567
+"Arizona State",2019,"Khalid Thomas","khalid-thomas-74828","West Linn","Portland, OR","Enrolled",1011.59193941292
+"Arizona State",2019,"Andre Allen","andre-allen-4450","Balboa City School","Los Angeles, CA","Enrolled",365.419253969087
+"Arizona State",2019,"Caleb Christopher","caleb-christopher-16926","Hillcrest Prep","Phoenix, AZ","Enrolled",8.57167716815567
+"Baylor",2019,"Jordan Turner","jordan-turner-66128","Sunrise Christian Academy","Wichita, KS","Enrolled",424.642368257592
+"BYU",2019,"Nate Hansen","nate-hansen-91231","Timpview","Provo, UT","Enrolled",1.37762800165695
+"BYU",2019,"Alex Barcello","alex-barcello-2807","Corona Del Sol","Tempe, AZ","Enrolled",471.964532970749
+"Cincinnati",2019,"Mika Adams-Woods","mika-adams-woods-88694","New Hampton School","Syracuse, NY","Enrolled",512.515890616262
+"Houston",2019,"J'Wan Roberts","jwan-roberts-50275","Shoemaker","Killeen, TX","Enrolled",171.971183095378
+"Kansas",2019,"Christian Braun","christian-braun-22796","Blue Valley Northwest","Overland Park, KS","Enrolled",31.4738569971424
+"Kansas",2019,"Issac McBride","issac-mcbride-50072","Arkansas Baptist","Little Rock, AR","Enrolled",333.767146254761
+"Kansas State",2019,"DaJuan Gordon","dajuan-gordon-27995","Curie Metropolitan","Chicago, IL","Enrolled",504.818783064578
+"Oklahoma State",2019,"Chris Harris Jr.","chris-harris-jr-21856","South Garland","Garland, TX","Enrolled",223.407087831488
+"Oklahoma State",2019,"Kalib Boone","kalib-boone-70804","Memorial","Tulsa, OK","Enrolled",60.0235328181615
+"Oklahoma State",2019,"Keylan Boone","keylan-boone-74642","Memorial","Tulsa, OK","Enrolled",60.0235328181615
+"Oklahoma State",2019,"Jonathan Laurent","jonathan-laurent-64745","Dr. Phillips","Orlando, FL","Enrolled",1053.42986957457
+"TCU",2019,"P.J. Fuller","pj-fuller-94861","Nathan Hale","Henderson, NV","Enrolled",1029.15770566524
+"TCU",2019,"Taryn Todd","taryn-todd-110383","Findlay Prep","Henderson, NV","Enrolled",1029.15770566524
+"TCU",2019,"Jaedon LeDee","jaedon-ledee-52801","The Kinkaid School","Houston, TX","Enrolled",235.383093497923
+"TCU",2019,"Kevin Easley","kevin-easley-74046","Lawrence North","Indianapolis, IN","Enrolled",791.273087511726
+"TCU",2019,"Keonte Kennedy","keonte-kennedy-73675","Westlake","Austin, TX","Enrolled",170.362745945659
+"Texas Tech",2019,"Kevin McCullar","kevin-mccullar-74250","Wagner","San Antonio, TX","Enrolled",349.70853547102
+"Texas Tech",2019,"Chris Clarke","chris-clarke-21506","Cape Henry Collegiate School","Virginia Beach, VA","Enrolled",1474.69823017948
+"Texas Tech",2019,"Joel Ntambwe","joel-ntambwe-62665","Aspire Basketball Academy","Louisville, KY","Enrolled",956.378298472466
+"Texas Tech",2019,"TJ Holyfield","tj-holyfield-113110","Manzano","Albuquerque, NM","Enrolled",291.338901674024
+"UCF",2019,"Darin Green","darin-green-30073","Wharton","Tampa, FL","Enrolled",88.8993588863771
+"UCF",2019,"Brandon Mahan","brandon-mahan-12745","Central Park Christian Schools","Birmingham, AL","Enrolled",474.65930994389
+"Utah",2019,"Mikael Jantunen","mikael-jantunen-144178","Helsinki Basketball Academy","Helsinski","Enrolled",5045.84571552387
+"West Virginia",2019,"Miles McBride","miles-mcbride-89698","Archbishop Moeller","Cincinnati, OH","Enrolled",246.186263370103
+"Arizona",2020,"Dalen Terry","dalen-terry-28140","Hillcrest Prep","Phoenix, AZ","Enrolled",106.380123785223
+"Arizona",2020,"Bennedict Mathurin","bennedict-mathurin-10185","NBA Academy Latin America","Montreal, QC","Enrolled",2184.88668279039
+"Arizona",2020,"Terrell Brown Jr.","terrell-brown-jr-111497","Garfield","Seattle, WA","Enrolled",1218.61935465831
+"Arizona State",2020,"Marcus Bagley","marcus-bagley-82486","Sheldon","Sacramento, CA","Enrolled",642.007291829866
+"Arizona State",2020,"Luther Muhammad","luther-muhammad-81003","Hudson Catholic","Jersey City, NJ","Enrolled",2129.209072684
+"Baylor",2020,"Dain Dainja","dain-dainja-27924","Park Center","Minneapolis, MN","Enrolled",950.761346597141
+"BYU",2020,"Dallin Hall","dallin-hall-28246","Fremont","Ogden, UT","Enrolled",69.2236781091252
+"BYU",2020,"Spencer Johnson","spencer-johnson-144993","American Fork","Salt Lake City, UT","Enrolled",37.3389101861149
+"BYU",2020,"Matt Haarms","matt-haarms-85347","Sunrise Christian Academy","Wichita, KS","Enrolled",787.944890744987
+"Cincinnati",2020,"Tari Eason","tari-eason-110277","Garfield","Seattle, WA","Enrolled",1965.64012445122
+"Cincinnati",2020,"Gabe Madsen","gabe-madsen-44539","Mayo Senior","Rochester, MN","Enrolled",531.743312829301
+"Cincinnati",2020,"Mike Saunders","mike-saunders-89341","Wasatch Academy","Indianapolis, IN","Enrolled",98.0263032754742
+"Cincinnati",2020,"Mason Madsen","mason-madsen-84805","Mayo Senior","Rochester, MN","Enrolled",531.743312829301
+"Cincinnati",2020,"David DeJulius","david-dejulius-31596","East English Village Prep","Detroit, MI","Enrolled",234.027025534642
+"Colorado",2020,"Nique Clifford","nique-clifford-37662","The Vanguard School","Colorado Springs, CO","Enrolled",84.4790629652279
+"Colorado",2020,"Jabari Walker","jabari-walker-50799","Compass Prep","Chandler, AZ","Enrolled",588.821744523614
+"Colorado",2020,"Jeriah Horne","jeriah-horne-141563","The Barstow School","Kansas City, MO","Enrolled",572.483999728511
+"Houston",2020,"Kiyron Powell","kiyron-powell-75420","Benjamin Bosse","Evansville, IN","Enrolled",724.02380043112
+"Houston",2020,"Reggie Chaney","reggie-chaney-99301","Findlay Prep","Frisco, TX","Enrolled",252.739482969496
+"Iowa State",2020,"Jalen Coleman-Lands","jalen-coleman-lands-54210","La Lumiere School","Indianapolis, IN","Enrolled",420.902718923487
+"Iowa State",2020,"Blake Hinson","blake-hinson-10898","Sunrise Christian Academy","Wichita, KS","Enrolled",357.704467553785
+"Iowa State",2020,"Tyler Harris","tyler-harris-117666","Cordova","Memphis, TN","Enrolled",513.198812068445
+"Kansas",2020,"Gethro Muscadin","gethro-muscadin-46037","Aspire Basketball Academy","Louisville, KY","Enrolled",514.897302714913
+"Kansas",2020,"Bryce Thompson","bryce-thompson-15945","Booker T. Washington","Tulsa, OK","Enrolled",197.650837741698
+"Kansas State",2020,"Nijel Pack","nijel-pack-93320","Lawrence Central","Indianapolis, IN","Enrolled",556.546425458614
+"Kansas State",2020,"Selton Miguel","selton-miguel-105847","West Oaks Academy","Orlando, FL","Enrolled",1137.68483046725
+"Kansas State",2020,"Seryee Lewis","seryee-lewis-105953","Compass Prep","Chandler, AZ","Enrolled",941.103129222436
+"Oklahoma State",2020,"Cade Cunningham","cade-cunningham-16583","Bowie","Arlington, TX","Enrolled",234.302135816078
+"Oklahoma State",2020,"Rondel Walker Jr.","rondel-walker-jr-102245","Putnam City West","Oklahoma City, OK","Enrolled",52.0721152267472
+"Oklahoma State",2020,"Donovan Williams","donovan-williams-38274","North Star","Lincoln, NE","Enrolled",324.383019010359
+"Oklahoma State",2020,"Montreal Pena","montreal-pena-90295","Martin","Arlington, TX","Enrolled",234.302135816078
+"Oklahoma State",2020,"Bernard Kouma","bernard-kouma-10294","Our Saviour Lutheran School","Bronx, NY","Enrolled",1292.33376451282
+"TCU",2020,"Charles O'Bannon Jr.","charles-obannon-jr-20241","Bishop Gorman","Las Vegas, NV","Enrolled",1039.01984154394
+"Texas Tech",2020,"Nimari Burnett","nimari-burnett-93455","Prolific Prep","Chicago, IL","Enrolled",964.613086053445
+"Texas Tech",2020,"Chibuzo Agbo Jr.","chibuzo-agbo-jr-21138","St. Augustine","San Diego, CA","Enrolled",885.087110293776
+"Texas Tech",2020,"Esahia Nyiwe","esahia-nyiwe-42819","Clarendon","Omaha, NE","Enrolled",620.074591578178
+"Texas Tech",2020,"Jamarius Burton","jamarius-burton-55183","Independence","Charlotte, NC","Enrolled",1202.25284511839
+"UCF",2020,"Isaiah Adams","isaiah-adams-49331","Paxon School for Advanced Studies","Jacksonville, FL","Enrolled",122.61118200678
+"UCF",2020,"CJ Walker","cj-walker-23686","Oak Ridge","Orlando, FL","Enrolled",11.7323085726228
+"West Virginia",2020,"Kedrian Johnson","kedrian-johnson-144942","South Oak Cliff","Dallas, TX","Enrolled",1049.47016707275
+"Arizona State",2021,"Alonzo Gaffney","alonzo-gaffney-3947","Brewster Academy","Cleveland, OH","Enrolled",1738.98510646809
+"Arizona State",2021,"Jamiya Neal","jamiya-neal-56295","Hillcrest Prep","Phoenix, AZ","Enrolled",8.57167716815567
+"Arizona State",2021,"Jay Heath","jay-heath-58437","Woodrow Wilson","Washington, DC","Enrolled",1970.34588222245
+"Arizona State",2021,"DJ Horne","dj-horne-144163","Trinity Christian School","Fayetteville, NC","Enrolled",1882.51999693349
+"Arizona State",2021,"Marreon Jackson","marreon-jackson-142457","Garfield Heights","Cleveland, OH","Enrolled",1738.98510646809
+"Baylor",2021,"Kendall Brown","kendall-brown-72716","Sunrise Christian Academy","Wichita, KS","Enrolled",424.642368257592
+"Baylor",2021,"Langston Love","langston-love-78110","Montverde Academy","San Antonio, TX","Enrolled",168.207767822552
+"Baylor",2021,"Jeremy Sochan","jeremy-sochan-60590","Orange Academy","Nashville, TN","Enrolled",672.511190016621
+"BYU",2021,"Jake Wahlin","jake-wahlin-53927","Timpview","Provo, UT","Enrolled",1.37762800165695
+"BYU",2021,"Te'Jon Lucas","tejon-lucas-111010","Washington Information Technology","Milwaukee, WI","Enrolled",1236.635485558
+"BYU",2021,"Seneca Knight","seneca-knight-105903","Northside","Lafayette, LA","Enrolled",1302.03802108164
+"Cincinnati",2021,"Abdul Ado","abdul-ado-912","Hamilton Heights Christian Academy","Chattanooga, TN","Enrolled",285.816009400024
+"Cincinnati",2021,"John Newman","john-newman-63461","Greensboro Day School","Greensboro, NC","Enrolled",333.890496958631
+"Colorado",2021,"Quincy Allen","quincy-allen-97364","Maret School","Washington, DC","Enrolled",1501.56224198098
+"Colorado",2021,"Javon Ruffin","javon-ruffin-58172","Isidore Newman","New Orleans, LA","Enrolled",1103.03088856006
+"Houston",2021,"Emanuel Sharp","emanuel-sharp-41640","Bishop McLaughlin Catholic","Tampa, FL","Enrolled",788.890015142079
+"Houston",2021,"Robbie Armbrester","robbie-armbrester-100805","Wasatch Academy","Atlanta, GA","Enrolled",700.844023121373
+"Houston",2021,"Ramon Walker","ramon-walker-98186","Shadow Creek","Pearland, TX","Enrolled",11.1712881526149
+"Houston",2021,"Kyler Edwards","kyler-edwards-77136","Findlay Prep","Arlington, TX","Enrolled",233.220941898895
+"Iowa State",2021,"Gabe Kalscheur","gabe-kalscheur-142422","De La Salle","Minneapolis, MN","Enrolled",204.811056554625
+"Kansas",2021,"Zach Clemence","zach-clemence-122639","Sunrise Christian Academy","San Antonio, TX","Enrolled",683.795084500592
+"Kansas",2021,"KJ Adams","kj-adams-75421","Westlake","Austin, TX","Enrolled",616.762065743811
+"Kansas",2021,"Bobby Pettiford","bobby-pettiford-11354","South Granville","Durham, NC","Enrolled",918.577960685537
+"Kansas",2021,"Jalen Coleman-Lands","jalen-coleman-lands-54210","La Lumiere School","Indianapolis, IN","Enrolled",489.038553551768
+"Kansas State",2021,"Ismael Massoud","ismael-massoud-50010","MacDuffie School","Bronx, NY","Enrolled",1203.67101028366
+"Oklahoma State",2021,"Moussa Cisse","moussa-cisse-90498","Lausanne Collegiate School","Memphis, TN","Enrolled",399.643678148293
+"Oklahoma State",2021,"Woody Newton","woody-newton-121744","Mt. Zion Prep","Baltimore, MD","Enrolled",1136.7607445356
+"Oklahoma State",2021,"Bryce Thompson","bryce-thompson-15945","Booker T. Washington","Tulsa, OK","Enrolled",60.0235328181615
+"TCU",2021,"Damion Baugh","damion-baugh-28627","Tennessee Preparatory Academy","Memphis, TN","Enrolled",451.655718838791
+"TCU",2021,"Emanuel Miller","emanuel-miller-41636","Prolific Prep","Napa, CA","Enrolled",1449.01117946494
+"Texas Tech",2021,"Bryson Williams","bryson-williams-16139","Roosevelt","Fresno, CA","Enrolled",1033.14580136162
+"Texas Tech",2021,"Davion Warren","davion-warren-152173","Bishop Timon-St. Jude","Buffalo, NY","Enrolled",1397.5920046391
+"UCF",2021,"Ed'Xavior Rhodes","edxavior-rhodes-40445","Skyline","Dallas, TX","Enrolled",969.437899012806
+"UCF",2021,"P.J. Edwards","pj-edwards-146520","Liberty Heights Athletic Institute","Springfield, IL","Enrolled",910.83921972514
+"Utah",2021,"Gabe Madsen","gabe-madsen-44539","Mayo Senior","Rochester, MN","Enrolled",1011.27088352046
+"Utah",2021,"Marco Anthony","marco-anthony-82412","Holmes","San Antonio, TX","Enrolled",1085.29012919849
+"Utah",2021,"Both Gach","both-gach-11469","Austin Senior","Chandler, AZ","Enrolled",515.296850392176
+"West Virginia",2021,"Kobe Johnson","kobe-johnson-145432","McKinley","Canton, OH","Enrolled",110.034198625391
+"West Virginia",2021,"Dimon Carrigan","dimon-carrigan-37108","Cambridge Rindge And Latin","Lynn, MA","Enrolled",508.289949653989
+"Arizona",2022,"Kylan Boswell","kylan-boswell-147220","Compass Prep","Champaign, IL","Enrolled",1373.55624609719
+"Arizona",2022,"Cedric Henderson Jr.","cedric-henderson-jr-155221","Briarcrest Christian","Memphis, TN","Committed",1215.87258783614
+"Arizona State",2022,"Austin Nunez","austin-nunez-8598","Wagner","San Antonio, TX","Enrolled",838.097718215789
+"Arizona State",2022,"Frankie Collins","frankie-collins-44118","Coronado","Henderson, NV","Enrolled",250.443032166822
+"Arizona State",2022,"Desmond Cambridge","desmond-cambridge-35543","Hun School","Nashville, TN","Enrolled",1435.12422429887
+"Arizona State",2022,"Devan Cambridge","devan-cambridge-35756","Hillcrest Prep","Phoenix, AZ","Committed",8.57167716815567
+"Baylor",2022,"Keyonte George","keyonte-george-74694","IMG Academy","Dallas, TX","Enrolled",86.7777224551407
+"BYU",2022,"Braeden Moore","braeden-moore-11953","Donda Academy","Nashville, TN","Enrolled",1374.36070846212
+"Cincinnati",2022,"Dan Skillings Jr.","dan-skillings-jr-147160","Roman Catholic","Philadelphia, PA","Enrolled",501.156420290705
+"Cincinnati",2022,"Josh Reed","josh-reed-67501","Pace Academy","Atlanta, GA","Enrolled",372.062538304754
+"Cincinnati",2022,"Sage Tolentino","sage-tolentino-104094","Maryknoll School","Honolulu, HI","Enrolled",4430.37867776771
+"Colorado",2022,"Jalen Gabbidon","jalen-gabbidon-155385","Glenelg Country School","Harrisburg, PA","Enrolled",1492.78291217654
+"Houston",2022,"Terrance Arceneaux","terrance-arceneaux-111297","Beaumont United","Beaumont, TX","Enrolled",78.470899258263
+"Houston",2022,"Cedric Lath","cedric-lath-158427","Liberty","Henderson, NV","Enrolled",1217.7790081779
+"Iowa State",2022,"Demarion Watson-Saulsberry","demarion-watson-saulsberry-33800","Totino-Grace","Minneapolis, MN","Enrolled",204.811056554625
+"Iowa State",2022,"Hason Ward","hason-ward-47712","Springfield Central","Springfield, MA","Committed",1077.36631561727
+"Iowa State",2022,"Jeremiah Williams","jeremiah-williams-60242","Simeon Vocational HS","Chicago, IL","Committed",309.266861002097
+"Kansas",2022,"Ernest Udeh Jr.","ernest-udeh-jr-42750","Dr. Phillips","Orlando, FL","Enrolled",1071.69031459154
+"Kansas",2022,"Gradey Dick","gradey-dick-46327","Sunrise Christian Academy","Wichita, KS","Signed",142.589662540652
+"Kansas",2022,"Zuby Ejiofor","zuby-ejiofor-123915","Garland","Garland, TX","Signed",424.503344328213
+"Kansas",2022,"Kevin McCullar","kevin-mccullar-74250","Wagner","San Antonio, TX","Committed",683.795084500592
+"Kansas State",2022,"Dorian Finister","dorian-finister-154689","G.W. Carver","New Orleans, LA","Enrolled",736.867669125735
+"Kansas State",2022,"Jerrell Colbert","jerrell-colbert-60997","Houston","Houston, TX","Committed",654.683727209834
+"Kansas State",2022,"David N'Guessan","david-nguessan-31912","Mt. Zion Prep","Baltimore, MD","Committed",1066.01331266449
+"Kansas State",2022,"Tykei Greene","tykei-greene-117248","Long Island Lutheran","New York, NY","Committed",1196.63990476708
+"Oklahoma State",2022,"John Michael Wright","john-michael-wright-154343","The Fayetteville Academy","Fayetteville, NC","Committed",1023.19917368593
+"Oklahoma State",2022,"Russell Harrison","russell-harrison-154905","Monterey","Lubbock, TX","Committed",323.563965351446
+"TCU",2022,"Tyler Lundblade","tyler-lundblade-117792","Greensboro Day School","Greensboro, NC","Enrolled",1026.92517906406
+"TCU",2022,"Rondel Walker Jr.","rondel-walker-jr-102245","Putnam City West","Oklahoma City, OK","Committed",190.721016112913
+"Texas Tech",2022,"Elijah Fisher","elijah-fisher-41177","Canada","Toronto, ON","Enrolled",1392.91615235743
+"Texas Tech",2022,"Lamar Washington","lamar-washington-77661","Compass Prep","Portland, OR","Enrolled",1374.39799915015
+"Texas Tech",2022,"Jaylon Tyson","jaylon-tyson-59156","John Paul II","Plano, TX","Enrolled",301.591284955645
+"Texas Tech",2022,"Fardaws Aimaq","fardaws-aimaq-152400","Steveston-London Secondary School","Vancouver, BC","Committed",1533.22005263548
+"Texas Tech",2022,"D’maurian Williams","dmaurian-williams-152382","Putnam Science Academy","Phoenix, AZ","Committed",587.170246982893
+"UCF",2022,"Taylor Hendricks","taylor-hendricks-110794","Calvary Christian Academy","Fort Lauderdale, FL","Enrolled",183.243128028457
+"UCF",2022,"Tyler Hendricks","tyler-hendricks-117688","Calvary Christian Academy","Fort Lauderdale, FL","Enrolled",183.243128028457
+"UCF",2022,"Michael Durr","michael-durr-87643","Oldsmar Christian School","Atlanta, GA","Committed",402.385282593831
+"Utah",2022,"Gavin Baxter","gavin-baxter-45349","Timpview","Provo, UT","Enrolled",38.0027050714145
+"Utah",2022,"Mike Saunders","mike-saunders-89341","Wasatch Academy","Indianapolis, IN","Enrolled",1351.03374044179
+"West Virginia",2022,"Josiah Harris","josiah-harris-68196","Richmond Heights","Cleveland, OH","Enrolled",157.901785823847
+"West Virginia",2022,"Jimmy Bell","jimmy-bell-61673","Bella Vista College Preparatory School","Scottsdale, AZ","Enrolled",1814.017172458
+"West Virginia",2022,"Tre Mitchell","tre-mitchell-115004","Woodstock Academy","Pittsburgh, PA","Committed",55.6646803882665
+"West Virginia",2022,"Joe Toussaint","joe-toussaint-62515","Cardinal Hayes","Bronx, NY","Committed",331.784698277401
+"West Virginia",2022,"Emmitt Matthews Jr.","emmitt-matthews-jr-41853","Wilson","Tacoma, WA","Committed",2166.91970369
+"West Virginia",2022,"Jose Perez","jose-perez-66420","Wings Academy","Bronx, NY","Committed",331.784698277401
+"Arizona",2023,"KJ Lewis","kj-lewis-75445","Chapin","El Paso, TX","Enrolled",263.522121318709
+"Arizona",2023,"Jaden Bradley","jaden-bradley-52576","IMG Academy","Rochester, NY","Committed",1956.38709397401
+"Arizona State",2023,"Malachi Davis","malachi-davis-237376","Central Technical School","Toronto, ON","Enrolled",1880.54566050848
+"Arizona State",2023,"Adam Miller","adam-miller-1263","Morgan Park","Chicago, IL","Enrolled",1445.37250142432
+"Arizona State",2023,"Kamari Lands","kamari-lands-70944","Hillcrest Prep","Indianapolis, IN","Enrolled",1489.21937564881
+"Arizona State",2023,"Shawn Phillips Jr.","shawn-phillips-jr-106944","Dream City Christian","Dayton, OH","Enrolled",1592.51025521829
+"Arizona State",2023,"Jose Perez","jose-perez-66420","Wings Academy","Bronx, NY","Withdrawn",2140.49635561928
+"Baylor",2023,"Yves Missi","yves-missi-150950","Prolific Prep","Yaoundé","Enrolled",7162.99913477645
+"Baylor",2023,"Jayden Nunn","jayden-nunn-58682","Dream City Christian","Flint, MI","Enrolled",1079.93337984213
+"Cincinnati",2023,"Jizzle James","jizzle-james-147237","Olympia","Orlando, FL","Enrolled",753.700134081882
+"Cincinnati",2023,"Rayvon Griffith","rayvon-griffith-99102","Compass Prep","Cincinnati, OH","Enrolled",2.07216342253474
+"Colorado",2023,"Assane Diop","assane-diop-7967","Accelerated Schools Aka Family Services Found","Denver, CO","Enrolled",23.8301670644328
+"Colorado",2023,"Courtney Anderson","courtney-anderson-26736","Dublin","Los Angeles, CA","Enrolled",824.465483411964
+"Colorado",2023,"Bangot Dak","bangot-dak-235853","Lincoln Southeast","Lincoln, NE","Enrolled",453.729319793067
+"Houston",2023,"Joseph Tugler","joseph-tugler-155442","Cy Falls","Houston, TX","Enrolled",3.41307145619784
+"Houston",2023,"Jacob McFarland","jacob-mcfarland-157325","Rancho Verde","Moreno Valley, CA","Enrolled",1314.89385154095
+"Houston",2023,"Kordel Jefferson","kordel-jefferson-150471","Martin","Arlington, TX","Enrolled",233.220941898895
+"Iowa State",2023,"JT Rock","jt-rock-158749","Lincoln","Sioux Falls, SD","Enrolled",187.158995911927
+"Iowa State",2023,"Kayden Fish","kayden-fish-157865","Staley","Kansas City, MO","Enrolled",208.108022643567
+"Iowa State",2023,"Keshon Gilbert","keshon-gilbert-73816","Durango","Las Vegas, NV","Enrolled",1217.21682214012
+"Iowa State",2023,"Curtis Jones","curtis-jones-174045","Cretin-Derham Hall","Minneapolis, MN","Enrolled",204.811056554625
+"Kansas",2023,"Parker Braun","parker-braun-94994","Blue Valley Northwest","Overland Park, KS","Enrolled",31.4738569971424
+"Kansas",2023,"Arterio Morris","arterio-morris-7681","Kimball","Dallas, TX","Committed",435.498051477169
+"Kansas State",2023,"Dai Dai Ames","dai-dai-ames-30867","Kenwood Academy","Chicago, IL","Enrolled",504.818783064578
+"Kansas State",2023,"Ques Glover","ques-glover-97317","Bearden","Knoxville, TN","Committed",726.950700119903
+"Kansas State",2023,"Will McNair Jr.","will-mcnair-jr-121309","Martin Luther King","Philadelphia, PA","Committed",1138.67869822657
+"Oklahoma State",2023,"Brandon Garrison","brandon-garrison-12509","Del City","Oklahoma City, OK","Enrolled",52.0721152267472
+"Oklahoma State",2023,"Justin McBride","justin-mcbride-69557","Plano","Dallas, TX","Enrolled",232.042084480029
+"Oklahoma State",2023,"Jamyron Keller","jamyron-keller-56354","Ellison","Killeen, TX","Enrolled",348.226787328683
+"Oklahoma State",2023,"Connor Dow","connor-dow-158457","Broken Arrow","Broken Arrow, OK","Enrolled",71.4528583823352
+"Oklahoma State",2023,"Mike Marsh","mike-marsh-178557","Gray Collegiate","Columbia, SC","Enrolled",917.487114317387
+"Oklahoma State",2023,"Javon Small","javon-small-58174","Compass Prep","Chandler, AZ","Enrolled",860.388651492666
+"Oklahoma State",2023,"Jarius Hicklen","jarius-hicklen-180113","DeSoto","Dallas, TX","Committed",232.042084480029
+"TCU",2023,"Jace Posey","jace-posey-150095","Strake Jesuit College Prep","Houston, TX","Enrolled",235.383093497923
+"TCU",2023,"Ernest Udeh Jr.","ernest-udeh-jr-42750","Dr. Phillips","Orlando, FL","Enrolled",991.991046273225
+"TCU",2023,"Essam Mostafa","essam-mostafa-42836","Long Island Lutheran","Glen Head, NY","Enrolled",1422.95967306876
+"TCU",2023,"Trey Tennyson","trey-tennyson-178878","Mansfield Legacy","Arlington, TX","Enrolled",14.9922894224591
+"Texas Tech",2023,"Drew Steffe","drew-steffe-39188","Memorial","Frisco, TX","Enrolled",293.224581034335
+"Texas Tech",2023,"Joe Toussaint","joe-toussaint-62515","Cardinal Hayes","Bronx, NY","Enrolled",1612.8986989168
+"Texas Tech",2023,"Devan Cambridge","devan-cambridge-35756","Hillcrest Prep","Phoenix, AZ","Enrolled",587.170246982893
+"Texas Tech",2023,"Chance McMillian","chance-mcmillian-19798","Golden State Prep","Napa, CA","Enrolled",1184.32857845261
+"Texas Tech",2023,"Darrion Williams","darrion-williams-151043","Bishop Gorman","Las Vegas, NV","Enrolled",771.86071245157
+"UCF",2023,"Comeh Emuobor","comeh-emuobor-147246","Ravenscroft School","Raleigh, NC","Enrolled",517.934886770176
+"UCF",2023,"Jaylin Sellers","jaylin-sellers-59043","Carver","Montgomery, AL","Enrolled",398.521010570496
+"Utah",2023,"Hunter Erickson","hunter-erickson-48438","Timpview","Provo, UT","Enrolled",38.0027050714145
+"West Virginia",2023,"Jeremiah Bembry","jeremiah-bembry-60039","Pillow Academy","Jersey City, NJ","Committed",319.250669193559
+"West Virginia",2023,"Omar Silverio","omar-silverio-94417","St. Raymond For Boys","Bronx, NY","Committed",331.784698277401
 "Arizona",2024,"Carter Bryant","carter-bryant-150941","Centennial","Riverside, CA","Enrolled",391.498907775463
 "Arizona",2024,"Tobe Awaka","tobe-awaka-155290","Cardinal Hayes","Bronx, NY","Enrolled",2125.50229363699
 "Arizona State",2024,"Jayden Quaintance","jayden-quaintance-159196","Word Of God Christian Academy","Cleveland, OH","Enrolled",1738.98510646809
@@ -128,3 +407,50 @@
 "West Virginia",2025,"Morris Ugusuk","morris-ugusuk-179183","Omnia Basketball Academy","Helsinski","Enrolled",4348.77735824046
 "West Virginia",2025,"Jasper Floyd","jasper-floyd-250622","Wharton","Tampa, FL","Enrolled",820.098662279123
 "West Virginia",2025,"Niyol Hauet","niyol-hauet-260900","Ogden","Ogden, UT","Enrolled",1678.1340728013
+"Arizona",2026,"Caleb Holt","caleb-holt-174844","Prolific Prep","Huntsville, AL","Signed",1411.16426262361
+"Arizona",2026,"Derek Dixon","derek-dixon-178212","Gonzaga","Washington, DC","Committed",1948.95810338356
+"Arizona State",2026,"JRob Croy","jrob-croy-261396","Polytechnic","Riverside, CA","Committed",316.379846206367
+"Arizona State",2026,"Emmanuel Innocenti","emmanuel-innocenti-246481","Italy","Rome, Rome","Committed",6152.3183814634
+"Baylor",2026,"Elijah Williams","elijah-williams-180967","TMI Episcopal","Scottsdale, AZ","Signed",872.61316456402
+"Baylor",2026,"Dylan Mingo","dylan-mingo-179195","Long Island Lutheran","Farmingdale, NY","Committed",1458.95273985945
+"Baylor",2026,"Kayden Mingo","kayden-mingo-236402","Long Island Lutheran","Glen Head, NY","Committed",1452.25338858708
+"BYU",2026,"Dean Rueckert","dean-rueckert-237665","Timpview","Provo, UT","Committed",1.37762800165695
+"BYU",2026,"Will Openshaw","will-openshaw-284744","Timpview","Provo, UT","Committed",1.37762800165695
+"BYU",2026,"Jake Wahlin","jake-wahlin-53927","Timpview","Provo, UT","Committed",1.37762800165695
+"Cincinnati",2026,"Myles Colvin","myles-colvin-147269","Heritage Christian School","Indianapolis, IN","Committed",98.0263032754742
+"Cincinnati",2026,"Riley Allenspach","riley-allenspach-155490","Providence Day School","Charlotte, NC","Committed",337.114637763815
+"Cincinnati",2026,"Eric Mahaffey","eric-mahaffey-287293","Archbishop Moeller","Cincinnati, OH","Committed",2.07216342253474
+"Cincinnati",2026,"Tylen Riley","tylen-riley-163252","Durango","Las Vegas, NV","Committed",1679.50421155591
+"Colorado",2026,"Rider Portela","rider-portela-261534","Sunnyslope","Phoenix, AZ","Committed",589.139374979527
+"Colorado",2026,"Justin Neely","justin-neely-69631","West Oaks Academy","Orlando, FL","Committed",1569.90792724482
+"Houston",2026,"Arafan Diane","arafan-diane-241018","Iowa United Prep","Montreal, QC","Signed",1605.64960181823
+"Houston",2026,"Dedan Thomas","dedan-thomas-150977","Liberty","Las Vegas, NV","Committed",1228.60994583609
+"Houston",2026,"Corey Hadnot","corey-hadnot-151182","Cy Creek","Houston, TX","Committed",3.41307145619784
+"Iowa State",2026,"Christian Wiggins","christian-wiggins-244187","Wayzata","Minneapolis, MN","Signed",204.811056554625
+"Iowa State",2026,"Yusef Gray Jr.","yusef-gray-jr-237689","West Allis Central","Milwaukee, WI","Signed",300.411739300901
+"Iowa State",2026,"Leon Bond","leon-bond-79020","Wauwatosa East","Milwaukee, WI","Committed",300.411739300901
+"Iowa State",2026,"Jaquan Johnson","jaquan-johnson-286171","Pius XI","Milwaukee, WI","Committed",300.411739300901
+"Kansas",2026,"Davion Adkins","davion-adkins-237682","Prolific Prep","Dallas, TX","Signed",435.498051477169
+"Kansas",2026,"Trent Perry","trent-perry-179203","Link Academy","Frisco, TX","Signed",410.466191193552
+"Kansas",2026,"Luke Barnett","luke-barnett-242295","Mater Dei","Santa Ana, CA","Signed",1304.91104057892
+"Kansas",2026,"Keanu Dawes","keanu-dawes-150253","Stratford","Houston, TX","Committed",635.305055281748
+"Kansas",2026,"Christian Reeves","christian-reeves-23126","Oak Hill Academy","Charlotte, NC","Committed",833.977594461265
+"Kansas",2026,"Leroy Blyden Jr.","leroy-blyden-jr-245626","University Of Detroit Jesuit HS","Detroit, MI","Committed",680.578934902725
+"Kansas State",2026,"Devin Hutcherson","devin-hutcherson-237674","Holy Innocents Episcopal School","Atlanta, GA","Committed",773.180022478124
+"Kansas State",2026,"JT Rock","jt-rock-158749","Lincoln","Sioux Falls, SD","Committed",301.69660668239
+"Kansas State",2026,"Pape N'Diaye","pape-ndiaye-235839","Trinity International Schools","Las Vegas, NV","Committed",1034.33607375504
+"Kansas State",2026,"Montana Wheeler","montana-wheeler-236619","Houston Christian","Houston, TX","Committed",654.683727209834
+"Oklahoma State",2026,"Latrell Allmond","latrell-allmond-156673","Petersburg","Richmond, VA","Signed",1088.085021766
+"Oklahoma State",2026,"Jacob Walker","jacob-walker-286915","Sunrise Christian Academy","Memphis, TN","Committed",399.643678148293
+"TCU",2026,"Trent Lincoln","trent-lincoln-283284","Wharton","Baltimore, MD","Committed",1242.33056685584
+"TCU",2026,"Gavin Sykes","gavin-sykes-241655","Capital Christian","Sacramento, CA","Committed",1409.56472176003
+"Texas Tech",2026,"Dakari Spear","dakari-spear-237715","Dynamic Prep","Dallas, TX","Signed",299.070820092056
+"Texas Tech",2026,"Damarion Dennis","damarion-dennis-236025","Veterans Memorial","San Antonio, TX","Committed",349.70853547102
+"UCF",2026,"Donovan Williams","donovan-williams-239409","Oak Hill Academy","Orlando, FL","Committed",11.7323085726228
+"UCF",2026,"Jason Asemota","jason-asemota-150952","Hillcrest Prep","Lynn, MA","Committed",1116.15821941064
+"UCF",2026,"Mister Dean","mister-dean-249606","Sunrise Christian Academy","Miami, FL","Committed",205.866162616454
+"Utah",2026,"Styles Clemmons","styles-clemmons-280737","Overtime Elite","Virginia Beach, VA","Committed",1936.14508648061
+"Utah",2026,"Taison Chatman","taison-chatman-109832","Totino-Grace","Minneapolis, MN","Committed",982.156131275956
+"Utah",2026,"Malek Gomma","malek-gomma-250173","Elite Prep","Seattle, WA","Committed",701.438316028653
+"Utah",2026,"Jackson Holcombe","jackson-holcombe-286173","Timpanogos","Charleston, SC","Committed",1838.79753650351
+"Utah",2026,"TJ Burch","tj-burch-236028","Texas Alliance of Christian Athletes","Dallas, TX","Committed",996.814937971173

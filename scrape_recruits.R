@@ -354,7 +354,7 @@ team_slugs <- c(
     "West Virginia"  = "west-virginia-mountaineers"
 )
 
-years <- 2024:2025
+years <- 2016:2026
 rows <- list()
 total <- length(years) * length(team_slugs)
 n <- 0
