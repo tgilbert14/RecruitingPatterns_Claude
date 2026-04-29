@@ -1,608 +1,608 @@
-"team","year","player_name","hometown","high_school","status"
-"Arizona",2016,"Rawle Alkins","Middle Village, NY","Word Of God Christian Academy","Enrolled"
-"Arizona",2016,"Kobi Simmons","Alpharetta, GA","St. Francis","Enrolled"
-"Arizona",2016,"Lauri Markkanen","Paterson, NJ","International","Enrolled"
-"Arizona State",2016,"Romello White","Suwanee, GA","Wheeler","Enrolled"
-"Arizona State",2016,"Jethro Tshisumpa","Grundy, VA","Mountain Mission School","Enrolled"
-"Arizona State",2016,"Ramon Vila","Barcelona","Spain","Enrolled"
-"Arizona State",2016,"Vitaliy Shibel","Lee, ME","Lee Academy","Enrolled"
-"Baylor",2016,"Mark Vital","Lake Charles, LA","Washington-Marion","Enrolled"
-"Baylor",2016,"Nuni Omot","Ottumwa, IA",NA,"Enrolled"
-"BYU",2016,"Yoeli Childs","South Jordan, UT","Bingham","Enrolled"
-"BYU",2016,"Connor Harding","Pocatello, ID","Highland","Enrolled"
-"BYU",2016,"Steven Beo","Richland, WA","Richland","Enrolled"
-"Cincinnati",2016,"Jarron Cumberland","Wilmington, OH","Wilmington","Enrolled"
-"Cincinnati",2016,"Nysier Brooks","Burlington, NJ","Life Center Academy","Enrolled"
-"Colorado",2016,"Bryce Peters","La Verne, CA","Damien","Enrolled"
-"Colorado",2016,"Dallas Walton","Arvada, CO","Arvada West","Enrolled"
-"Houston",2016,"Valentine Sangoyomi","Tonkawa, OK","Erie First Christian Academy","Enrolled"
-"Iowa State",2016,"Cameron Lard","Natchitoches, LA","Natchitoches Central","Enrolled"
-"Iowa State",2016,"Jakolby Long","Mustang, OK","Mustang","Enrolled"
-"Iowa State",2016,"Donovan Jackson","Council Bluffs, IA",NA,"Enrolled"
-"Kansas",2016,"Patrick Muldoon","Basehor, KS","Basehor-Linwood","Enrolled"
-"Kansas State",2016,"Xavier Sneed","Florissant, MO","Hazelwood Central","Enrolled"
-"Kansas State",2016,"Cartier Diarra","Florence, SC","West Florence","Enrolled"
-"Oklahoma State",2016,"Cameron McGriff","Grand Prairie, TX","South Grand Prairie","Enrolled"
-"TCU",2016,"Jaylen Fisher","Arlington, TN","Bolton","Enrolled"
-"TCU",2016,"Desmond Bane","Richmond, IN","Seton Catholic","Enrolled"
-"TCU",2016,"Kouat Noi","Montverde, FL","Montverde Academy","Enrolled"
-"Texas Tech",2016,"Niem Stevenson","Liberal, KS","Faith Baptist Christian School","Enrolled"
-"Utah",2016,"Jayce Johnson","Santa Monica, CA","Santa Monica","Enrolled"
-"Utah",2016,"Devon Daniels","Kalamazoo, MI","Prolific Prep","Enrolled"
-"Utah",2016,"Jojo Zamora","Marysville, CA",NA,"Enrolled"
-"Utah",2016,"Sedrick Barefield","Corona, CA","Centennial","Enrolled"
-"West Virginia",2016,"Sagaba Konate","Hermitage, PA","Kennedy Catholic","Enrolled"
-"West Virginia",2016,"Maciej Bender","Grundy, VA","Mountain Mission School","Enrolled"
-"West Virginia",2016,"Chase Harler","Wheeling, WV","Wheeling Central Catholic","Enrolled"
-"Arizona",2017,"Emmanuel Akot","Mount Pleasant, UT","Wasatch Academy","Enrolled"
-"Arizona",2017,"Ira Lee","San Pedro, CA","Prolific Prep","Enrolled"
-"Arizona State",2017,"Kimani Lawrence","Ashburnham, MA","New Hampton School","Enrolled"
-"Arizona State",2017,"Remy Martin","Chatsworth, CA","Sierra Canyon","Enrolled"
-"Arizona State",2017,"De'Quon Lake","Council Bluffs, IA",NA,"Enrolled"
-"Baylor",2017,"Tristan Clark","Converse, TX","Judson","Enrolled"
-"Baylor",2017,"Leonard Allen","Round Rock, TX","Round Rock","Enrolled"
-"Cincinnati",2017,"Trevor Moore","Whitney, TX","Whitney","Enrolled"
-"Colorado",2017,"Evan Battey","Villa Park, CA","Villa Park","Enrolled"
-"Colorado",2017,"McKinley Wright","Champlin, MN","Champlin Park Senior","Enrolled"
-"Colorado",2017,"Lazar Nikolic","Belgrade","Italy","Enrolled"
-"Houston",2017,"Fabian White","Humble, TX","Atascocita","Enrolled"
-"Houston",2017,"Mike Adewunmi","Mansfield, TX","Lake Ridge","Enrolled"
-"Houston",2017,"Breaon Brady","Mission Viejo, CA",NA,"Enrolled"
-"Iowa State",2017,"Lindell Wigginton","Mouth Of Wilson, VA","Oak Hill Academy","Enrolled"
-"Kansas",2017,"Billy Preston","Mouth Of Wilson, VA","Oak Hill Academy","Enrolled"
-"Kansas",2017,"Silvio De Sousa","Montverde, FL","IMG Academy","Enrolled"
-"Kansas State",2017,"Mike McGuirl","Bolton, CT","East Catholic","Enrolled"
-"Kansas State",2017,"Levi Stockard","Saint Louis, MO","Vashon","Enrolled"
-"Kansas State",2017,"Amaad Wainright","Athens, TX",NA,"Enrolled"
-"Oklahoma State",2017,"Michael Weathers","Mission, KS","Shawnee Mission North","Enrolled"
-"TCU",2017,"R.J. Nembhard","Keller, TX","Keller","Enrolled"
-"TCU",2017,"Lat Mayen","Canberra","Australian Institute of Sport","Enrolled"
-"TCU",2017,"Shawn Olden","Hobbs, NM",NA,"Enrolled"
-"TCU",2017,"Andre Pierce","Baytown, TX",NA,"Signed"
-"Texas Tech",2017,"Hyron Edwards","East Chicago, IN","East Chicago Central","Enrolled"
-"Texas Tech",2017,"Malik Ondigo","Putnam, CT","Putnam Science Academy","Enrolled"
-"Texas Tech",2017,"Josh Webster","Levelland, TX",NA,"Enrolled"
-"Texas Tech",2017,"Davide Moretti","Bologna","Italy","Enrolled"
-"UCF",2017,"Kani Coles","Pensacola, FL",NA,"Committed"
-"Utah",2017,"Branden Carlson","South Jordan, UT","Bingham","Enrolled"
-"Utah",2017,"Christian Popoola","American Fork, UT","Bishop Gorman","Enrolled"
-"Utah",2017,"Jaxon Brenchley","Hyrum, UT","Mountain Crest","Enrolled"
-"Utah",2017,"Vante Hendrix","Van Nuys, CA","Birmingham","Enrolled"
-"West Virginia",2017,"Teddy Allen","Boys Town, NE","Boys Town","Enrolled"
-"West Virginia",2017,"Brandon Knapper","Chatham, VA","Hargrave Military Academy (HS)","Enrolled"
-"Arizona",2018,"Brandon Williams","Encino, CA","Crespi","Enrolled"
-"Arizona",2018,"Devonaire Doutrive","Van Nuys, CA","Birmingham","Enrolled"
-"Arizona",2018,"Omar Thielemans","Ghent","Gistel Oostende","Enrolled"
-"Arizona State",2018,"Taeshon Cherry","El Cajon, CA","Foothills Christian","Enrolled"
-"Arizona State",2018,"Luguentz Dort","Mono, ON","The Conrad Academy","Enrolled"
-"Arizona State",2018,"Uros Plavsic","Cacak","Hamilton Heights Christian Academy","Enrolled"
-"Baylor",2018,"Flo Thamba","Grundy, VA","Mountain Mission School","Enrolled"
-"Baylor",2018,"Darius Allen","Hollywood, FL","Chaminade-Madonna Prep","Enrolled"
-"Cincinnati",2018,"Logan Johnson","Mountain View, CA","St. Francis","Enrolled"
-"Cincinnati",2018,"LaQuill Hardnett","Nottingham, MD","Perry Hall","Enrolled"
-"Cincinnati",2018,"Rashawn Fredericks","Tullahoma, TN",NA,"Enrolled"
-"Cincinnati",2018,"Rapolas Ivanauskas","Barrington, IL","Barrington","Enrolled"
-"Colorado",2018,"Elijah Parquet","Westbrook, TX","Westbrook School","Enrolled"
-"Colorado",2018,"Shane Gatling","Ottumwa, IA",NA,"Enrolled"
-"Colorado",2018,"Jakub Dombek","Ostrava","Get Better Academy","Enrolled"
-"Houston",2018,"Nate Hinton","Gastonia, NC","Gaston Day School Inc","Enrolled"
-"Houston",2018,"Darius Bowser","Gaffney, SC","Gaffney","Enrolled"
-"Iowa State",2018,"Zion Griffin","Darien, IL","Hinsdale South","Enrolled"
-"Iowa State",2018,"Prentiss Nixon","Bolingbrook, IL","Bolingbrook","Enrolled"
-"Kansas",2018,"Quentin Grimes","The Woodlands, TX","College Park","Enrolled"
-"Kansas",2018,"Garrett Luinstra","Lawrence, KS","Lawrence Free State","Enrolled"
-"Kansas State",2018,"Shaun Williams","Florissant, MO","Hazelwood Central","Enrolled"
-"Kansas State",2018,"Austin Trice","Mount Carmel, IL",NA,"Enrolled"
-"Oklahoma State",2018,"Isaac Likekele","Mansfield, TX","Mansfield Timberview","Enrolled"
-"Oklahoma State",2018,"Maurice Calloo","Huntington, WV","Oak Hill Academy","Enrolled"
-"Oklahoma State",2018,"Duncan Demuth","Seminole, FL","Seminole","Enrolled"
-"Oklahoma State",2018,"Curtis Jones","Highland Springs, VA","Huntington Prep","Enrolled"
-"TCU",2018,"Kaden Archie","Midlothian, TX","Midlothian","Enrolled"
-"TCU",2018,"Yuat Alok","Sarasota, FL","Impact Academy","Enrolled"
-"Texas Tech",2018,"Josh Mballa","Bordeaux","Putnam Science Academy","Enrolled"
-"UCF",2018,"Andreas Fuller","Saint Petersburg, FL","Admiral Farragut Academy","Enrolled"
-"Utah",2018,"Riley Battin","Oak Park, CA","Oak Park","Enrolled"
-"Utah",2018,"Lahat Thioune","Melbourne, FL","Florida Air Academy","Enrolled"
-"Utah",2018,"Charles Jones","Rogerson, ID",NA,"Enrolled"
-"West Virginia",2018,"Derek Culver","Wolfeboro, NH","Brewster Academy","Enrolled"
-"West Virginia",2018,"Jordan McCabe","Kaukauna, WI","Kaukauna","Enrolled"
-"West Virginia",2018,"Jermaine Haley","Burnaby, BC","Sunrise Christian Academy","Enrolled"
-"West Virginia",2018,"Andrew Gordon","South Kent, CT","South Kent School","Enrolled"
-"Arizona",2019,"Josh Green","Bradenton, FL","IMG Academy","Enrolled"
-"Arizona",2019,"Zeke Nnaji","Hopkins, MN","Hopkins","Enrolled"
-"Arizona",2019,"Christian Koloko","Chatsworth, CA","Sierra Canyon","Enrolled"
-"Arizona State",2019,"Alonzo Verge Jr.","Villa Park, IL","Proviso West","Enrolled"
-"Baylor",2019,"Adam Flagler","Duluth, GA","Duluth","Enrolled"
-"Baylor",2019,"Jonathan Tchamwa Tchatchoua","Douala","NBA Global Academy","Enrolled"
-"Baylor",2019,"Jared Butler","Reserve, LA","Riverside Academy","Signed"
-"BYU",2019,"Bernardo Da Silva","Mount Pleasant, UT","Wasatch Academy","Enrolled"
-"Cincinnati",2019,"Zach Harvey","Topeka, KS","Hayden","Enrolled"
-"Cincinnati",2019,"Jeremiah Davenport","Chatham, VA","Hargrave Military Academy","Enrolled"
-"Cincinnati",2019,"Chris Vogt","Mayfield, KY","Graves County","Enrolled"
-"Colorado",2019,"Keeshawn Barthelemy","Ontario, CA","Thornlea Secondary School","Enrolled"
-"Colorado",2019,"Maddox Daniels","Fort Myers, FL",NA,"Enrolled"
-"Houston",2019,"Caleb Mills","Swannanoa, NC","Asheville Christian Academy","Enrolled"
-"Houston",2019,"Marcus Sasser","Red Oak, TX","Red Oak","Enrolled"
-"Iowa State",2019,"Luke Anderson","Lakeland, FL","Lakeland","Enrolled"
-"Iowa State",2019,"Marcedus Leech","Poplar Bluff, MO","Poplar Bluff","Enrolled"
-"Iowa State",2019,"Caleb Grill","Maize, KS","Maize","Enrolled"
-"Iowa State",2019,"Tre Jackson","Blythewood, SC","Blythewood","Enrolled"
-"Iowa State",2019,"Javan Johnson","Decatur, AL","Austin","Enrolled"
-"Iowa State",2019,"Rasir Bolton","Woodstock, VA","Massanutten Military Academy","Committed"
-"Kansas",2019,"Jalen Wilson","Denton, TX","Guyer","Enrolled"
-"Kansas",2019,"Tristan Enaruna","Mount Pleasant, UT","Wasatch Academy","Enrolled"
-"Kansas",2019,"Dajuan Harris","Columbia, MO","Rock Bridge","Enrolled"
-"Kansas",2019,"Isaiah Moss","New Lenox, IL","Lincoln Way West","Enrolled"
-"Kansas State",2019,"Montavious Murphy","Spring, TX","Concordia Lutheran","Enrolled"
-"Kansas State",2019,"David Sloan","Campbellsville, KY","Taylor County","Enrolled"
-"Kansas State",2019,"Antonio Gordon","Lawton, OK","Eisenhower","Enrolled"
-"Kansas State",2019,"Goodnews Kpegeol","Pensacola, FL","Taylor Made Basketball","Enrolled"
-"Oklahoma State",2019,"Marcus Watson","Buford, GA","Buford","Enrolled"
-"Oklahoma State",2019,"Avery Anderson III","Justin, TX","Northwest","Enrolled"
-"TCU",2019,"Diante Smith","Fort Walton Beach, FL","Choctawhatchee","Enrolled"
-"TCU",2019,"Mickey Pearson","Elizabethtown, KY","Hargrave Military Academy (HS)","Enrolled"
-"TCU",2019,"Francisco Farabello","Canberra","NBA Global Academy","Enrolled"
-"TCU",2019,"Edric Dennis","DeSoto, TX","DeSoto","Enrolled"
-"Texas Tech",2019,"Jahmi'us Ramsey","Mansfield, TX","Duncanville","Enrolled"
-"Texas Tech",2019,"Terrence Shannon","Bradenton, FL","IMG Academy","Enrolled"
-"Texas Tech",2019,"Tyreek Smith","Cedar Hill, TX","Trinity Leadership","Enrolled"
-"Texas Tech",2019,"Russel Tchewa","Putnam, CT","Putnam Science Academy","Enrolled"
-"Texas Tech",2019,"Clarence Nadolny","Scotland, PA","Scotland Campus","Enrolled"
-"Texas Tech",2019,"Andrei Savrasov","Saint Petersburg","Russia","Enrolled"
-"UCF",2019,"Tony Johnson","Eufaula, AL","Eufaula","Enrolled"
-"UCF",2019,"Moses Bol","Colby, KS",NA,"Enrolled"
-"UCF",2019,"Avery Diggs","Summit, MS",NA,"Enrolled"
-"UCF",2019,"Dazon Ingram","Theodore, AL","Theodore","Enrolled"
-"UCF",2019,"Yuat Alok","Sarasota, FL","Impact Academy","Enrolled"
-"Utah",2019,"Matthew Van Komen","Pleasant Grove, UT","Pleasant Grove","Enrolled"
-"Utah",2019,"Rylan Jones","Logan, UT","Olympus","Enrolled"
-"Utah",2019,"Brendan Wenzel","Helotes, TX","O'Connor","Enrolled"
-"Utah",2019,"Alfonso Plummer","Yuma, AZ",NA,"Enrolled"
-"West Virginia",2019,"Oscar Tshiebwe","Hermitage, PA","Kennedy Catholic","Enrolled"
-"West Virginia",2019,"Jalen Bridges","Fairmont, WV","Fairmont","Enrolled"
-"West Virginia",2019,"Taz Sherman","Missouri City, TX","Fort Bend Marshall","Enrolled"
-"West Virginia",2019,"Sean McNeil","Union, KY","Ryle","Enrolled"
-"West Virginia",2019,"Ethan Richardson","Madera, CA","Madera Christian School","Committed"
-"Arizona",2020,"Tibet Gorener","Orange, CA","Orange Lutheran","Enrolled"
-"Arizona",2020,"Daniel Batcho","Paris","France","Enrolled"
-"Arizona",2020,"Kerr Kriisa","Tartu","Estonia","Enrolled"
-"Arizona",2020,"Azuolas Tubelis","Vilnius","Lithuania","Enrolled"
-"Arizona",2020,"Tautvilas Tubelis","Vilnius","Lithuania","Enrolled"
-"Arizona",2020,"James Akinjo","Richmond, CA","Salesian College Preparatory","Enrolled"
-"Arizona State",2020,"Joshua Christopher","Lakewood, CA","Mayfair","Enrolled"
-"Arizona State",2020,"Pavlo Dziuba","Kyiv","Ukraine","Enrolled"
-"Arizona State",2020,"Chris Osten","Crowley, LA","Crowley","Enrolled"
-"Arizona State",2020,"Holland Woods","Glendale, AZ","Apollo","Enrolled"
-"Baylor",2020,"LJ Cryer","Katy, TX","Morton Ranch","Enrolled"
-"Baylor",2020,"Zach Loveday","Gallipolis, OH","Huntington Prep","Enrolled"
-"BYU",2020,"Caleb Lohner","Flower Mound, TX","Wasatch Academy","Enrolled"
-"BYU",2020,"Richie Saunders","Mount Pleasant, UT","Wasatch Academy","Enrolled"
-"BYU",2020,"Gideon George","Minna",NA,"Enrolled"
-"BYU",2020,"Tanner Toolson","Vancouver, WA","Evergreen","Enrolled"
-"Cincinnati",2020,"Viktor Lakhin","Moscow","Russia","Enrolled"
-"Cincinnati",2020,"Rapolas Ivanauskas","Barrington, IL","Barrington","Enrolled"
-"Colorado",2020,"Luke O'Brien","Littleton, CO","Columbine","Enrolled"
-"Colorado",2020,"Tristan da Silva","Munich","Germany","Enrolled"
-"Houston",2020,"Tramon Mark","Dickinson, TX","Dickinson","Enrolled"
-"Houston",2020,"Jamal Shead","Manor, TX","Manor","Enrolled"
-"Houston",2020,"Ryan Elvin","Round Rock, TX","Cedar Ridge","Enrolled"
-"Iowa State",2020,"Xavier Foster","Oskaloosa, IA","Oskaloosa","Enrolled"
-"Iowa State",2020,"Dudley Blackwell","Pembroke Pines, FL","Somerset Academy Charter","Enrolled"
-"Iowa State",2020,"Jaden Walker","Lawrenceville, GA","Discovery","Enrolled"
-"Iowa State",2020,"Darlinstone Dubar","Scotland, PA","Scotland Campus","Enrolled"
-"Kansas",2020,"Latrell Jossell","Keller, TX","Keller Central","Enrolled"
-"Kansas",2020,"Tyon Grant-Foster","Kansas City, KS","F L Schlagle","Enrolled"
-"Kansas State",2020,"Davion Bradford","Saint Louis, MO","Mehlville","Enrolled"
-"Kansas State",2020,"Luke Kasubke","Saint Louis, MO","Chaminade","Enrolled"
-"Kansas State",2020,"Rudi Williams","Hamilton, ON",NA,"Enrolled"
-"Kansas State",2020,"Carlton Linguard","Temple, TX",NA,"Enrolled"
-"Kansas State",2020,"Kaosi Ezeagu","Brampton, ON","GTA Prep","Enrolled"
-"Oklahoma State",2020,"Matthew-Alexander Moncrieffe","Mono, ON","Orangeville Prep","Enrolled"
-"Oklahoma State",2020,"Bryce Williams","Bushnell, FL","South Sumter","Enrolled"
-"Oklahoma State",2020,"Ferron Flavors","Federal Way, WA","Federal Way","Enrolled"
-"TCU",2020,"Mike Miles","Lancaster, TX","Lancaster","Enrolled"
-"TCU",2020,"Terren Frank","Chatsworth, CA","Sierra Canyon","Enrolled"
-"TCU",2020,"Eddie Lampkin","Katy, TX","Morton Ranch","Enrolled"
-"Texas Tech",2020,"Micah Peavy","Duncanville, TX","Duncanville","Enrolled"
-"Texas Tech",2020,"Vladislav Goldin","Putnam, CT","Putnam Science Academy","Enrolled"
-"Texas Tech",2020,"Marcus Santos-Silva","Saxtons River, VT","Vermont Academy","Enrolled"
-"Texas Tech",2020,"Mac McClung","Gate City, VA","Gate City","Enrolled"
-"UCF",2020,"Jamille Reynolds","Saint Petersburg, FL","Lakewood","Enrolled"
-"UCF",2020,"Darius Perry","Marietta, GA","Wheeler","Enrolled"
-"Utah",2020,"Ian Martinez","San Juan Capistrano, CA","JSerra Catholic","Enrolled"
-"Utah",2020,"Pelle Larsson","Nacka","Sweden","Enrolled"
-"Utah",2020,"Jordan Kellier","Williston, ND",NA,"Enrolled"
-"Utah",2020,"Norbert Thelissen","Hertogenbosch","Netherlands","Signed"
-"Utah",2020,"Mason Falslev","Smithfield, UT","Sky View","Committed"
-"West Virginia",2020,"Isaiah Cottrell","Huntington, WV","Huntington Prep","Enrolled"
-"West Virginia",2020,"Taj Thweatt","Wildwood, NJ","Wildwood Catholic","Enrolled"
-"West Virginia",2020,"Seny Ndiaye","Huntington, WV","Huntington Prep","Enrolled"
-"Arizona",2021,"Shane Nowell","Sammamish, WA","Eastside Catholic","Enrolled"
-"Arizona",2021,"Adama Bal","Paris","INSEP Paris","Enrolled"
-"Arizona",2021,"Pelle Larsson","Nacka","Sweden","Enrolled"
-"Arizona",2021,"Justin Kier","Penn Laird, VA","Spotswood","Enrolled"
-"Arizona",2021,"Oumar Ballo","Mali","NBA Academy Latin America","Enrolled"
-"Arizona",2021,"Kim Aiken","Redlands, CA","Redlands East Valley","Enrolled"
-"Arizona State",2021,"Enoch Boakye","Mississauga, ON","George Harris Prep","Enrolled"
-"Arizona State",2021,"Justin Rochelin","Northridge, CA","Heritage Christian","Enrolled"
-"Arizona State",2021,"Demari Williams","Glendale, AZ","Dream City Christian","Enrolled"
-"Arizona State",2021,"William Felton","Chatham, VA","Hargrave Military Academy (HS)","Enrolled"
-"Baylor",2021,"James Akinjo","Richmond, CA","Salesian College Preparatory","Enrolled"
-"Baylor",2021,"Dale Bonner","Shaker Heights, OH","Shaker Heights","Enrolled"
-"BYU",2021,"Fousseyni Traore","Bamako","Wasatch Academy","Enrolled"
-"BYU",2021,"Atiki Ally Atiki","Mwanza","London Academy","Enrolled"
-"Colorado",2021,"Lawson Lovering","Cheyenne, WY","Cheyenne Central","Enrolled"
-"Colorado",2021,"K.J. Simpson","West Hills, CA","Chaminade","Enrolled"
-"Colorado",2021,"Julian Hammond III","Englewood, CO","Cherry Creek","Enrolled"
-"Colorado",2021,"Mason Faulkner","Horse Cave, KY","Caverna","Committed"
-"Houston",2021,"Ja'Vier Francis","Montverde, FL","Montverde Academy","Enrolled"
-"Houston",2021,"Josh Carlton","Winterville, NC","DeMatha Catholic","Enrolled"
-"Iowa State",2021,"Tyrese Hunter","Racine, WI","St. Catherine's","Enrolled"
-"Iowa State",2021,"Robert Jones","Prior Lake, MN","Prior Lake","Enrolled"
-"Iowa State",2021,"Izaiah Brockington","Woodstock, CT","Woodstock Academy","Enrolled"
-"Iowa State",2021,"Aljaz Kunc","Sarasota, FL","Impact Academy","Enrolled"
-"Iowa State",2021,"Tre King","Chatham, VA","Hargrave Military Academy","Enrolled"
-"Iowa State",2021,"Caleb Grill","Maize, KS","Maize","Enrolled"
-"Iowa State",2021,"Tristan Enaruna","Mount Pleasant, UT","Wasatch Academy","Committed"
-"Kansas",2021,"Kyle Cuffe Jr.","Blairstown, NJ","Blair Academy","Enrolled"
-"Kansas",2021,"Remy Martin","Chatsworth, CA","Sierra Canyon","Enrolled"
-"Kansas",2021,"Joseph Yesufu","Bolingbrook, IL","Bolingbrook","Enrolled"
-"Kansas",2021,"Cameron Martin","Yukon, OK","Yukon","Enrolled"
-"Kansas State",2021,"Logan Landers","Cedarburg, WI","Cedarburg","Enrolled"
-"Kansas State",2021,"Maximus Edwards","Stratford, CT","Our Saviour Lutheran School","Enrolled"
-"Kansas State",2021,"Mark Smith","Edwardsville, IL","Edwardsville","Enrolled"
-"Kansas State",2021,"Markquis Nowell","Elizabeth, NJ","St. Patrick","Enrolled"
-"Oklahoma State",2021,"Tyreek Smith","Cedar Hill, TX","Trinity Leadership","Enrolled"
-"TCU",2021,"Souleymane Doumbia","Corsicana, TX","Mali","Enrolled"
-"TCU",2021,"Micah Peavy","Duncanville, TX","Duncanville","Enrolled"
-"TCU",2021,"JaKobe Coles","Denton, TX","Guyer","Enrolled"
-"TCU",2021,"Maxwell Evans","Bellaire, TX","Bellaire","Enrolled"
-"Texas Tech",2021,"Mylik Wilson","Rayville, LA","Rayville","Enrolled"
-"Texas Tech",2021,"KJ Allen","Monterey Park, CA","Westchester Senior","Enrolled"
-"Texas Tech",2021,"Daniel Batcho","Paris","France","Enrolled"
-"Texas Tech",2021,"Sardaar Calhoun","West Plains, MO",NA,"Committed"
-"UCF",2021,"Darius Johnson","Alexandria, VA","Episcopal","Enrolled"
-"UCF",2021,"Cheikh Mbacke Diong","Melbourne, FL","Florida Air Academy","Enrolled"
-"Utah",2021,"Lazar Stefanovic","Belgrade","Serbia","Enrolled"
-"Utah",2021,"Dusan Mahorcic","Niles, IL","Notre Dame College Prep","Enrolled"
-"West Virginia",2021,"James Okonkwo","Mount Hope, WV","Beckley Prep Academy","Enrolled"
-"West Virginia",2021,"Seth Wilson","Lorain, OH","Lorain","Enrolled"
-"West Virginia",2021,"Jamel King","Uniontown, AL","Bella Vista College Preparatory School","Enrolled"
-"West Virginia",2021,"Pauly Paulicap","Elmont, NY","Elmont Memorial","Enrolled"
-"West Virginia",2021,"Malik Curry","Wilmington, DE","Putnam Science Academy","Enrolled"
-"Arizona",2022,"Dylan Anderson","Gilbert, AZ","Perry","Enrolled"
-"Arizona",2022,"Filip Borovicanin","Belgrade","Serbia","Enrolled"
-"Arizona",2022,"Henri Veesaar","Tallinn","Estonia","Enrolled"
-"Arizona",2022,"Courtney Ramey","Saint Louis, MO","Webster Groves","Committed"
-"Arizona State",2022,"Duke Brennan","Gilbert, AZ","Hillcrest Prep","Enrolled"
-"Arizona State",2022,"Malcolm Flaggs","Gilbert, AZ","Eduprize","Enrolled"
-"Arizona State",2022,"Warren Washington","San Marcos, CA","Mission Hills","Enrolled"
-"Baylor",2022,"Josh Ojianwuna",NA,"NBA Global Academy","Enrolled"
-"Baylor",2022,"Jalen Bridges","Fairmont, WV","Fairmont","Enrolled"
-"Baylor",2022,"Dantwan Grimes","Ocala, FL",NA,"Enrolled"
-"Baylor",2022,"Caleb Lohner","Flower Mound, TX","Wasatch Academy","Committed"
-"BYU",2022,"Jaxson Robinson","Ada, OK","Ada","Enrolled"
-"BYU",2022,"Rudi Williams","Hamilton, ON",NA,"Enrolled"
-"BYU",2022,"Noah Waterman","Savannah, NY","Finger Lakes Christian School","Enrolled"
-"Cincinnati",2022,"Landers Nolley","Fairburn, GA","Langston Hughes","Committed"
-"Cincinnati",2022,"Robert Phinisee","Lafayette, IN","Mccutcheon","Committed"
-"Cincinnati",2022,"Kalu Ezikpe","Lawrenceville, GA","Discovery","Committed"
-"Colorado",2022,"Joe Hurlburt","Enderlin, ND","Enderlin Area","Enrolled"
-"Colorado",2022,"RJ Smith","La Verne, CA","Damien","Enrolled"
-"Colorado",2022,"J'Vonne Hadley","Saint Paul, MN","Cretin-Derham Hall","Enrolled"
-"Colorado",2022,"Ethan Wright","Newtonville, MA","Newton North","Enrolled"
-"Houston",2022,"Jarace Walker","Bradenton, FL","IMG Academy","Enrolled"
-"Houston",2022,"Mylik Wilson","Rayville, LA","Rayville","Committed"
-"Houston",2022,"Sadarius Bowser","Gaffney, SC","Gaffney","Committed"
-"Iowa State",2022,"Eli King","Caledonia, MN","Caledonia","Enrolled"
-"Iowa State",2022,"Tamin Lipsey","Ames, IA","Ames","Enrolled"
-"Iowa State",2022,"Osun Osunniyi","Putnam, CT","Putnam Science Academy","Committed"
-"Iowa State",2022,"Jaren Holmes","Romulus, MI","Romulus Senior","Committed"
-"Kansas",2022,"MJ Rice","Mouth Of Wilson, VA","Prolific Prep","Signed"
-"Kansas State",2022,"Nae'Qwan Tomlin","Harlem, NY",NA,"Enrolled"
-"Kansas State",2022,"Taj Manning","Mission, KS","La Lumiere School","Signed"
-"Kansas State",2022,"Keyontae Johnson","Oak Hill, WV","Oak Hill","Committed"
-"Kansas State",2022,"Desi Sills","Jonesboro, AR","Jonesboro","Committed"
-"Kansas State",2022,"Cam Carter","Mouth Of Wilson, VA","Oak Hill Academy","Committed"
-"Kansas State",2022,"Abayomi Iyiola","Decatur, GA","Greenforest McCalep Christian Academy","Committed"
-"Oklahoma State",2022,"Quion Williams","Mansfield, TX","Mansfield Legacy","Enrolled"
-"Oklahoma State",2022,"Caleb Asberry","Pflugerville, TX","Pflugerville","Committed"
-"TCU",2022,"PJ Haggerty","Crosby, TX","Crosby","Enrolled"
-"Texas Tech",2022,"Pop Isaacs","Mount Pleasant, UT","Coronado","Enrolled"
-"Texas Tech",2022,"Robert Jennings","DeSoto, TX","Texas Alliance of Christian Athletes","Enrolled"
-"Texas Tech",2022,"De'Vion Harmon","Denton, TX","Guyer","Committed"
-"Texas Tech",2022,"Kerwin Walton","Hopkins, MN","Hopkins","Committed"
-"Texas Tech",2022,"Malik Ondigo","Putnam, CT","Putnam Science Academy","Committed"
-"UCF",2022,"Ithiel Horton","Roselle, NJ","Roselle Catholic","Enrolled"
-"UCF",2022,"Brandon Suggs","Powder Springs, GA","Massanutten Military Academy","Committed"
-"UCF",2022,"CJ Kelly","Bellerose, NY","Queens Of Teaching","Committed"
-"Utah",2022,"Keba Keita","Mount Pleasant, UT","Wasatch Academy","Enrolled"
-"Utah",2022,"Wilguens Exacte Jr.","Mexico, ME","NBA Global Academy","Enrolled"
-"Utah",2022,"Luka Tarlac","Belgrade","The International School of Belgrade","Enrolled"
-"Utah",2022,"Ben Carlson","Saint Paul, MN","East Ridge","Enrolled"
-"West Virginia",2022,"Josiah Davis","Scott Depot, WV","Teays Valley Christian School","Enrolled"
-"West Virginia",2022,"Pat Suemnick","Denmark, WI","Denmark","Enrolled"
-"West Virginia",2022,"Mohamed Wague","Scotland, PA","Scotland Campus","Enrolled"
-"West Virginia",2022,"Erik Stevenson","Lacey, WA","Timberline","Committed"
-"Arizona",2023,"Motiejus Krivas","Siauliai","Lithuania","Enrolled"
-"Arizona",2023,"Paulius Murauskas","Kaunas","Lithuania","Enrolled"
-"Arizona",2023,"Conrad Martinez","Granollers","Spain","Enrolled"
-"Arizona",2023,"Caleb Love","Saint Louis, MO","Christian Brothers College","Enrolled"
-"Arizona",2023,"Keshad Johnson","San Leandro, CA","San Leandro","Enrolled"
-"Arizona State",2023,"Akil Watson","Middletown, NY","Roselle Catholic","Enrolled"
-"Arizona State",2023,"Braelon Green","Ypsilanti, MI","Southern California Academy","Enrolled"
-"Arizona State",2023,"Brycen Long","Gilbert, AZ","Gilbert","Enrolled"
-"Arizona State",2023,"Bryant Selebangue","Quebec City","RISE Prep","Enrolled"
-"Arizona State",2023,"Zane Meeks","Wolfeboro, NH","Brewster Academy","Enrolled"
-"Baylor",2023,"Ja'Kobe Walter","McKinney, TX","Link Academy","Enrolled"
-"Baylor",2023,"Miro Little","Helsinki, Uusi","Sunrise Christian Academy","Enrolled"
-"Baylor",2023,"RayJ Dennis","Oswego, IL","Oswego East","Enrolled"
-"BYU",2023,"Dawson Baker","Ladera Ranch, CA","Tesoro","Enrolled"
-"BYU",2023,"Marcus Adams Jr.","Harbor City, CA","Nathaniel Narbonne HS","Committed"
-"BYU",2023,"Aly Khalifa","Sydney, NSW","NBA Global Academy","Committed"
-"Cincinnati",2023,"Jamille Reynolds","Saint Petersburg, FL","Lakewood","Enrolled"
-"Cincinnati",2023,"Simas Lukosius","Kaunas","Lithuania","Enrolled"
-"Cincinnati",2023,"Aziz Bandaogo","Dakar","NBA Academy Africa","Enrolled"
-"Cincinnati",2023,"C.J. Fredrick","Alexandria, KY","Covington Catholic","Committed"
-"Cincinnati",2023,"Day Day Thomas","Bishopville, SC","Lee Central","Committed"
-"Colorado",2023,"Cody Williams","Gilbert, AZ","Perry","Enrolled"
-"Colorado",2023,"Eddie Lampkin","Katy, TX","Morton Ranch","Enrolled"
-"Houston",2023,"LJ Cryer","Katy, TX","Morton Ranch","Enrolled"
-"Houston",2023,"Damian Dunn","Kinston, NC","Meadowcreek","Enrolled"
-"Iowa State",2023,"Omaha Biliew","Waukee, IA","Waukee","Enrolled"
-"Iowa State",2023,"Milan Momcilovic","Pewaukee, WI","Pewaukee","Enrolled"
-"Iowa State",2023,"Jelani Hamilton","Austell, GA","Wheeler","Enrolled"
-"Iowa State",2023,"Jackson Paveletzke","Kimberly, WI","Kimberly","Enrolled"
-"Kansas",2023,"Elmarko Jackson","Marlton, NJ","South Kent School","Enrolled"
-"Kansas",2023,"Marcus Adams Jr.","Harbor City, CA","Nathaniel Narbonne HS","Enrolled"
-"Kansas",2023,"Jamari McDowell","Manvel, TX","Manvel","Enrolled"
-"Kansas",2023,"Johnny Furphy","Melbourne","NBA Global Academy","Committed"
-"Kansas",2023,"Hunter Dickinson","Hyattsville, MD","DeMatha Catholic","Enrolled"
-"Kansas",2023,"Nick Timberlake","Braintree, MA","Kimball Union Academy","Enrolled"
-"Kansas State",2023,"Macaleab Rich","East St. Louis, IL","East St. Louis","Enrolled"
-"Kansas State",2023,"RJ Jones","Denton, TX","Wasatch Academy","Committed"
-"Kansas State",2023,"Tylor Perry","Fort Coffee, OK","Spiro","Enrolled"
-"Kansas State",2023,"Arthur Kaluma","Glendale, AZ","Dream City Christian","Committed"
-"Oklahoma State",2023,"Eric Dailey","Bradenton, FL","IMG Academy","Enrolled"
-"Oklahoma State",2023,"Isaiah Miranda","Pawtucket, RI","Southern California Academy","Committed"
-"TCU",2023,"Isaiah Manning","Mansfield, TX","Mansfield Legacy","Committed"
-"TCU",2023,"Avery Anderson III","Justin, TX","Northwest","Enrolled"
-"TCU",2023,"Jameer Nelson Jr.","Haverford, PA","Haverford School","Enrolled"
-"Texas Tech",2023,"Eemeli Yalaho","Hudson, OH","Western Reserve Academy","Enrolled"
-"Texas Tech",2023,"KyeRon Lindsay","Denton, TX","Guyer","Enrolled"
-"Texas Tech",2023,"Warren Washington","San Marcos, CA","Mission Hills","Enrolled"
-"UCF",2023,"Shemarri Allen","Arden, NC","T C Roberson","Enrolled"
-"UCF",2023,"Omar Payne","Montverde, FL","Montverde Academy","Committed"
-"UCF",2023,"Demarr Langford","Wolfeboro, NH","Brewster Academy","Committed"
-"Utah",2023,"Karahan Efeoglu","Istanbul","Turkey","Enrolled"
-"Utah",2023,"Lawson Lovering","Cheyenne, WY","Cheyenne Central","Enrolled"
-"Utah",2023,"Cole Bajema","Lynden, WA","Lynden Christian School","Enrolled"
-"Utah",2023,"Deivon Smith","Loganville, GA","Grayson","Enrolled"
-"West Virginia",2023,"Ofri Naveh","Neot","Israel","Enrolled"
-"West Virginia",2023,"RaeQuan Battle","Marysville, WA","Marysville Pilchuck","Enrolled"
-"West Virginia",2023,"Akok Akok","Putnam, CT","Putnam Science Academy","Committed"
-"West Virginia",2023,"Jesse Edwards","Bradenton, FL","IMG Academy","Committed"
-"West Virginia",2023,"Noah Farrakhan","Hillside, NJ","The Patrick School","Committed"
-"West Virginia",2023,"Quinn Slazinski","Huntington, WV","Huntington Prep","Committed"
-"West Virginia",2023,"Kerr Kriisa","Tartu","Estonia","Committed"
-"Arizona",2024,"Emmanuel Stephen","Glendale, AZ","Dream City Christian","Enrolled"
-"Arizona",2024,"Trey Townsend","Oxford, MI","Oxford","Enrolled"
-"Arizona",2024,"Anthony Dell'Orso","Melbourne","Marcellin","Enrolled"
-"Arizona State",2024,"Joson Sanon","Fall River, MA","Vermont Academy","Enrolled"
-"Arizona State",2024,"Trevor Best","Wilson, NC","Word Of God Christian Academy","Enrolled"
-"Baylor",2024,"VJ Edgecombe","Nassau","Long Island Lutheran","Enrolled"
-"Baylor",2024,"Marino Dubravcic","Split","Croatia","Enrolled"
-"Baylor",2024,"Jeremy Roach","Fairfax, VA","Paul VI Catholic","Enrolled"
-"Baylor",2024,"Norchad Omier","Bluefields","Hialeah","Enrolled"
-"BYU",2024,"Egor Demin","Moscow","Russia","Enrolled"
-"BYU",2024,"Mihailo Boskovic","Belgrade","Serbia","Enrolled"
-"BYU",2024,"Brooks Bahr","Keller, TX","Keller","Signed"
-"BYU",2024,"Khadim Mboup","Saly","NBA Academy Africa","Committed"
-"BYU",2024,"Keba Keita","Mount Pleasant, UT","Wasatch Academy","Enrolled"
-"BYU",2024,"Mawot Mag","Windsor, CA","Prolific Prep","Enrolled"
-"Cincinnati",2024,"Tyler Betsey","Windsor, CT","St. Thomas More","Enrolled"
-"Cincinnati",2024,"Dillon Mitchell","Spring Hill, FL","Montverde Academy","Enrolled"
-"Cincinnati",2024,"Arrinten Page","Marietta, GA","Wheeler","Enrolled"
-"Cincinnati",2024,"Connor Hickman","Bloomington, IN","Bloomington South","Enrolled"
-"Colorado",2024,"Andrew Crawford","Littleton, CO","ThunderRidge","Enrolled"
-"Colorado",2024,"Sebastian Rancik","San Juan Capistrano, CA","JSerra Catholic","Enrolled"
-"Colorado",2024,"Andrej Jakimovski","Kriva Palanka","Macedonia","Enrolled"
-"Colorado",2024,"Trevor Baskin","Arvada, CO","Pomona","Enrolled"
-"Colorado",2024,"Elijah Malone","Angola, IN","Prairie Heights Sr Sch","Enrolled"
-"Iowa State",2024,"Nojus Indrusaitis","Lemont, IL","Brewster Academy","Enrolled"
-"Iowa State",2024,"Dishon Jackson","Vallejo, CA","St. Patrick-St. Vincent","Enrolled"
-"Iowa State",2024,"Brandton Chatfield","Clarkston, WA","Clarkston","Enrolled"
-"Kansas",2024,"Rakease Passmore","Palatka, FL","Combine Academy","Enrolled"
-"Kansas",2024,"Noah Shelby","McKinney, TX","Greenhill School","Enrolled"
-"Kansas",2024,"Zeke Mayo","Lawrence, KS","Lawrence","Enrolled"
-"Kansas",2024,"David Coit","Columbus, NJ","Scotland Campus","Enrolled"
-"Kansas State",2024,"David Castillo","Bartlesville, OK","Sunrise Christian Academy","Enrolled"
-"Kansas State",2024,"Mobi Ikegwuruka","Galway","Republic of Ireland","Enrolled"
-"Kansas State",2024,"Ugonna Onyenso","Putnam, CT","Putnam Science Academy","Enrolled"
-"Kansas State",2024,"Baye Fall","Dakar","Accelerated Schools Aka Family Services Found","Enrolled"
-"Kansas State",2024,"Dug McDaniel","Fairfax, VA","Paul VI Catholic","Enrolled"
-"Kansas State",2024,"Coleman Hawkins","Antelope, CA","Prolific Prep","Enrolled"
-"Kansas State",2024,"Max Jones","Clearwater, FL","Clearwater","Enrolled"
-"Kansas State",2024,"CJ Jones","East St. Louis, IL","East St. Louis","Enrolled"
-"Kansas State",2024,"Achor Achor","Melbourne","Greenforest McCalep Christian Academy","Enrolled"
-"Oklahoma State",2024,"Brandon Newman","Valparaiso, IN","Valparaiso","Enrolled"
-"Oklahoma State",2024,"Davonte Davis","Jacksonville, AR","Jacksonville","Enrolled"
-"Oklahoma State",2024,"Robert Jennings","DeSoto, TX","Texas Alliance of Christian Athletes","Enrolled"
-"Oklahoma State",2024,"Tyler Caron","Longview, TX","Spring Hill","Enrolled"
-"Oklahoma State",2024,"Marchelus Avery","Highland Springs, VA","Virginia Academy","Enrolled"
-"Oklahoma State",2024,"Pat Suemnick","Denmark, WI","Denmark","Enrolled"
-"TCU",2024,"David Punch","Harker Heights, TX","Harker Heights","Enrolled"
-"TCU",2024,"Malick Diallo","Draper, UT","Wasatch Academy","Enrolled"
-"TCU",2024,"RJ Jones","Denton, TX","Wasatch Academy","Enrolled"
-"TCU",2024,"Vasean Allette","Ontario, CA","Thornlea Secondary School","Enrolled"
-"TCU",2024,"Brendan Wenzel","Helotes, TX","O'Connor","Enrolled"
-"TCU",2024,"Trazarien White","Mansfield, TX","Mansfield Timberview","Enrolled"
-"Texas Tech",2024,"Federiko Federiko","Tonkawa, OK","First Love Christian Academy","Enrolled"
-"UCF",2024,"Dior Johnson","Corona, CA","Prolific Prep","Enrolled"
-"UCF",2024,"Moustapha Thiam","Dakar","DME Academy","Enrolled"
-"UCF",2024,"Benny Williams","Bradenton, FL","IMG Academy","Enrolled"
-"UCF",2024,"Deebo Coleman","Callahan, FL","West Nassau","Enrolled"
-"UCF",2024,"Jordan Ivy-Curry","La Marque, TX","La Marque","Enrolled"
-"UCF",2024,"Rokas Jocius","Kaunas","Lithuania","Enrolled"
-"Utah",2024,"Jaxon Johnson","Sandy, UT","Alta","Signed"
-"Utah",2024,"David Katoa","Layton, UT","Real Salt Lake Academy","Signed"
-"Utah",2024,"Miro Little","Helsinki, Uusi","Sunrise Christian Academy","Enrolled"
-"Utah",2024,"Mike Sharavjamts","Willoughby, OH","ISA Academy","Enrolled"
-"Utah",2024,"Zach Keller","Littleton, CO","ThunderRidge","Enrolled"
-"Utah",2024,"Caleb Lohner","Flower Mound, TX","Wasatch Academy","Enrolled"
-"Utah",2024,"Ezra Ausar","Snellville, GA","Liberty Heights Athletic Institute","Enrolled"
-"West Virginia",2024,"KJ Tenner","Cordova, TN","Cordova","Enrolled"
-"West Virginia",2024,"Amani Hansberry","Silver Spring, MD","Mount Saint Joseph","Enrolled"
-"West Virginia",2024,"Jayden Stone","Perth","Sunrise Christian Academy","Enrolled"
-"West Virginia",2024,"Toby Okani","West Orange, NJ","Cushing Academy","Enrolled"
-"West Virginia",2024,"Tucker DeVries","Waukee, IA","Waukee","Enrolled"
-"West Virginia",2024,"Joseph Yesufu","Bolingbrook, IL","Bolingbrook","Enrolled"
-"Arizona",2025,"Koa Peat","Gilbert, AZ","Perry","Enrolled"
-"Arizona",2025,"Dwayne Aristode","Wolfeboro, NH","Brewster Academy","Enrolled"
-"Arizona",2025,"Ivan Kharchenkov","Munich, BY","Bayern Munich","Enrolled"
-"Arizona",2025,"Sidi Gueye","Madrid","Real Madrid","Enrolled"
-"Arizona State",2025,"Kash Polk","Argyle, TX","Argyle","Enrolled"
-"Arizona State",2025,"Massamba Diop",NA,NA,"Enrolled"
-"Arizona State",2025,"Andrija Grbovic","Pljevlja",NA,"Enrolled"
-"Arizona State",2025,"Noah Meeusen",NA,"Belgium","Enrolled"
-"Arizona State",2025,"Dame Salane","Stafford, TX","Stafford","Enrolled"
-"Arizona State",2025,"Jovan Icitovic","Belgrade","Serbia","Enrolled"
-"Arizona State",2025,"Adante Holiman","Mcalester, OK","McAlester","Enrolled"
-"Arizona State",2025,"Santiago Trouet","Buenos Aires","American","Enrolled"
-"Arizona State",2025,"Maurice Odum","Union City, NJ","West Oaks Academy","Enrolled"
-"Arizona State",2025,"Marcus Adams Jr.","Harbor City, CA","Nathaniel Narbonne HS","Committed"
-"Baylor",2025,"Ramon Soyoye","Blairstown, NJ","Blair Academy","Enrolled"
-"Baylor",2025,"Michael Rataj","Berlin, BE","Germany","Enrolled"
-"BYU",2025,"AJ Dybantsa","Brockton, MA","Utah Prep","Enrolled"
-"BYU",2025,"Abdullah Ahmed","Cairo",NA,"Enrolled"
-"BYU",2025,"Aleksej Kostić",NA,"Austria","Enrolled"
-"BYU",2025,"Chamberlain Burgess","American Fork, UT","Lone Peak","Signed"
-"BYU",2025,"Kennard Davis","Saint Louis, MO","Vashon","Enrolled"
-"BYU",2025,"Dominique Diomande","Tours",NA,"Enrolled"
-"BYU",2025,"Nate Pickens","Surprise, AZ","Paradise Honors","Enrolled"
-"Cincinnati",2025,"Keyshuan Tillery","New Hampton, NH","New Hampton School","Enrolled"
-"Cincinnati",2025,"Jordi Rodriguez","Barcelona","Club Joventut Badalona","Enrolled"
-"Cincinnati",2025,"Lucas Atauri","Sao Paulo",NA,"Enrolled"
-"Cincinnati",2025,"Moustapha Thiam","Dakar","DME Academy","Enrolled"
-"Cincinnati",2025,"Baba Miller","Madrid","Spain","Enrolled"
-"Cincinnati",2025,"Kerr Kriisa","Tartu","Estonia","Enrolled"
-"Colorado",2025,"Jalin Holland","Los Lunas, NM","Dream City Christian","Enrolled"
-"Colorado",2025,"Tacko Fawaz","Elizabeth, NJ","Dream City Christian","Enrolled"
-"Colorado",2025,"Isaiah Johnson","Valley Village, CA","Campbell Hall School","Enrolled"
-"Colorado",2025,"Ian Inman","The Woodlands, TX","College Park","Enrolled"
-"Colorado",2025,"Leonardo Van Elswyk","Oleggio",NA,"Enrolled"
-"Colorado",2025,"Alon Michaeli","Herzliya","Bnei Herzliya","Committed"
-"Colorado",2025,"Jon Mani","Pacific Palisades, CA","Palisades","Enrolled"
-"Houston",2025,"Isiah Harwell","Pocatello, ID","Wasatch Academy","Enrolled"
-"Houston",2025,"Kalifa Sakho","Levelland, TX",NA,"Enrolled"
-"Iowa State",2025,"Killyan Toure","Wolfeboro, NH","Brewster Academy","Enrolled"
-"Iowa State",2025,"Dominykas Pleta",NA,"Porsche BBA Ludwigsburg","Enrolled"
-"Iowa State",2025,"Blake Buchanan","Coeur D Alene, ID","Lake City","Enrolled"
-"Iowa State",2025,"Eric Mulder","Oskaloosa, IA","Pella Christian","Enrolled"
-"Kansas State",2025,"Andrej Kostic","Belgrade","KK Dynamic","Enrolled"
-"Kansas State",2025,"Elias Rapieque","Berlin",NA,"Enrolled"
-"Kansas State",2025,"Dorin Buca","Livorno","Akern Libertas Livorno","Enrolled"
-"Kansas State",2025,"PJ Haggerty","Crosby, TX","Crosby","Enrolled"
-"Kansas State",2025,"Nate Johnson","Middletown, OH","Lakota East","Enrolled"
-"Kansas State",2025,"Tyreek Smith","Cedar Hill, TX","Trinity Leadership","Committed"
-"Oklahoma State",2025,"Ben Ahmed","Putnam, CT","Putnam Science Academy","Enrolled"
-"Oklahoma State",2025,"Ryan Crotty","Charlottesville, VA","Miller School","Enrolled"
-"Oklahoma State",2025,"Mekhi Ragland","Lilburn, GA","Sunrise Christian Academy","Enrolled"
-"Oklahoma State",2025,"Daniel Guetta","Tel Aviv",NA,"Enrolled"
-"Oklahoma State",2025,"Lefteris Mantzoukas","Athens",NA,"Enrolled"
-"Oklahoma State",2025,"Vyctorius Miller","North Hollywood, CA","Compass Prep","Enrolled"
-"Oklahoma State",2025,"Isaiah Coleman","Fredericksburg, VA","Word Of God Christian Academy","Enrolled"
-"Oklahoma State",2025,"Kanye Clary","Woodstock, VA","Massanutten Military Academy","Enrolled"
-"Oklahoma State",2025,"Parsa Fallah","Cedar City, UT","Iran","Enrolled"
-"Oklahoma State",2025,"Christian Coleman","Winnsboro, LA","Franklin Parish","Enrolled"
-"TCU",2025,"Jayden Pierre","Elizabeth, NJ","Long Island Lutheran","Enrolled"
-"TCU",2025,"Brock Harding","Moline, IL","Moline","Enrolled"
-"TCU",2025,"Tanner Toolson","Vancouver, WA","Evergreen","Enrolled"
-"TCU",2025,"Vianney Salatchoum","Yaounde","Cameroon","Enrolled"
-"TCU",2025,"Liutauras Lelevicius","Vilnius","Lithuania","Enrolled"
-"Texas Tech",2025,"Nolan Groves","Long Lake, MN","Orono Senior","Enrolled"
-"Texas Tech",2025,"Josiah Moseley","Round Rock, TX","Stony Point","Enrolled"
-"Texas Tech",2025,"Luke Bamgboye","London","Compass Prep","Enrolled"
-"Texas Tech",2025,"Donovan Atwell","Huntersville, NC","Providence Day School","Enrolled"
-"UCF",2025,"Tanner Jones","Bradenton, FL","IMG Academy","Enrolled"
-"UCF",2025,"Chris Johnson","Missouri City, TX","Montverde Academy","Enrolled"
-"UCF",2025,"John Bol","Boma","Overtime Elite","Enrolled"
-"UCF",2025,"Kris Parker","Quincy, FL","Crossroad Academy","Enrolled"
-"UCF",2025,"Jordan Burks","Decatur, AL","Hillcrest Prep","Enrolled"
-"UCF",2025,"Themus Fulks","Winston Salem, NC",NA,"Enrolled"
-"UCF",2025,"Carmelo Pacheco","Harrisonburg, VA","Spotswood","Enrolled"
-"Utah",2025,"Kendyl Sanders","Bradenton, FL","IMG Academy","Enrolled"
-"Utah",2025,"James Okonkwo","Mount Hope, WV","Beckley Prep Academy","Enrolled"
-"Utah",2025,"Babacar Faye","Saly","NBA Academy Africa","Enrolled"
-"West Virginia",2025,"DJ Thomas","Allen, TX","Allen","Enrolled"
-"West Virginia",2025,"Chance Moore","Powder Springs, GA","McEachern","Enrolled"
-"West Virginia",2025,"Treysen Eaglestaff","Bismarck, ND","Bismarck","Enrolled"
-"West Virginia",2025,"Harlan Obioha","Hoxie, KS","Hoxie","Enrolled"
-"West Virginia",2025,"Honor Huff","Pennsburg, PA","Perkiomen School","Enrolled"
-"West Virginia",2025,"Jackson Fields","Missouri City, TX","Elkins","Enrolled"
-"Arizona",2026,"Cameron Holmes","Goodyear, AZ","Millennium","Signed"
-"Arizona",2026,"JJ Mandaquit","Hilo, HI","Utah Prep","Committed"
-"Arizona State",2026,"Marcus Vaughns","Melbourne","NBA Global Academy","Committed"
-"Arizona State",2026,"Dillan Shaw","Northridge, CA","Heritage Christian","Committed"
-"Arizona State",2026,"Ben Defty","Berlin","St. Thomas More","Committed"
-"Arizona State",2026,"Paulius Murauskas","Kaunas","Lithuania","Committed"
-"Arizona State",2026,"Joel Foxwell","Melbourne, VIC","Australia","Committed"
-"Arizona State",2026,"Nate Garcia","La Verne, CA","Damien","Committed"
-"Baylor",2026,"Isaac Celiscar","Winter Haven, FL","Winter Haven","Committed"
-"Baylor",2026,"Brett Decker","Cecilia, KY","Central Hardin","Committed"
-"Baylor",2026,"Evan Chatman","Harker Heights, TX","Harker Heights","Committed"
-"BYU",2026,"KJ Perry","Pacific Palisades, CA","Palisades","Enrolled"
-"BYU",2026,"Bruce Branch III","Gilbert, AZ","Prolific Prep","Signed"
-"BYU",2026,"Collin Chandler","Farmington, UT","Farmington","Committed"
-"BYU",2026,"Tyler Betsey","Windsor, CT","St. Thomas More","Committed"
-"Cincinnati",2026,"Adlan Elamin","Arlington, VA","Paul VI Catholic","Committed"
-"Cincinnati",2026,"Trevian Carson","West Des Moines, IA","Valley","Committed"
-"Cincinnati",2026,"David Iweze","Lewisville, TX","iSchool of Lewisville","Committed"
-"Cincinnati",2026,"Tyler Tejada","Teaneck, NJ","Teaneck Sr","Committed"
-"Cincinnati",2026,"Elijah Perryman","Concord, CA","Clayton Valley","Committed"
-"Colorado",2026,"Goc Malual",NA,NA,"Committed"
-"Colorado",2026,"Alex Dickeson","Melbourne, VIC","UC Senior Secondary College Lake Ginninderra","Committed"
-"Colorado",2026,"Noah Feddersen","Menomonie, WI","Menomonie","Committed"
-"Houston",2026,"Ikenna Alozie","Lagos","Dream City Christian","Signed"
-"Houston",2026,"Delrecco Gillespie","Sharpsburg, GA","East Coweta","Committed"
-"Houston",2026,"Braden East","Stafford, TX","Stafford","Committed"
-"Iowa State",2026,"Jackson Kiss","Hurricane, UT","Utah Prep","Signed"
-"Iowa State",2026,"Dorian Rinaldo-Komlan","Fort-de-France","SPIRE Academy","Signed"
-"Iowa State",2026,"Tre Singleton","Jeffersonville, IN","Jeffersonville","Committed"
-"Iowa State",2026,"Taj Manning","Mission, KS","La Lumiere School","Committed"
-"Iowa State",2026,"Ryan Prather Jr.","Clarksburg, MD","Clarksburg","Committed"
-"Kansas",2026,"Tay Kinney","Newport, KY","Overtime Elite","Signed"
-"Kansas State",2026,"Jaylen Alexander","Oxford, AL","Oxford","Committed"
-"Kansas State",2026,"Isaiah Abraham","Gainesville, VA","Paul VI Catholic","Committed"
-"Kansas State",2026,"Jaden Schutt","Yorkville, IL","Yorkville Christian","Committed"
-"Kansas State",2026,"Matt Gilhool","Elizabethtown, PA","William Penn Charter","Committed"
-"Kansas State",2026,"Brandon Rechsteiner","Woodstock, GA","Etowah","Committed"
-"Kansas State",2026,"Brock Vice","Germantown, TN","Houston","Committed"
-"Kansas State",2026,"Dezdrick Lindsay","Fort Myers, FL","Louisville Male","Committed"
-"Kansas State",2026,"Timotej Malovec","Belgrade",NA,"Committed"
-"Oklahoma State",2026,"Jalen Montonati","Owasso, OK","Owasso","Signed"
-"Oklahoma State",2026,"Parker Robinson","Olney, MD","Overtime Elite","Signed"
-"Oklahoma State",2026,"Anthony Felesi","Orem, UT","Utah Prep","Committed"
-"Oklahoma State",2026,"Julius Halaifonua","Auckland","NBA Global Academy","Committed"
-"Oklahoma State",2026,"Kashie Natt","Rayville, LA","Rayville","Committed"
-"Oklahoma State",2026,"Luka Bogavac","Podgorica","SC Derby","Committed"
-"Oklahoma State",2026,"Andrija Grbovic","Pljevlja",NA,"Committed"
-"TCU",2026,"Ryan Hunt","Perth","Australia","Committed"
-"TCU",2026,"DJ Thomas","Allen, TX","Allen","Committed"
-"Texas Tech",2026,"Dra Gibbs-Lawhorn","Lafayette, IN","Montverde Academy","Committed"
-"Texas Tech",2026,"Cruz Davis","Lewisville, TX","Southern California Academy","Committed"
-"UCF",2026,"Dior Johnson","Corona, CA","Prolific Prep","Committed"
-"UCF",2026,"Lewis Walker","Winston Salem, NC","Winston Salem Christian School","Committed"
-"UCF",2026,"Churchill Abass","Abuja","NBA Academy Africa","Committed"
-"UCF",2026,"Isaiah Malone","Lagrange, IN","Fayette Ware Comprehensive","Committed"
-"UCF",2026,"Cayden Vasko","Crown Point, IN","Don Bosco Prep Academy","Committed"
-"Utah",2026,"Alec Anigbata","Munich","Ratiopharm Ulm","Signed"
-"Utah",2026,"Simeon Suguturaga","Orem, UT","Orem","Committed"
-"West Virginia",2026,"Miles Sadler","Glendale, AZ","Bella Vista College Preparatory School","Signed"
-"West Virginia",2026,"Aliou Dioum","Dakar","Bella Vista College Preparatory School","Signed"
-"West Virginia",2026,"Keonte Greybear","McKinney, TX","iSchool of Lewisville","Committed"
-"West Virginia",2026,"Amadou Seini",NA,"Bella Vista College Preparatory School","Committed"
-"West Virginia",2026,"Mouhamed Sylla","Dakar","Bella Vista College Preparatory School","Committed"
-"West Virginia",2026,"Finley Bizjack","Trophy Club, TX","Byron Nelson","Committed"
-"West Virginia",2026,"Javan Buchanan","Lafayette, IN","Lafayette Jefferson","Committed"
-"West Virginia",2026,"Martin Somerville","Bowie, MD","Southern California Academy","Committed"
+team,year,player_name,hometown,high_school,status
+Arizona,2016,Rawle Alkins,"Middle Village, NY",Word Of God Christian Academy,Enrolled
+Arizona,2016,Kobi Simmons,"Alpharetta, GA",St. Francis,Enrolled
+Arizona,2016,Lauri Markkanen,"Paterson, NJ",International,Enrolled
+Arizona,2017,Emmanuel Akot,"Mount Pleasant, UT",Wasatch Academy,Enrolled
+Arizona,2017,Ira Lee,"San Pedro, CA",Prolific Prep,Enrolled
+Arizona,2018,Brandon Williams,"Encino, CA",Crespi,Enrolled
+Arizona,2018,Devonaire Doutrive,"Van Nuys, CA",Birmingham,Enrolled
+Arizona,2018,Omar Thielemans,Ghent,Gistel Oostende,Enrolled
+Arizona,2019,Josh Green,"Bradenton, FL",IMG Academy,Enrolled
+Arizona,2019,Zeke Nnaji,"Hopkins, MN",Hopkins,Enrolled
+Arizona,2019,Christian Koloko,"Chatsworth, CA",Sierra Canyon,Enrolled
+Arizona,2020,Tibet Gorener,"Orange, CA",Orange Lutheran,Enrolled
+Arizona,2020,Daniel Batcho,Paris,France,Enrolled
+Arizona,2020,Kerr Kriisa,Tartu,Estonia,Enrolled
+Arizona,2020,Azuolas Tubelis,Vilnius,Lithuania,Enrolled
+Arizona,2020,Tautvilas Tubelis,Vilnius,Lithuania,Enrolled
+Arizona,2020,James Akinjo,"Richmond, CA",Salesian College Preparatory,Enrolled
+Arizona,2021,Shane Nowell,"Sammamish, WA",Eastside Catholic,Enrolled
+Arizona,2021,Adama Bal,Paris,INSEP Paris,Enrolled
+Arizona,2021,Pelle Larsson,Nacka,Sweden,Enrolled
+Arizona,2021,Justin Kier,"Penn Laird, VA",Spotswood,Enrolled
+Arizona,2021,Oumar Ballo,Mali,NBA Academy Latin America,Enrolled
+Arizona,2021,Kim Aiken,"Redlands, CA",Redlands East Valley,Enrolled
+Arizona,2022,Dylan Anderson,"Gilbert, AZ",Perry,Enrolled
+Arizona,2022,Filip Borovicanin,Belgrade,Serbia,Enrolled
+Arizona,2022,Henri Veesaar,Tallinn,Estonia,Enrolled
+Arizona,2022,Courtney Ramey,"Saint Louis, MO",Webster Groves,Committed
+Arizona,2023,Motiejus Krivas,Siauliai,Lithuania,Enrolled
+Arizona,2023,Paulius Murauskas,Kaunas,Lithuania,Enrolled
+Arizona,2023,Conrad Martinez,Granollers,Spain,Enrolled
+Arizona,2023,Caleb Love,"Saint Louis, MO",Christian Brothers College,Enrolled
+Arizona,2023,Keshad Johnson,"San Leandro, CA",San Leandro,Enrolled
+Arizona,2024,Emmanuel Stephen,"Glendale, AZ",Dream City Christian,Enrolled
+Arizona,2024,Trey Townsend,"Oxford, MI",Oxford,Enrolled
+Arizona,2024,Anthony Dell'Orso,Melbourne,Marcellin,Enrolled
+Arizona,2025,Koa Peat,"Gilbert, AZ",Perry,Enrolled
+Arizona,2025,Dwayne Aristode,"Wolfeboro, NH",Brewster Academy,Enrolled
+Arizona,2025,Ivan Kharchenkov,"Munich, BY",Bayern Munich,Enrolled
+Arizona,2025,Sidi Gueye,Madrid,Real Madrid,Enrolled
+Arizona,2026,Cameron Holmes,"Goodyear, AZ",Millennium,Signed
+Arizona,2026,JJ Mandaquit,"Hilo, HI",Utah Prep,Committed
+Arizona State,2016,Romello White,"Suwanee, GA",Wheeler,Enrolled
+Arizona State,2016,Jethro Tshisumpa,"Grundy, VA",Mountain Mission School,Enrolled
+Arizona State,2016,Ramon Vila,Barcelona,Spain,Enrolled
+Arizona State,2016,Vitaliy Shibel,"Lee, ME",Lee Academy,Enrolled
+Arizona State,2017,Kimani Lawrence,"Ashburnham, MA",New Hampton School,Enrolled
+Arizona State,2017,Remy Martin,"Chatsworth, CA",Sierra Canyon,Enrolled
+Arizona State,2017,De'Quon Lake,"Council Bluffs, IA",NA,Enrolled
+Arizona State,2018,Taeshon Cherry,"El Cajon, CA",Foothills Christian,Enrolled
+Arizona State,2018,Luguentz Dort,"Mono, ON",The Conrad Academy,Enrolled
+Arizona State,2018,Uros Plavsic,Cacak,Hamilton Heights Christian Academy,Enrolled
+Arizona State,2019,Alonzo Verge Jr.,"Villa Park, IL",Proviso West,Enrolled
+Arizona State,2020,Joshua Christopher,"Lakewood, CA",Mayfair,Enrolled
+Arizona State,2020,Pavlo Dziuba,Kyiv,Ukraine,Enrolled
+Arizona State,2020,Chris Osten,"Crowley, LA",Crowley,Enrolled
+Arizona State,2020,Holland Woods,"Glendale, AZ",Apollo,Enrolled
+Arizona State,2021,Enoch Boakye,"Mississauga, ON",George Harris Prep,Enrolled
+Arizona State,2021,Justin Rochelin,"Northridge, CA",Heritage Christian,Enrolled
+Arizona State,2021,Demari Williams,"Glendale, AZ",Dream City Christian,Enrolled
+Arizona State,2021,William Felton,"Chatham, VA",Hargrave Military Academy (HS),Enrolled
+Arizona State,2022,Duke Brennan,"Gilbert, AZ",Hillcrest Prep,Enrolled
+Arizona State,2022,Malcolm Flaggs,"Gilbert, AZ",Eduprize,Enrolled
+Arizona State,2022,Warren Washington,"San Marcos, CA",Mission Hills,Enrolled
+Arizona State,2023,Akil Watson,"Middletown, NY",Roselle Catholic,Enrolled
+Arizona State,2023,Braelon Green,"Ypsilanti, MI",Southern California Academy,Enrolled
+Arizona State,2023,Brycen Long,"Gilbert, AZ",Gilbert,Enrolled
+Arizona State,2023,Bryant Selebangue,Quebec City,RISE Prep,Enrolled
+Arizona State,2023,Zane Meeks,"Wolfeboro, NH",Brewster Academy,Enrolled
+Arizona State,2024,Joson Sanon,"Fall River, MA",Vermont Academy,Enrolled
+Arizona State,2024,Trevor Best,"Wilson, NC",Word Of God Christian Academy,Enrolled
+Arizona State,2025,Kash Polk,"Argyle, TX",Argyle,Enrolled
+Arizona State,2025,Massamba Diop,NA,NA,Enrolled
+Arizona State,2025,Andrija Grbovic,Pljevlja,NA,Enrolled
+Arizona State,2025,Noah Meeusen,NA,Belgium,Enrolled
+Arizona State,2025,Dame Salane,"Stafford, TX",Stafford,Enrolled
+Arizona State,2025,Jovan Icitovic,Belgrade,Serbia,Enrolled
+Arizona State,2025,Adante Holiman,"Mcalester, OK",McAlester,Enrolled
+Arizona State,2025,Santiago Trouet,Buenos Aires,American,Enrolled
+Arizona State,2025,Maurice Odum,"Union City, NJ",West Oaks Academy,Enrolled
+Arizona State,2025,Marcus Adams Jr.,"Harbor City, CA",Nathaniel Narbonne HS,Committed
+Arizona State,2026,Marcus Vaughns,Melbourne,NBA Global Academy,Committed
+Arizona State,2026,Dillan Shaw,"Northridge, CA",Heritage Christian,Committed
+Arizona State,2026,Ben Defty,Berlin,St. Thomas More,Committed
+Arizona State,2026,Paulius Murauskas,Kaunas,Lithuania,Committed
+Arizona State,2026,Joel Foxwell,"Melbourne, VIC",Australia,Committed
+Arizona State,2026,Nate Garcia,"La Verne, CA",Damien,Committed
+Baylor,2016,Mark Vital,"Lake Charles, LA",Washington-Marion,Enrolled
+Baylor,2016,Nuni Omot,"Ottumwa, IA",NA,Enrolled
+Baylor,2017,Tristan Clark,"Converse, TX",Judson,Enrolled
+Baylor,2017,Leonard Allen,"Round Rock, TX",Round Rock,Enrolled
+Baylor,2018,Flo Thamba,"Grundy, VA",Mountain Mission School,Enrolled
+Baylor,2018,Darius Allen,"Hollywood, FL",Chaminade-Madonna Prep,Enrolled
+Baylor,2019,Adam Flagler,"Duluth, GA",Duluth,Enrolled
+Baylor,2019,Jonathan Tchamwa Tchatchoua,Douala,NBA Global Academy,Enrolled
+Baylor,2019,Jared Butler,"Reserve, LA",Riverside Academy,Signed
+Baylor,2020,LJ Cryer,"Katy, TX",Morton Ranch,Enrolled
+Baylor,2020,Zach Loveday,"Gallipolis, OH",Huntington Prep,Enrolled
+Baylor,2021,James Akinjo,"Richmond, CA",Salesian College Preparatory,Enrolled
+Baylor,2021,Dale Bonner,"Shaker Heights, OH",Shaker Heights,Enrolled
+Baylor,2022,Josh Ojianwuna,NA,NBA Global Academy,Enrolled
+Baylor,2022,Jalen Bridges,"Fairmont, WV",Fairmont,Enrolled
+Baylor,2022,Dantwan Grimes,"Ocala, FL",NA,Enrolled
+Baylor,2022,Caleb Lohner,"Flower Mound, TX",Wasatch Academy,Committed
+Baylor,2023,Ja'Kobe Walter,"McKinney, TX",Link Academy,Enrolled
+Baylor,2023,Miro Little,"Helsinki, Uusi",Sunrise Christian Academy,Enrolled
+Baylor,2023,RayJ Dennis,"Oswego, IL",Oswego East,Enrolled
+Baylor,2024,VJ Edgecombe,Nassau,Long Island Lutheran,Enrolled
+Baylor,2024,Marino Dubravcic,Split,Croatia,Enrolled
+Baylor,2024,Jeremy Roach,"Fairfax, VA",Paul VI Catholic,Enrolled
+Baylor,2024,Norchad Omier,Bluefields,Hialeah,Enrolled
+Baylor,2025,Ramon Soyoye,"Blairstown, NJ",Blair Academy,Enrolled
+Baylor,2025,Michael Rataj,"Berlin, BE",Germany,Enrolled
+Baylor,2026,Isaac Celiscar,"Winter Haven, FL",Winter Haven,Committed
+Baylor,2026,Brett Decker,"Cecilia, KY",Central Hardin,Committed
+Baylor,2026,Evan Chatman,"Harker Heights, TX",Harker Heights,Committed
+BYU,2016,Yoeli Childs,"South Jordan, UT",Bingham,Enrolled
+BYU,2016,Connor Harding,"Pocatello, ID",Highland,Enrolled
+BYU,2016,Steven Beo,"Richland, WA",Richland,Enrolled
+BYU,2019,Bernardo Da Silva,"Mount Pleasant, UT",Wasatch Academy,Enrolled
+BYU,2020,Caleb Lohner,"Flower Mound, TX",Wasatch Academy,Enrolled
+BYU,2020,Richie Saunders,"Mount Pleasant, UT",Wasatch Academy,Enrolled
+BYU,2020,Gideon George,Minna,NA,Enrolled
+BYU,2020,Tanner Toolson,"Vancouver, WA",Evergreen,Enrolled
+BYU,2021,Fousseyni Traore,Bamako,Wasatch Academy,Enrolled
+BYU,2021,Atiki Ally Atiki,Mwanza,London Academy,Enrolled
+BYU,2022,Jaxson Robinson,"Ada, OK",Ada,Enrolled
+BYU,2022,Rudi Williams,"Hamilton, ON",NA,Enrolled
+BYU,2022,Noah Waterman,"Savannah, NY",Finger Lakes Christian School,Enrolled
+BYU,2023,Dawson Baker,"Ladera Ranch, CA",Tesoro,Enrolled
+BYU,2023,Marcus Adams Jr.,"Harbor City, CA",Nathaniel Narbonne HS,Committed
+BYU,2023,Aly Khalifa,"Sydney, NSW",NBA Global Academy,Committed
+BYU,2024,Egor Demin,Moscow,Russia,Enrolled
+BYU,2024,Mihailo Boskovic,Belgrade,Serbia,Enrolled
+BYU,2024,Brooks Bahr,"Keller, TX",Keller,Signed
+BYU,2024,Khadim Mboup,Saly,NBA Academy Africa,Committed
+BYU,2024,Keba Keita,"Mount Pleasant, UT",Wasatch Academy,Enrolled
+BYU,2024,Mawot Mag,"Windsor, CA",Prolific Prep,Enrolled
+BYU,2025,AJ Dybantsa,"Brockton, MA",Utah Prep,Enrolled
+BYU,2025,Abdullah Ahmed,Cairo,NA,Enrolled
+BYU,2025,Aleksej Kostić,NA,Austria,Enrolled
+BYU,2025,Chamberlain Burgess,"American Fork, UT",Lone Peak,Signed
+BYU,2025,Kennard Davis,"Saint Louis, MO",Vashon,Enrolled
+BYU,2025,Dominique Diomande,Tours,NA,Enrolled
+BYU,2025,Nate Pickens,"Surprise, AZ",Paradise Honors,Enrolled
+BYU,2026,KJ Perry,"Pacific Palisades, CA",Palisades,Enrolled
+BYU,2026,Bruce Branch III,"Gilbert, AZ",Prolific Prep,Signed
+BYU,2026,Collin Chandler,"Farmington, UT",Farmington,Committed
+BYU,2026,Tyler Betsey,"Windsor, CT",St. Thomas More,Committed
+Cincinnati,2016,Jarron Cumberland,"Wilmington, OH",Wilmington,Enrolled
+Cincinnati,2016,Nysier Brooks,"Burlington, NJ",Life Center Academy,Enrolled
+Cincinnati,2017,Trevor Moore,"Whitney, TX",Whitney,Enrolled
+Cincinnati,2018,Logan Johnson,"Mountain View, CA",St. Francis,Enrolled
+Cincinnati,2018,LaQuill Hardnett,"Nottingham, MD",Perry Hall,Enrolled
+Cincinnati,2018,Rashawn Fredericks,"Tullahoma, TN",NA,Enrolled
+Cincinnati,2018,Rapolas Ivanauskas,"Barrington, IL",Barrington,Enrolled
+Cincinnati,2019,Zach Harvey,"Topeka, KS",Hayden,Enrolled
+Cincinnati,2019,Jeremiah Davenport,"Chatham, VA",Hargrave Military Academy,Enrolled
+Cincinnati,2019,Chris Vogt,"Mayfield, KY",Graves County,Enrolled
+Cincinnati,2020,Viktor Lakhin,Moscow,Russia,Enrolled
+Cincinnati,2020,Rapolas Ivanauskas,"Barrington, IL",Barrington,Enrolled
+Cincinnati,2022,Landers Nolley,"Fairburn, GA",Langston Hughes,Committed
+Cincinnati,2022,Robert Phinisee,"Lafayette, IN",Mccutcheon,Committed
+Cincinnati,2022,Kalu Ezikpe,"Lawrenceville, GA",Discovery,Committed
+Cincinnati,2023,Jamille Reynolds,"Saint Petersburg, FL",Lakewood,Enrolled
+Cincinnati,2023,Simas Lukosius,Kaunas,Lithuania,Enrolled
+Cincinnati,2023,Aziz Bandaogo,Dakar,NBA Academy Africa,Enrolled
+Cincinnati,2023,C.J. Fredrick,"Alexandria, KY",Covington Catholic,Committed
+Cincinnati,2023,Day Day Thomas,"Bishopville, SC",Lee Central,Committed
+Cincinnati,2024,Tyler Betsey,"Windsor, CT",St. Thomas More,Enrolled
+Cincinnati,2024,Dillon Mitchell,"Spring Hill, FL",Montverde Academy,Enrolled
+Cincinnati,2024,Arrinten Page,"Marietta, GA",Wheeler,Enrolled
+Cincinnati,2024,Connor Hickman,"Bloomington, IN",Bloomington South,Enrolled
+Cincinnati,2025,Keyshuan Tillery,"New Hampton, NH",New Hampton School,Enrolled
+Cincinnati,2025,Jordi Rodriguez,Barcelona,Club Joventut Badalona,Enrolled
+Cincinnati,2025,Lucas Atauri,Sao Paulo,NA,Enrolled
+Cincinnati,2025,Moustapha Thiam,Dakar,DME Academy,Enrolled
+Cincinnati,2025,Baba Miller,Madrid,Spain,Enrolled
+Cincinnati,2025,Kerr Kriisa,Tartu,Estonia,Enrolled
+Cincinnati,2026,Adlan Elamin,"Arlington, VA",Paul VI Catholic,Committed
+Cincinnati,2026,Trevian Carson,"West Des Moines, IA",Valley,Committed
+Cincinnati,2026,David Iweze,"Lewisville, TX",iSchool of Lewisville,Committed
+Cincinnati,2026,Tyler Tejada,"Teaneck, NJ",Teaneck Sr,Committed
+Cincinnati,2026,Elijah Perryman,"Concord, CA",Clayton Valley,Committed
+Colorado,2016,Bryce Peters,"La Verne, CA",Damien,Enrolled
+Colorado,2016,Dallas Walton,"Arvada, CO",Arvada West,Enrolled
+Colorado,2017,Evan Battey,"Villa Park, CA",Villa Park,Enrolled
+Colorado,2017,McKinley Wright,"Champlin, MN",Champlin Park Senior,Enrolled
+Colorado,2017,Lazar Nikolic,Belgrade,Italy,Enrolled
+Colorado,2018,Elijah Parquet,"Westbrook, TX",Westbrook School,Enrolled
+Colorado,2018,Shane Gatling,"Ottumwa, IA",NA,Enrolled
+Colorado,2018,Jakub Dombek,Ostrava,Get Better Academy,Enrolled
+Colorado,2019,Keeshawn Barthelemy,"Ontario, CA",Thornlea Secondary School,Enrolled
+Colorado,2019,Maddox Daniels,"Fort Myers, FL",NA,Enrolled
+Colorado,2020,Luke O'Brien,"Littleton, CO",Columbine,Enrolled
+Colorado,2020,Tristan da Silva,Munich,Germany,Enrolled
+Colorado,2021,Lawson Lovering,"Cheyenne, WY",Cheyenne Central,Enrolled
+Colorado,2021,K.J. Simpson,"West Hills, CA",Chaminade,Enrolled
+Colorado,2021,Julian Hammond III,"Englewood, CO",Cherry Creek,Enrolled
+Colorado,2021,Mason Faulkner,"Horse Cave, KY",Caverna,Committed
+Colorado,2022,Joe Hurlburt,"Enderlin, ND",Enderlin Area,Enrolled
+Colorado,2022,RJ Smith,"La Verne, CA",Damien,Enrolled
+Colorado,2022,J'Vonne Hadley,"Saint Paul, MN",Cretin-Derham Hall,Enrolled
+Colorado,2022,Ethan Wright,"Newtonville, MA",Newton North,Enrolled
+Colorado,2023,Cody Williams,"Gilbert, AZ",Perry,Enrolled
+Colorado,2023,Eddie Lampkin,"Katy, TX",Morton Ranch,Enrolled
+Colorado,2024,Andrew Crawford,"Littleton, CO",ThunderRidge,Enrolled
+Colorado,2024,Sebastian Rancik,"San Juan Capistrano, CA",JSerra Catholic,Enrolled
+Colorado,2024,Andrej Jakimovski,Kriva Palanka,Macedonia,Enrolled
+Colorado,2024,Trevor Baskin,"Arvada, CO",Pomona,Enrolled
+Colorado,2024,Elijah Malone,"Angola, IN",Prairie Heights Sr Sch,Enrolled
+Colorado,2025,Jalin Holland,"Los Lunas, NM",Dream City Christian,Enrolled
+Colorado,2025,Tacko Fawaz,"Elizabeth, NJ",Dream City Christian,Enrolled
+Colorado,2025,Isaiah Johnson,"Valley Village, CA",Campbell Hall School,Enrolled
+Colorado,2025,Ian Inman,"The Woodlands, TX",College Park,Enrolled
+Colorado,2025,Leonardo Van Elswyk,Oleggio,NA,Enrolled
+Colorado,2025,Alon Michaeli,Herzliya,Bnei Herzliya,Committed
+Colorado,2025,Jon Mani,"Pacific Palisades, CA",Palisades,Enrolled
+Colorado,2026,Goc Malual,NA,NA,Committed
+Colorado,2026,Alex Dickeson,"Melbourne, VIC",UC Senior Secondary College Lake Ginninderra,Committed
+Colorado,2026,Noah Feddersen,"Menomonie, WI",Menomonie,Committed
+Houston,2016,Valentine Sangoyomi,"Tonkawa, OK",Erie First Christian Academy,Enrolled
+Houston,2017,Fabian White,"Humble, TX",Atascocita,Enrolled
+Houston,2017,Mike Adewunmi,"Mansfield, TX",Lake Ridge,Enrolled
+Houston,2017,Breaon Brady,"Mission Viejo, CA",NA,Enrolled
+Houston,2018,Nate Hinton,"Gastonia, NC",Gaston Day School Inc,Enrolled
+Houston,2018,Darius Bowser,"Gaffney, SC",Gaffney,Enrolled
+Houston,2019,Caleb Mills,"Swannanoa, NC",Asheville Christian Academy,Enrolled
+Houston,2019,Marcus Sasser,"Red Oak, TX",Red Oak,Enrolled
+Houston,2020,Tramon Mark,"Dickinson, TX",Dickinson,Enrolled
+Houston,2020,Jamal Shead,"Manor, TX",Manor,Enrolled
+Houston,2020,Ryan Elvin,"Round Rock, TX",Cedar Ridge,Enrolled
+Houston,2021,Ja'Vier Francis,"Montverde, FL",Montverde Academy,Enrolled
+Houston,2021,Josh Carlton,"Winterville, NC",DeMatha Catholic,Enrolled
+Houston,2022,Jarace Walker,"Bradenton, FL",IMG Academy,Enrolled
+Houston,2022,Mylik Wilson,"Rayville, LA",Rayville,Committed
+Houston,2022,Sadarius Bowser,"Gaffney, SC",Gaffney,Committed
+Houston,2023,LJ Cryer,"Katy, TX",Morton Ranch,Enrolled
+Houston,2023,Damian Dunn,"Kinston, NC",Meadowcreek,Enrolled
+Houston,2025,Isiah Harwell,"Pocatello, ID",Wasatch Academy,Enrolled
+Houston,2025,Kalifa Sakho,"Levelland, TX",NA,Enrolled
+Houston,2026,Ikenna Alozie,Lagos,Dream City Christian,Signed
+Houston,2026,Delrecco Gillespie,"Sharpsburg, GA",East Coweta,Committed
+Houston,2026,Braden East,"Stafford, TX",Stafford,Committed
+Iowa State,2016,Cameron Lard,"Natchitoches, LA",Natchitoches Central,Enrolled
+Iowa State,2016,Jakolby Long,"Mustang, OK",Mustang,Enrolled
+Iowa State,2016,Donovan Jackson,"Council Bluffs, IA",NA,Enrolled
+Iowa State,2017,Lindell Wigginton,"Mouth Of Wilson, VA",Oak Hill Academy,Enrolled
+Iowa State,2018,Zion Griffin,"Darien, IL",Hinsdale South,Enrolled
+Iowa State,2018,Prentiss Nixon,"Bolingbrook, IL",Bolingbrook,Enrolled
+Iowa State,2019,Luke Anderson,"Lakeland, FL",Lakeland,Enrolled
+Iowa State,2019,Marcedus Leech,"Poplar Bluff, MO",Poplar Bluff,Enrolled
+Iowa State,2019,Caleb Grill,"Maize, KS",Maize,Enrolled
+Iowa State,2019,Tre Jackson,"Blythewood, SC",Blythewood,Enrolled
+Iowa State,2019,Javan Johnson,"Decatur, AL",Austin,Enrolled
+Iowa State,2019,Rasir Bolton,"Woodstock, VA",Massanutten Military Academy,Committed
+Iowa State,2020,Xavier Foster,"Oskaloosa, IA",Oskaloosa,Enrolled
+Iowa State,2020,Dudley Blackwell,"Pembroke Pines, FL",Somerset Academy Charter,Enrolled
+Iowa State,2020,Jaden Walker,"Lawrenceville, GA",Discovery,Enrolled
+Iowa State,2020,Darlinstone Dubar,"Scotland, PA",Scotland Campus,Enrolled
+Iowa State,2021,Tyrese Hunter,"Racine, WI",St. Catherine's,Enrolled
+Iowa State,2021,Robert Jones,"Prior Lake, MN",Prior Lake,Enrolled
+Iowa State,2021,Izaiah Brockington,"Woodstock, CT",Woodstock Academy,Enrolled
+Iowa State,2021,Aljaz Kunc,"Sarasota, FL",Impact Academy,Enrolled
+Iowa State,2021,Tre King,"Chatham, VA",Hargrave Military Academy,Enrolled
+Iowa State,2021,Caleb Grill,"Maize, KS",Maize,Enrolled
+Iowa State,2021,Tristan Enaruna,"Mount Pleasant, UT",Wasatch Academy,Committed
+Iowa State,2022,Eli King,"Caledonia, MN",Caledonia,Enrolled
+Iowa State,2022,Tamin Lipsey,"Ames, IA",Ames,Enrolled
+Iowa State,2022,Osun Osunniyi,"Putnam, CT",Putnam Science Academy,Committed
+Iowa State,2022,Jaren Holmes,"Romulus, MI",Romulus Senior,Committed
+Iowa State,2023,Omaha Biliew,"Waukee, IA",Waukee,Enrolled
+Iowa State,2023,Milan Momcilovic,"Pewaukee, WI",Pewaukee,Enrolled
+Iowa State,2023,Jelani Hamilton,"Austell, GA",Wheeler,Enrolled
+Iowa State,2023,Jackson Paveletzke,"Kimberly, WI",Kimberly,Enrolled
+Iowa State,2024,Nojus Indrusaitis,"Lemont, IL",Brewster Academy,Enrolled
+Iowa State,2024,Dishon Jackson,"Vallejo, CA",St. Patrick-St. Vincent,Enrolled
+Iowa State,2024,Brandton Chatfield,"Clarkston, WA",Clarkston,Enrolled
+Iowa State,2025,Killyan Toure,"Wolfeboro, NH",Brewster Academy,Enrolled
+Iowa State,2025,Dominykas Pleta,NA,Porsche BBA Ludwigsburg,Enrolled
+Iowa State,2025,Blake Buchanan,"Coeur D Alene, ID",Lake City,Enrolled
+Iowa State,2025,Eric Mulder,"Oskaloosa, IA",Pella Christian,Enrolled
+Iowa State,2026,Jackson Kiss,"Hurricane, UT",Utah Prep,Signed
+Iowa State,2026,Dorian Rinaldo-Komlan,Fort-de-France,SPIRE Academy,Signed
+Iowa State,2026,Tre Singleton,"Jeffersonville, IN",Jeffersonville,Committed
+Iowa State,2026,Taj Manning,"Mission, KS",La Lumiere School,Committed
+Iowa State,2026,Ryan Prather Jr.,"Clarksburg, MD",Clarksburg,Committed
+Kansas,2016,Patrick Muldoon,"Basehor, KS",Basehor-Linwood,Enrolled
+Kansas,2017,Billy Preston,"Mouth Of Wilson, VA",Oak Hill Academy,Enrolled
+Kansas,2017,Silvio De Sousa,"Montverde, FL",IMG Academy,Enrolled
+Kansas,2018,Quentin Grimes,"The Woodlands, TX",College Park,Enrolled
+Kansas,2018,Garrett Luinstra,"Lawrence, KS",Lawrence Free State,Enrolled
+Kansas,2019,Jalen Wilson,"Denton, TX",Guyer,Enrolled
+Kansas,2019,Tristan Enaruna,"Mount Pleasant, UT",Wasatch Academy,Enrolled
+Kansas,2019,Dajuan Harris,"Columbia, MO",Rock Bridge,Enrolled
+Kansas,2019,Isaiah Moss,"New Lenox, IL",Lincoln Way West,Enrolled
+Kansas,2020,Latrell Jossell,"Keller, TX",Keller Central,Enrolled
+Kansas,2020,Tyon Grant-Foster,"Kansas City, KS",F L Schlagle,Enrolled
+Kansas,2021,Kyle Cuffe Jr.,"Blairstown, NJ",Blair Academy,Enrolled
+Kansas,2021,Remy Martin,"Chatsworth, CA",Sierra Canyon,Enrolled
+Kansas,2021,Joseph Yesufu,"Bolingbrook, IL",Bolingbrook,Enrolled
+Kansas,2021,Cameron Martin,"Yukon, OK",Yukon,Enrolled
+Kansas,2022,MJ Rice,"Mouth Of Wilson, VA",Prolific Prep,Signed
+Kansas,2023,Elmarko Jackson,"Marlton, NJ",South Kent School,Enrolled
+Kansas,2023,Marcus Adams Jr.,"Harbor City, CA",Nathaniel Narbonne HS,Enrolled
+Kansas,2023,Jamari McDowell,"Manvel, TX",Manvel,Enrolled
+Kansas,2023,Johnny Furphy,Melbourne,NBA Global Academy,Committed
+Kansas,2023,Hunter Dickinson,"Hyattsville, MD",DeMatha Catholic,Enrolled
+Kansas,2023,Nick Timberlake,"Braintree, MA",Kimball Union Academy,Enrolled
+Kansas,2024,Rakease Passmore,"Palatka, FL",Combine Academy,Enrolled
+Kansas,2024,Noah Shelby,"McKinney, TX",Greenhill School,Enrolled
+Kansas,2024,Zeke Mayo,"Lawrence, KS",Lawrence,Enrolled
+Kansas,2024,David Coit,"Columbus, NJ",Scotland Campus,Enrolled
+Kansas,2026,Tay Kinney,"Newport, KY",Overtime Elite,Signed
+Kansas State,2016,Xavier Sneed,"Florissant, MO",Hazelwood Central,Enrolled
+Kansas State,2016,Cartier Diarra,"Florence, SC",West Florence,Enrolled
+Kansas State,2017,Mike McGuirl,"Bolton, CT",East Catholic,Enrolled
+Kansas State,2017,Levi Stockard,"Saint Louis, MO",Vashon,Enrolled
+Kansas State,2017,Amaad Wainright,"Athens, TX",NA,Enrolled
+Kansas State,2018,Shaun Williams,"Florissant, MO",Hazelwood Central,Enrolled
+Kansas State,2018,Austin Trice,"Mount Carmel, IL",NA,Enrolled
+Kansas State,2019,Montavious Murphy,"Spring, TX",Concordia Lutheran,Enrolled
+Kansas State,2019,David Sloan,"Campbellsville, KY",Taylor County,Enrolled
+Kansas State,2019,Antonio Gordon,"Lawton, OK",Eisenhower,Enrolled
+Kansas State,2019,Goodnews Kpegeol,"Pensacola, FL",Taylor Made Basketball,Enrolled
+Kansas State,2020,Davion Bradford,"Saint Louis, MO",Mehlville,Enrolled
+Kansas State,2020,Luke Kasubke,"Saint Louis, MO",Chaminade,Enrolled
+Kansas State,2020,Rudi Williams,"Hamilton, ON",NA,Enrolled
+Kansas State,2020,Carlton Linguard,"Temple, TX",NA,Enrolled
+Kansas State,2020,Kaosi Ezeagu,"Brampton, ON",GTA Prep,Enrolled
+Kansas State,2021,Logan Landers,"Cedarburg, WI",Cedarburg,Enrolled
+Kansas State,2021,Maximus Edwards,"Stratford, CT",Our Saviour Lutheran School,Enrolled
+Kansas State,2021,Mark Smith,"Edwardsville, IL",Edwardsville,Enrolled
+Kansas State,2021,Markquis Nowell,"Elizabeth, NJ",St. Patrick,Enrolled
+Kansas State,2022,Nae'Qwan Tomlin,"Harlem, NY",NA,Enrolled
+Kansas State,2022,Taj Manning,"Mission, KS",La Lumiere School,Signed
+Kansas State,2022,Keyontae Johnson,"Oak Hill, WV",Oak Hill,Committed
+Kansas State,2022,Desi Sills,"Jonesboro, AR",Jonesboro,Committed
+Kansas State,2022,Cam Carter,"Mouth Of Wilson, VA",Oak Hill Academy,Committed
+Kansas State,2022,Abayomi Iyiola,"Decatur, GA",Greenforest McCalep Christian Academy,Committed
+Kansas State,2023,Macaleab Rich,"East St. Louis, IL",East St. Louis,Enrolled
+Kansas State,2023,RJ Jones,"Denton, TX",Wasatch Academy,Committed
+Kansas State,2023,Tylor Perry,"Fort Coffee, OK",Spiro,Enrolled
+Kansas State,2023,Arthur Kaluma,"Glendale, AZ",Dream City Christian,Committed
+Kansas State,2024,David Castillo,"Bartlesville, OK",Sunrise Christian Academy,Enrolled
+Kansas State,2024,Mobi Ikegwuruka,Galway,Republic of Ireland,Enrolled
+Kansas State,2024,Ugonna Onyenso,"Putnam, CT",Putnam Science Academy,Enrolled
+Kansas State,2024,Baye Fall,Dakar,Accelerated Schools Aka Family Services Found,Enrolled
+Kansas State,2024,Dug McDaniel,"Fairfax, VA",Paul VI Catholic,Enrolled
+Kansas State,2024,Coleman Hawkins,"Antelope, CA",Prolific Prep,Enrolled
+Kansas State,2024,Max Jones,"Clearwater, FL",Clearwater,Enrolled
+Kansas State,2024,CJ Jones,"East St. Louis, IL",East St. Louis,Enrolled
+Kansas State,2024,Achor Achor,Melbourne,Greenforest McCalep Christian Academy,Enrolled
+Kansas State,2025,Andrej Kostic,Belgrade,KK Dynamic,Enrolled
+Kansas State,2025,Elias Rapieque,Berlin,NA,Enrolled
+Kansas State,2025,Dorin Buca,Livorno,Akern Libertas Livorno,Enrolled
+Kansas State,2025,PJ Haggerty,"Crosby, TX",Crosby,Enrolled
+Kansas State,2025,Nate Johnson,"Middletown, OH",Lakota East,Enrolled
+Kansas State,2025,Tyreek Smith,"Cedar Hill, TX",Trinity Leadership,Committed
+Kansas State,2026,Jaylen Alexander,"Oxford, AL",Oxford,Committed
+Kansas State,2026,Isaiah Abraham,"Gainesville, VA",Paul VI Catholic,Committed
+Kansas State,2026,Jaden Schutt,"Yorkville, IL",Yorkville Christian,Committed
+Kansas State,2026,Matt Gilhool,"Elizabethtown, PA",William Penn Charter,Committed
+Kansas State,2026,Brandon Rechsteiner,"Woodstock, GA",Etowah,Committed
+Kansas State,2026,Brock Vice,"Germantown, TN",Houston,Committed
+Kansas State,2026,Dezdrick Lindsay,"Fort Myers, FL",Louisville Male,Committed
+Kansas State,2026,Timotej Malovec,Belgrade,NA,Committed
+Oklahoma State,2016,Cameron McGriff,"Grand Prairie, TX",South Grand Prairie,Enrolled
+Oklahoma State,2017,Michael Weathers,"Mission, KS",Shawnee Mission North,Enrolled
+Oklahoma State,2018,Isaac Likekele,"Mansfield, TX",Mansfield Timberview,Enrolled
+Oklahoma State,2018,Maurice Calloo,"Huntington, WV",Oak Hill Academy,Enrolled
+Oklahoma State,2018,Duncan Demuth,"Seminole, FL",Seminole,Enrolled
+Oklahoma State,2018,Curtis Jones,"Highland Springs, VA",Huntington Prep,Enrolled
+Oklahoma State,2019,Marcus Watson,"Buford, GA",Buford,Enrolled
+Oklahoma State,2019,Avery Anderson III,"Justin, TX",Northwest,Enrolled
+Oklahoma State,2020,Matthew-Alexander Moncrieffe,"Mono, ON",Orangeville Prep,Enrolled
+Oklahoma State,2020,Bryce Williams,"Bushnell, FL",South Sumter,Enrolled
+Oklahoma State,2020,Ferron Flavors,"Federal Way, WA",Federal Way,Enrolled
+Oklahoma State,2021,Tyreek Smith,"Cedar Hill, TX",Trinity Leadership,Enrolled
+Oklahoma State,2022,Quion Williams,"Mansfield, TX",Mansfield Legacy,Enrolled
+Oklahoma State,2022,Caleb Asberry,"Pflugerville, TX",Pflugerville,Committed
+Oklahoma State,2023,Eric Dailey,"Bradenton, FL",IMG Academy,Enrolled
+Oklahoma State,2023,Isaiah Miranda,"Pawtucket, RI",Southern California Academy,Committed
+Oklahoma State,2024,Brandon Newman,"Valparaiso, IN",Valparaiso,Enrolled
+Oklahoma State,2024,Davonte Davis,"Jacksonville, AR",Jacksonville,Enrolled
+Oklahoma State,2024,Robert Jennings,"DeSoto, TX",Texas Alliance of Christian Athletes,Enrolled
+Oklahoma State,2024,Tyler Caron,"Longview, TX",Spring Hill,Enrolled
+Oklahoma State,2024,Marchelus Avery,"Highland Springs, VA",Virginia Academy,Enrolled
+Oklahoma State,2024,Pat Suemnick,"Denmark, WI",Denmark,Enrolled
+Oklahoma State,2025,Ben Ahmed,"Putnam, CT",Putnam Science Academy,Enrolled
+Oklahoma State,2025,Ryan Crotty,"Charlottesville, VA",Miller School,Enrolled
+Oklahoma State,2025,Mekhi Ragland,"Lilburn, GA",Sunrise Christian Academy,Enrolled
+Oklahoma State,2025,Daniel Guetta,Tel Aviv,NA,Enrolled
+Oklahoma State,2025,Lefteris Mantzoukas,Athens,NA,Enrolled
+Oklahoma State,2025,Vyctorius Miller,"North Hollywood, CA",Compass Prep,Enrolled
+Oklahoma State,2025,Isaiah Coleman,"Fredericksburg, VA",Word Of God Christian Academy,Enrolled
+Oklahoma State,2025,Kanye Clary,"Woodstock, VA",Massanutten Military Academy,Enrolled
+Oklahoma State,2025,Parsa Fallah,"Cedar City, UT",Iran,Enrolled
+Oklahoma State,2025,Christian Coleman,"Winnsboro, LA",Franklin Parish,Enrolled
+Oklahoma State,2026,Jalen Montonati,"Owasso, OK",Owasso,Signed
+Oklahoma State,2026,Parker Robinson,"Olney, MD",Overtime Elite,Signed
+Oklahoma State,2026,Anthony Felesi,"Orem, UT",Utah Prep,Committed
+Oklahoma State,2026,Julius Halaifonua,Auckland,NBA Global Academy,Committed
+Oklahoma State,2026,Kashie Natt,"Rayville, LA",Rayville,Committed
+Oklahoma State,2026,Luka Bogavac,Podgorica,SC Derby,Committed
+Oklahoma State,2026,Andrija Grbovic,Pljevlja,NA,Committed
+TCU,2016,Jaylen Fisher,"Arlington, TN",Bolton,Enrolled
+TCU,2016,Desmond Bane,"Richmond, IN",Seton Catholic,Enrolled
+TCU,2016,Kouat Noi,"Montverde, FL",Montverde Academy,Enrolled
+TCU,2017,R.J. Nembhard,"Keller, TX",Keller,Enrolled
+TCU,2017,Lat Mayen,Canberra,Australian Institute of Sport,Enrolled
+TCU,2017,Shawn Olden,"Hobbs, NM",NA,Enrolled
+TCU,2017,Andre Pierce,"Baytown, TX",NA,Signed
+TCU,2018,Kaden Archie,"Midlothian, TX",Midlothian,Enrolled
+TCU,2018,Yuat Alok,"Sarasota, FL",Impact Academy,Enrolled
+TCU,2019,Diante Smith,"Fort Walton Beach, FL",Choctawhatchee,Enrolled
+TCU,2019,Mickey Pearson,"Elizabethtown, KY",Hargrave Military Academy (HS),Enrolled
+TCU,2019,Francisco Farabello,Canberra,NBA Global Academy,Enrolled
+TCU,2019,Edric Dennis,"DeSoto, TX",DeSoto,Enrolled
+TCU,2020,Mike Miles,"Lancaster, TX",Lancaster,Enrolled
+TCU,2020,Terren Frank,"Chatsworth, CA",Sierra Canyon,Enrolled
+TCU,2020,Eddie Lampkin,"Katy, TX",Morton Ranch,Enrolled
+TCU,2021,Souleymane Doumbia,"Corsicana, TX",Mali,Enrolled
+TCU,2021,Micah Peavy,"Duncanville, TX",Duncanville,Enrolled
+TCU,2021,JaKobe Coles,"Denton, TX",Guyer,Enrolled
+TCU,2021,Maxwell Evans,"Bellaire, TX",Bellaire,Enrolled
+TCU,2022,PJ Haggerty,"Crosby, TX",Crosby,Enrolled
+TCU,2023,Isaiah Manning,"Mansfield, TX",Mansfield Legacy,Committed
+TCU,2023,Avery Anderson III,"Justin, TX",Northwest,Enrolled
+TCU,2023,Jameer Nelson Jr.,"Haverford, PA",Haverford School,Enrolled
+TCU,2024,David Punch,"Harker Heights, TX",Harker Heights,Enrolled
+TCU,2024,Malick Diallo,"Draper, UT",Wasatch Academy,Enrolled
+TCU,2024,RJ Jones,"Denton, TX",Wasatch Academy,Enrolled
+TCU,2024,Vasean Allette,"Ontario, CA",Thornlea Secondary School,Enrolled
+TCU,2024,Brendan Wenzel,"Helotes, TX",O'Connor,Enrolled
+TCU,2024,Trazarien White,"Mansfield, TX",Mansfield Timberview,Enrolled
+TCU,2025,Jayden Pierre,"Elizabeth, NJ",Long Island Lutheran,Enrolled
+TCU,2025,Brock Harding,"Moline, IL",Moline,Enrolled
+TCU,2025,Tanner Toolson,"Vancouver, WA",Evergreen,Enrolled
+TCU,2025,Vianney Salatchoum,Yaounde,Cameroon,Enrolled
+TCU,2025,Liutauras Lelevicius,Vilnius,Lithuania,Enrolled
+TCU,2026,Ryan Hunt,Perth,Australia,Committed
+TCU,2026,DJ Thomas,"Allen, TX",Allen,Committed
+Texas Tech,2016,Niem Stevenson,"Liberal, KS",Faith Baptist Christian School,Enrolled
+Texas Tech,2017,Hyron Edwards,"East Chicago, IN",East Chicago Central,Enrolled
+Texas Tech,2017,Malik Ondigo,"Putnam, CT",Putnam Science Academy,Enrolled
+Texas Tech,2017,Josh Webster,"Levelland, TX",NA,Enrolled
+Texas Tech,2017,Davide Moretti,Bologna,Italy,Enrolled
+Texas Tech,2018,Josh Mballa,Bordeaux,Putnam Science Academy,Enrolled
+Texas Tech,2019,Jahmi'us Ramsey,"Mansfield, TX",Duncanville,Enrolled
+Texas Tech,2019,Terrence Shannon,"Bradenton, FL",IMG Academy,Enrolled
+Texas Tech,2019,Tyreek Smith,"Cedar Hill, TX",Trinity Leadership,Enrolled
+Texas Tech,2019,Russel Tchewa,"Putnam, CT",Putnam Science Academy,Enrolled
+Texas Tech,2019,Clarence Nadolny,"Scotland, PA",Scotland Campus,Enrolled
+Texas Tech,2019,Andrei Savrasov,Saint Petersburg,Russia,Enrolled
+Texas Tech,2020,Micah Peavy,"Duncanville, TX",Duncanville,Enrolled
+Texas Tech,2020,Vladislav Goldin,"Putnam, CT",Putnam Science Academy,Enrolled
+Texas Tech,2020,Marcus Santos-Silva,"Saxtons River, VT",Vermont Academy,Enrolled
+Texas Tech,2020,Mac McClung,"Gate City, VA",Gate City,Enrolled
+Texas Tech,2021,Mylik Wilson,"Rayville, LA",Rayville,Enrolled
+Texas Tech,2021,KJ Allen,"Monterey Park, CA",Westchester Senior,Enrolled
+Texas Tech,2021,Daniel Batcho,Paris,France,Enrolled
+Texas Tech,2021,Sardaar Calhoun,"West Plains, MO",NA,Committed
+Texas Tech,2022,Pop Isaacs,"Mount Pleasant, UT",Coronado,Enrolled
+Texas Tech,2022,Robert Jennings,"DeSoto, TX",Texas Alliance of Christian Athletes,Enrolled
+Texas Tech,2022,De'Vion Harmon,"Denton, TX",Guyer,Committed
+Texas Tech,2022,Kerwin Walton,"Hopkins, MN",Hopkins,Committed
+Texas Tech,2022,Malik Ondigo,"Putnam, CT",Putnam Science Academy,Committed
+Texas Tech,2023,Eemeli Yalaho,"Hudson, OH",Western Reserve Academy,Enrolled
+Texas Tech,2023,KyeRon Lindsay,"Denton, TX",Guyer,Enrolled
+Texas Tech,2023,Warren Washington,"San Marcos, CA",Mission Hills,Enrolled
+Texas Tech,2024,Federiko Federiko,"Tonkawa, OK",First Love Christian Academy,Enrolled
+Texas Tech,2025,Nolan Groves,"Long Lake, MN",Orono Senior,Enrolled
+Texas Tech,2025,Josiah Moseley,"Round Rock, TX",Stony Point,Enrolled
+Texas Tech,2025,Luke Bamgboye,London,Compass Prep,Enrolled
+Texas Tech,2025,Donovan Atwell,"Huntersville, NC",Providence Day School,Enrolled
+Texas Tech,2026,Dra Gibbs-Lawhorn,"Lafayette, IN",Montverde Academy,Committed
+Texas Tech,2026,Cruz Davis,"Lewisville, TX",Southern California Academy,Committed
+UCF,2017,Kani Coles,"Pensacola, FL",NA,Committed
+UCF,2018,Andreas Fuller,"Saint Petersburg, FL",Admiral Farragut Academy,Enrolled
+UCF,2019,Tony Johnson,"Eufaula, AL",Eufaula,Enrolled
+UCF,2019,Moses Bol,"Colby, KS",NA,Enrolled
+UCF,2019,Avery Diggs,"Summit, MS",NA,Enrolled
+UCF,2019,Dazon Ingram,"Theodore, AL",Theodore,Enrolled
+UCF,2019,Yuat Alok,"Sarasota, FL",Impact Academy,Enrolled
+UCF,2020,Jamille Reynolds,"Saint Petersburg, FL",Lakewood,Enrolled
+UCF,2020,Darius Perry,"Marietta, GA",Wheeler,Enrolled
+UCF,2021,Darius Johnson,"Alexandria, VA",Episcopal,Enrolled
+UCF,2021,Cheikh Mbacke Diong,"Melbourne, FL",Florida Air Academy,Enrolled
+UCF,2022,Ithiel Horton,"Roselle, NJ",Roselle Catholic,Enrolled
+UCF,2022,Brandon Suggs,"Powder Springs, GA",Massanutten Military Academy,Committed
+UCF,2022,CJ Kelly,"Bellerose, NY",Queens Of Teaching,Committed
+UCF,2023,Shemarri Allen,"Arden, NC",T C Roberson,Enrolled
+UCF,2023,Omar Payne,"Montverde, FL",Montverde Academy,Committed
+UCF,2023,Demarr Langford,"Wolfeboro, NH",Brewster Academy,Committed
+UCF,2024,Dior Johnson,"Corona, CA",Prolific Prep,Enrolled
+UCF,2024,Moustapha Thiam,Dakar,DME Academy,Enrolled
+UCF,2024,Benny Williams,"Bradenton, FL",IMG Academy,Enrolled
+UCF,2024,Deebo Coleman,"Callahan, FL",West Nassau,Enrolled
+UCF,2024,Jordan Ivy-Curry,"La Marque, TX",La Marque,Enrolled
+UCF,2024,Rokas Jocius,Kaunas,Lithuania,Enrolled
+UCF,2025,Tanner Jones,"Bradenton, FL",IMG Academy,Enrolled
+UCF,2025,Chris Johnson,"Missouri City, TX",Montverde Academy,Enrolled
+UCF,2025,John Bol,Boma,Overtime Elite,Enrolled
+UCF,2025,Kris Parker,"Quincy, FL",Crossroad Academy,Enrolled
+UCF,2025,Jordan Burks,"Decatur, AL",Hillcrest Prep,Enrolled
+UCF,2025,Themus Fulks,"Winston Salem, NC",NA,Enrolled
+UCF,2025,Carmelo Pacheco,"Harrisonburg, VA",Spotswood,Enrolled
+UCF,2026,Dior Johnson,"Corona, CA",Prolific Prep,Committed
+UCF,2026,Lewis Walker,"Winston Salem, NC",Winston Salem Christian School,Committed
+UCF,2026,Churchill Abass,Abuja,NBA Academy Africa,Committed
+UCF,2026,Isaiah Malone,"Lagrange, IN",Fayette Ware Comprehensive,Committed
+UCF,2026,Cayden Vasko,"Crown Point, IN",Don Bosco Prep Academy,Committed
+Utah,2016,Jayce Johnson,"Santa Monica, CA",Santa Monica,Enrolled
+Utah,2016,Devon Daniels,"Kalamazoo, MI",Prolific Prep,Enrolled
+Utah,2016,Jojo Zamora,"Marysville, CA",NA,Enrolled
+Utah,2016,Sedrick Barefield,"Corona, CA",Centennial,Enrolled
+Utah,2017,Branden Carlson,"South Jordan, UT",Bingham,Enrolled
+Utah,2017,Christian Popoola,"American Fork, UT",Bishop Gorman,Enrolled
+Utah,2017,Jaxon Brenchley,"Hyrum, UT",Mountain Crest,Enrolled
+Utah,2017,Vante Hendrix,"Van Nuys, CA",Birmingham,Enrolled
+Utah,2018,Riley Battin,"Oak Park, CA",Oak Park,Enrolled
+Utah,2018,Lahat Thioune,"Melbourne, FL",Florida Air Academy,Enrolled
+Utah,2018,Charles Jones,"Rogerson, ID",NA,Enrolled
+Utah,2019,Matthew Van Komen,"Pleasant Grove, UT",Pleasant Grove,Enrolled
+Utah,2019,Rylan Jones,"Logan, UT",Olympus,Enrolled
+Utah,2019,Brendan Wenzel,"Helotes, TX",O'Connor,Enrolled
+Utah,2019,Alfonso Plummer,"Yuma, AZ",NA,Enrolled
+Utah,2020,Ian Martinez,"San Juan Capistrano, CA",JSerra Catholic,Enrolled
+Utah,2020,Pelle Larsson,Nacka,Sweden,Enrolled
+Utah,2020,Jordan Kellier,"Williston, ND",NA,Enrolled
+Utah,2020,Norbert Thelissen,Hertogenbosch,Netherlands,Signed
+Utah,2020,Mason Falslev,"Smithfield, UT",Sky View,Committed
+Utah,2021,Lazar Stefanovic,Belgrade,Serbia,Enrolled
+Utah,2021,Dusan Mahorcic,"Niles, IL",Notre Dame College Prep,Enrolled
+Utah,2022,Keba Keita,"Mount Pleasant, UT",Wasatch Academy,Enrolled
+Utah,2022,Wilguens Exacte Jr.,"Mexico, ME",NBA Global Academy,Enrolled
+Utah,2022,Luka Tarlac,Belgrade,The International School of Belgrade,Enrolled
+Utah,2022,Ben Carlson,"Saint Paul, MN",East Ridge,Enrolled
+Utah,2023,Karahan Efeoglu,Istanbul,Turkey,Enrolled
+Utah,2023,Lawson Lovering,"Cheyenne, WY",Cheyenne Central,Enrolled
+Utah,2023,Cole Bajema,"Lynden, WA",Lynden Christian School,Enrolled
+Utah,2023,Deivon Smith,"Loganville, GA",Grayson,Enrolled
+Utah,2024,Jaxon Johnson,"Sandy, UT",Alta,Signed
+Utah,2024,David Katoa,"Layton, UT",Real Salt Lake Academy,Signed
+Utah,2024,Miro Little,"Helsinki, Uusi",Sunrise Christian Academy,Enrolled
+Utah,2024,Mike Sharavjamts,"Willoughby, OH",ISA Academy,Enrolled
+Utah,2024,Zach Keller,"Littleton, CO",ThunderRidge,Enrolled
+Utah,2024,Caleb Lohner,"Flower Mound, TX",Wasatch Academy,Enrolled
+Utah,2024,Ezra Ausar,"Snellville, GA",Liberty Heights Athletic Institute,Enrolled
+Utah,2025,Kendyl Sanders,"Bradenton, FL",IMG Academy,Enrolled
+Utah,2025,James Okonkwo,"Mount Hope, WV",Beckley Prep Academy,Enrolled
+Utah,2025,Babacar Faye,Saly,NBA Academy Africa,Enrolled
+Utah,2026,Alec Anigbata,Munich,Ratiopharm Ulm,Signed
+Utah,2026,Simeon Suguturaga,"Orem, UT",Orem,Committed
+West Virginia,2016,Sagaba Konate,"Hermitage, PA",Kennedy Catholic,Enrolled
+West Virginia,2016,Maciej Bender,"Grundy, VA",Mountain Mission School,Enrolled
+West Virginia,2016,Chase Harler,"Wheeling, WV",Wheeling Central Catholic,Enrolled
+West Virginia,2017,Teddy Allen,"Boys Town, NE",Boys Town,Enrolled
+West Virginia,2017,Brandon Knapper,"Chatham, VA",Hargrave Military Academy (HS),Enrolled
+West Virginia,2018,Derek Culver,"Wolfeboro, NH",Brewster Academy,Enrolled
+West Virginia,2018,Jordan McCabe,"Kaukauna, WI",Kaukauna,Enrolled
+West Virginia,2018,Jermaine Haley,"Burnaby, BC",Sunrise Christian Academy,Enrolled
+West Virginia,2018,Andrew Gordon,"South Kent, CT",South Kent School,Enrolled
+West Virginia,2019,Oscar Tshiebwe,"Hermitage, PA",Kennedy Catholic,Enrolled
+West Virginia,2019,Jalen Bridges,"Fairmont, WV",Fairmont,Enrolled
+West Virginia,2019,Taz Sherman,"Missouri City, TX",Fort Bend Marshall,Enrolled
+West Virginia,2019,Sean McNeil,"Union, KY",Ryle,Enrolled
+West Virginia,2019,Ethan Richardson,"Madera, CA",Madera Christian School,Committed
+West Virginia,2020,Isaiah Cottrell,"Huntington, WV",Huntington Prep,Enrolled
+West Virginia,2020,Taj Thweatt,"Wildwood, NJ",Wildwood Catholic,Enrolled
+West Virginia,2020,Seny Ndiaye,"Huntington, WV",Huntington Prep,Enrolled
+West Virginia,2021,James Okonkwo,"Mount Hope, WV",Beckley Prep Academy,Enrolled
+West Virginia,2021,Seth Wilson,"Lorain, OH",Lorain,Enrolled
+West Virginia,2021,Jamel King,"Uniontown, AL",Bella Vista College Preparatory School,Enrolled
+West Virginia,2021,Pauly Paulicap,"Elmont, NY",Elmont Memorial,Enrolled
+West Virginia,2021,Malik Curry,"Wilmington, DE",Putnam Science Academy,Enrolled
+West Virginia,2022,Josiah Davis,"Scott Depot, WV",Teays Valley Christian School,Enrolled
+West Virginia,2022,Pat Suemnick,"Denmark, WI",Denmark,Enrolled
+West Virginia,2022,Mohamed Wague,"Scotland, PA",Scotland Campus,Enrolled
+West Virginia,2022,Erik Stevenson,"Lacey, WA",Timberline,Committed
+West Virginia,2023,Ofri Naveh,Neot,Israel,Enrolled
+West Virginia,2023,RaeQuan Battle,"Marysville, WA",Marysville Pilchuck,Enrolled
+West Virginia,2023,Akok Akok,"Putnam, CT",Putnam Science Academy,Committed
+West Virginia,2023,Jesse Edwards,"Bradenton, FL",IMG Academy,Committed
+West Virginia,2023,Noah Farrakhan,"Hillside, NJ",The Patrick School,Committed
+West Virginia,2023,Quinn Slazinski,"Huntington, WV",Huntington Prep,Committed
+West Virginia,2023,Kerr Kriisa,Tartu,Estonia,Committed
+West Virginia,2024,KJ Tenner,"Cordova, TN",Cordova,Enrolled
+West Virginia,2024,Amani Hansberry,"Silver Spring, MD",Mount Saint Joseph,Enrolled
+West Virginia,2024,Jayden Stone,Perth,Sunrise Christian Academy,Enrolled
+West Virginia,2024,Toby Okani,"West Orange, NJ",Cushing Academy,Enrolled
+West Virginia,2024,Tucker DeVries,"Waukee, IA",Waukee,Enrolled
+West Virginia,2024,Joseph Yesufu,"Bolingbrook, IL",Bolingbrook,Enrolled
+West Virginia,2025,DJ Thomas,"Allen, TX",Allen,Enrolled
+West Virginia,2025,Chance Moore,"Powder Springs, GA",McEachern,Enrolled
+West Virginia,2025,Treysen Eaglestaff,"Bismarck, ND",Bismarck,Enrolled
+West Virginia,2025,Harlan Obioha,"Hoxie, KS",Hoxie,Enrolled
+West Virginia,2025,Honor Huff,"Pennsburg, PA",Perkiomen School,Enrolled
+West Virginia,2025,Jackson Fields,"Missouri City, TX",Elkins,Enrolled
+West Virginia,2026,Miles Sadler,"Glendale, AZ",Bella Vista College Preparatory School,Signed
+West Virginia,2026,Aliou Dioum,Dakar,Bella Vista College Preparatory School,Signed
+West Virginia,2026,Keonte Greybear,"McKinney, TX",iSchool of Lewisville,Committed
+West Virginia,2026,Amadou Seini,NA,Bella Vista College Preparatory School,Committed
+West Virginia,2026,Mouhamed Sylla,Dakar,Bella Vista College Preparatory School,Committed
+West Virginia,2026,Finley Bizjack,"Trophy Club, TX",Byron Nelson,Committed
+West Virginia,2026,Javan Buchanan,"Lafayette, IN",Lafayette Jefferson,Committed
+West Virginia,2026,Martin Somerville,"Bowie, MD",Southern California Academy,Committed
