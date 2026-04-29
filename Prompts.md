@@ -1,6 +1,6 @@
 # **Creating an app with Claude**
+
 #### *(Using Visual Studio Code in 10 steps)*
-=======
 
 1.  **Prompt:** *Make me a shiny R app that makes a pretty histogram of all the big 12 basketball teams and each recruits distance traveled to get to their school (miles from highschool to college destination). I want to see patterns in how far colleges recruit players from. it should also update reactively as I update the input dates (years). Make it so recruits in previous years look different than the most current year so I can see if they are still recruiting similar distances.*
 
@@ -49,23 +49,5 @@
 *Core capabilities:*
 
 *Compare current recruiting class vs prior classes with a hero horizontal box plot. Surface key recruiting KPIs: total recruits median and average distance local share (\<=300 miles) national share (\>1000 miles) long-haul share (\>2500 miles) Switch instantly between views in the same main panel: Box Plot (primary) Histogram (supplemental distribution view) QA/QC table (player-level validation) How-to guide (interpretation help) Toggle analysis layers: benchmark distance markers individual points on box plot density overlay on histogram optional exclusion of very long-distance international records Use locally stored team logos and CSV-backed data for stable, repeatable runs. Refresh data from CSV with one obvious control.*
-=======
-Compare current recruiting class vs prior classes with a hero horizontal box plot.
-Surface key recruiting KPIs:
-total recruits
-median and average distance
-local share (<=300 miles)
-national share (>1000 miles)
-long-haul share (>2500 miles)
-Switch instantly between views in the same main panel:
-Box Plot (primary)
-Histogram (supplemental distribution view)
-QA/QC table (player-level validation)
-How-to guide (interpretation help)
-Toggle analysis layers:
-benchmark distance markers
-individual points on box plot
-density overlay on histogram
-optional exclusion of very long-distance international records
-Use locally stored team logos and CSV-backed data for stable, repeatable runs.
-Refresh data from CSV with one obvious control.
+
+*Compare current recruiting class vs prior classes with a hero horizontal box plot. Surface key recruiting KPIs: total recruits median and average distance local share (\<=300 miles) national share (\>1000 miles) long-haul share (\>2500 miles) Switch instantly between views in the same main panel: Box Plot (primary) Histogram (supplemental distribution view) QA/QC table (player-level validation) How-to guide (interpretation help) Toggle analysis layers: benchmark distance markers individual points on box plot density overlay on histogram optional exclusion of very long-distance international records Use locally stored team logos and CSV-backed data for stable, repeatable runs. Refresh data from CSV with one obvious control.*
